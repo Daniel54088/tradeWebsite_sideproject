@@ -1,0 +1,161 @@
+/*下拉式選單的連結*/
+
+.ant-dropdown-link,
+.ant-dropdown-link:hover{
+	color: #fff;
+    font-weight: 500;
+}
+
+/*下拉式選單樣式*/
+
+.ant-dropdown-menu{
+	border-radius:0;
+	background-color: #333;
+    box-shadow: 0 0 6px rgba(0, 0, 0, .9);
+    top:15px;
+		padding: 10px;
+    border: 1px solid #111;
+}
+
+/*選單內文字*/
+
+ul li .ant-dropdown-menu-item-group-title{
+	color: #fdc200;
+}
+
+.ant-dropdown ul li a{
+	color: #ccc;
+	font-weight: 400;
+}
+
+/*選單hover效果*/
+
+.ant-dropdown-menu-item:hover,
+.ant-dropdown-menu-submenu-title:hover{
+	background-color: #252525;
+}
+
+.ant-dropdown-menu-item:last-child,
+.ant-dropdown-menu-submenu-title:last-child{
+	border-radius:none;
+}
+
+/*公告的喇叭size*/
+
+.fa-bullhorn{
+	font-size: 20px !important;
+}
+
+/*解決公告變化時，偏移的問題*/
+
+.bulletin p{
+	margin-left: 0 !important;
+}
+
+/*新聞&推薦的tab*/
+
+.ant-tabs-bar{
+    border-bottom: none !important;
+    margin-bottom:11px;
+    margin-top: 26px;
+}
+
+.ant-tabs-nav .ant-tabs-tab-inner{
+	font-size: 24px;
+}
+
+.ant-tabs-ink-bar{
+	display: none !important;
+}
+
+/*左右區塊對齊*/
+
+.live_bg h3{
+	margin-top: 40px;
+}
+
+/*內文標題*/
+
+.news_text_right h3{
+	font-weight:400;
+	font-size: 16px;
+}
+
+.news_text_right h4{
+	color: #ddd;
+	font-size: 14px;
+}
+
+/*小姊姊直播*/
+
+.live_bg h4{
+    color: #666;
+    text-align: center;
+    margin: 20px 0;
+    font-weight: 400;
+}
+
+.live_list h4 {
+    text-align: left !important;
+    margin: 0 !important;
+    margin-left: 10px !important;
+    font-size: 14px !important;
+		margin-bottom: 10px !important;
+}
+
+.liveing .Liveing_title h3{
+    text-align: center;
+    margin: 30px;
+    color: #f17013;
+    font-weight: 400;
+    margin-top: 52px;
+}
+
+.news_1 hr,
+.live_list_1 hr{
+    border-top: 1px dashed #6D6E75;
+}
+
+/*頁碼樣式*/
+
+.ant-pagination{
+	margin-top: 20px !important;
+}
+
+.ant-pagination-item a{
+	font-size: 15px !important;
+	color: #fff !important;
+}
+
+.ant-pagination-item a:hover{
+	color: #fdc200 !important;
+}
+
+.ant-pagination-prev,
+.ant-pagination-next{
+	border:none !important;
+}
+
+.ant-pagination-item{
+	border:none !important;
+	background-color: transparent !important;
+}
+
+.ant-pagination-item-active {
+    background-color: #fdc200 !important;
+    border-color: transparent !important;
+}
+
+.ant-pagination-prev:hover a,
+.ant-pagination-next:hover a{
+    color: #fdc200 !important;
+}
+
+.ant-pagination-item:hover a {
+    color: #fdc200 !important;
+}
+
+.ant-pagination-prev a:hover,
+.ant-pagination-next a:hover{
+    color: #fdc200 !important;
+}

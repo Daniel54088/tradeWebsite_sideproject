@@ -1,0 +1,30 @@
+#bottomWrap .tutorial .container-fluid .row .ant-tabs-nav-scroll{
+	width: 1265px !important;
+}
+
+#bottomWrap .tutorial .container-fluid .row .ant-tabs-nav{
+	float: none;
+}
+
+#bottomWrap .tutorial .container-fluid .row .ant-tabs-nav .ant-tabs-tab{
+    border-radius: 6px 6px 0 0;
+    border-right: 3px solid rgba(34,34,34,.9);
+    background-color: #fffffff2;
+    border: 2px solid rgba(34,34,34,.9);
+	width: 25%;
+	text-align: center;
+	margin-right: 0;
+}
+
+#bottomWrap .tutorial .container-fluid .row .ant-tabs-nav .ant-tabs-tab-inner{
+	font-size: 20px;
+	padding: 20px 0;
+}
+
+#bottomWrap .tutorial .container-fluid .row .ant-tabs-content{
+	top: -17px;
+}
+
+#bottomWrap .tutorial .container-fluid .row .tutorial .tutorial_wrap{
+	margin-bottom: 30px;
+}

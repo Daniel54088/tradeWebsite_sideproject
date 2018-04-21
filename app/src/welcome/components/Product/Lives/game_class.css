@@ -1,0 +1,62 @@
+/*英雄聯盟*/
+
+.game_01 {
+    color: #fff;
+    background: -webkit-linear-gradient(45deg, #ffd028 30%, #d18d27 100%);
+    padding: 3px;
+    font-weight: 500;
+    border-radius: 10px;
+    font-size: 13px;
+}
+
+
+
+/*DOTA2*/
+
+.game_02 {
+    color: #fff;
+    background: -webkit-linear-gradient(45deg, #dd0000 0%, #660000 100%);
+    padding: 3px;
+    font-weight: 500;
+    border-radius: 10px;
+    font-size: 13px;
+}
+
+
+
+/*CS:GO*/
+
+.game_03 {
+    color: #fff;
+    background: -webkit-linear-gradient(45deg, #627d4d 0%, #1f3b08 100%);
+    padding: 3px;
+    font-weight: 500;
+    border-radius: 10px;
+    font-size: 13px;
+}
+
+
+
+/*绝地求生*/
+
+.game_04 {
+    color: #fff;
+    background: -webkit-linear-gradient(45deg, #f6e6b4 0%, #ed9017 40%, #bc1e12 100%);
+    padding: 3px;
+    font-weight: 500;
+    border-radius: 10px;
+    font-size: 13px;
+}
+
+
+
+/*王者荣耀*/
+
+.game_05 {
+    color: #fff;
+    background: -webkit-linear-gradient(45deg, #b3d0e0 0%, #4f85bb 43%, #06335b 100%);
+    padding: 3px;
+    font-weight: 500;
+    border-radius: 10px;
+    font-size: 13px;
+}

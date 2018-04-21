@@ -1,0 +1,366 @@
+/*公告*/
+
+.bulletin {
+    height: 50px;
+    border-bottom: 2px solid #fdc200;
+    margin: 0 auto;
+    padding-top: 2px;
+    background-color: #000;
+}
+
+.bulletin {
+    overflow: hidden;
+}
+
+.bulletin ul li {
+    vertical-align: middle;
+    list-style-type: none;
+}
+
+.bulletin p {
+    font-size: 13px;
+    font-weight: 400;
+    color: #F3F3F3;
+    display: inline-block;
+    margin-left: -4px;
+}
+
+
+
+
+/*新聞/優惠，假tab按鈕*/
+
+.tab_position ul {
+    width: 100%;
+    text-align: center;
+}
+
+.tab_position ul li {
+    display: inline-block;
+    margin-left: -4px;
+    margin: 30px;
+}
+
+.tab_news,
+.tab_race {
+    color: #fff;
+}
+
+
+.tab_news:hover,
+.tab_race:hover {
+    color: #ec6c3a;
+}
+
+.pagination {
+    margin-top: 0;
+}
+
+
+.recommendation hr {
+    margin-top: 30px;
+}
+
+
+
+
+
+/*news的左圖片*/
+
+.news_img_left {
+    display: inline-block;
+    margin-left: -4px;
+    width: 40%;
+    margin-right: 20px;
+}
+
+
+.news_img_left img {
+    width: 100%;
+    padding: 1px;
+    margin: 0;
+}
+
+
+
+
+
+
+
+
+
+
+/*news的右文字*/
+
+.news_text_right {
+    display: inline-block;
+    margin-left: -4px;
+    width: 55%;
+    vertical-align: bottom;
+}
+
+.news_text_right h3,
+.race_text_bottom h3 {
+    color: #fdc200;
+}
+
+.news_text_right p,
+.race_text_bottom p {
+    color: #fff;
+    font-size: 12px;
+}
+
+
+.news_text_right h4,
+.race_text_bottom h4 {
+    color: #FEBD0A;
+    font-weight: 400;
+}
+
+.news_text_right h5,
+.race_text_bottom h5 {
+    color: #ddd;
+}
+
+
+
+
+
+
+
+
+/*race的上半部圖片*/
+
+.race_img_top {
+    width: 100%;
+    height: 150px;
+    overflow: hidden;
+}
+
+.race_img_top img {
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+/*race的下半部文字*/
+
+.race_text_bottom {
+    width: 100%;
+}
+
+.news_eye {
+    float: right;
+    padding-right: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+/*瀏覽數量*/
+
+.race_eye {
+    float: right;
+    margin-top: -15px;
+}
+
+
+
+.news_eye p,
+.race_eye p {
+    display: inline-block;
+    margin-left: -4px;
+    color: #666;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.race_eye p,
+.news_text_right .news_eye p {
+    color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+/*小姊姊開黑中*/
+
+.liveing_img {
+    width: 100%;
+    height: 150px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.liveing {
+    border-bottom: 2px solid rgba(241, 112, 19, .5);
+    margin-bottom: 50px;
+    color: #fcfaf4;
+}
+
+.liveing_img img {
+    width: 100%;
+    padding: 0 20px;
+}
+
+.liveing h2 {
+    margin: 53px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.liveing_text {
+    position: relative;
+    padding: 0 20px;
+}
+
+.liveing_text h4 {
+    font-weight: 400;
+    color: #333;
+}
+
+.liveing_text .liveingtext {
+    color: #333;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+
+
+
+
+/*標籤*/
+
+.Liveing_title {
+    position: relative;
+    width: 100%;
+    color: #FFDA00;
+}
+
+.live_type {
+    position: absolute;
+    top: 1px;
+    right: 65px;
+    color: #fff;
+    background-color: #D0021B;
+    padding: 1px;
+    font-weight: 700;
+    border: 2px #D0021B solid;
+    border-radius: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*小姊姊開黑行程*/
+
+.live_list {
+    width: 100%;
+}
+
+.live_list h4 {
+    color: #666;
+    text-align: center;
+    margin: 20px 0;
+    font-weight: 400;
+}
+
+.live_list_1 {
+    margin-bottom: 30px;
+}
+
+.live_bg {
+    background-color: #fff;
+}
+
+.live_bg h3 {
+    text-align: center;
+    margin: 30px;
+    color: #f17013;
+    font-weight: 400;
+    margin-top: 52px;
+}
+
+.live_list_img {
+    display: inline-block;
+    margin-left: -4px;
+    margin-right: 0px;
+    width: 60%;
+}
+
+.live_list_img img {
+    width: 100%;
+}
+
+.live_list_text {
+    display: inline-block;
+    margin-left: -4px;
+    width: 40%;
+    vertical-align: middle;
+}
+
+.live_list_text ul,
+.live_list_text ul li {
+    display: inline-block;
+    margin-right: -4px;
+    padding: 0;
+    margin: 0;
+}
+
+.live_list_text h5 {
+    font-weight: 400;
+    margin-left: 10px;
+    color: #666;
+}
+
+.live_list_text p {
+    color: #333;
+    font-weight: 400;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+
+.ant-tabs-nav{
+	left: 50%;
+	transform: translateX(-50%);
+	font-size: 36px;
+}
+.ant-tabs-nav-scroll{
+	width: 100% !important;
+}
+.ant-tabs-ink-bar{  /*新聞賽事推薦分頁tab的顏色*/
+	background-color: #F24B0C !important;
+}
+.ant-tabs-nav .ant-tabs-tab-active .ant-tabs-tab-inner{/*新聞賽事推薦分頁tab的顏色*/
+	color: #F24B0C !important;
+}
+.ant-tabs-tab-inner:hover{/*新聞賽事推薦分頁tab的顏色*/
+	color: #fdc200 !important;
+}

@@ -1,0 +1,80 @@
+{
+    "status": true,
+    "err_id": "",
+    "err_code": "",
+    "err_msg": "",
+    "data": [
+        {
+            "TransactionId": "W201801153510002",
+            "TransactionType": 2,
+            "Amount": 1,
+            "Charges": 0,
+            "PaymentMethodId": "LB",
+            "CurrencyCode": "CNY",
+            "SubmittedAt": "2018-01-15T11:18:35.35",
+            "StatusId": 1,
+            "Status": "待处理",
+            "PaymentMethodName": "本地银行提款"
+        },
+        {
+            "TransactionId": "W201801157710001",
+            "TransactionType": 2,
+            "Amount": 1,
+            "Charges": 0,
+            "PaymentMethodId": "LB",
+            "CurrencyCode": "CNY",
+            "SubmittedAt": "2018-01-15T11:15:40.487",
+            "StatusId": 3,
+            "Status": "到账失败",
+            "PaymentMethodName": "本地银行提款"
+        },
+        {
+            "TransactionId": "W201801026810003",
+            "TransactionType": 2,
+            "Amount": 10,
+            "Charges": 0,
+            "PaymentMethodId": "LB",
+            "CurrencyCode": "CNY",
+            "SubmittedAt": "2018-01-02T10:46:08.13",
+            "StatusId": 3,
+            "Status": "到账失败",
+            "PaymentMethodName": "本地银行提款"
+        },
+        {
+            "TransactionId": "W201801027210002",
+            "TransactionType": 2,
+            "Amount": 10,
+            "Charges": 0,
+            "PaymentMethodId": "LB",
+            "CurrencyCode": "CNY",
+            "SubmittedAt": "2018-01-02T10:45:16.833",
+            "StatusId": 1,
+            "Status": "待处理",
+            "PaymentMethodName": "本地银行提款"
+        },
+        {
+            "TransactionId": "W201801027110001",
+            "TransactionType": 2,
+            "Amount": 10,
+            "Charges": 0,
+            "PaymentMethodId": "LB",
+            "CurrencyCode": "CNY",
+            "SubmittedAt": "2018-01-02T10:38:49.507",
+            "StatusId": 1,
+            "Status": "待处理",
+            "PaymentMethodName": "本地银行提款"
+        },
+        {
+            "TransactionId": "W201711032210001",
+            "TransactionType": 2,
+            "Amount": 2,
+            "Charges": 0,
+            "PaymentMethodId": "LB",
+            "CurrencyCode": "CNY",
+            "SubmittedAt": "2017-11-03T11:31:50.34",
+            "StatusId": 1,
+            "Status": "待处理",
+            "PaymentMethodName": "本地银行提款"
+        }
+    ]
+}

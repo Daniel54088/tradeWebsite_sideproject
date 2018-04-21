@@ -1,0 +1,594 @@
+hot_newsbody{
+  background-size: auto!important;
+  background-position: inherit!important;
+}
+/*main news content*/
+main .news {
+  height: auto;
+  margin-top: 50px;
+  margin-bottom: 150px;
+}
+main .newsbanner ol{
+  display: none;
+}
+main .news #tabs {
+  width: 380px;
+  display: block;
+  margin: 0 auto;
+}
+main .news #tabs li {
+  opacity: 0.6;
+  color: #000;
+  transition: all 0.15s ease-out 0s;
+}
+main .news #tabs li h2 {
+  position: absolute;
+  top: 30%;
+  left: 33%;
+}
+main .news span {
+  float: left;
+  width: 110px;
+  font-family: Impact;
+  font-size: 14px;
+  font-weight: 100;
+  display: block;
+  color: #999;
+}
+main .news h1 {
+  display: block;
+  float: left;
+  font-size: 24px;
+  overflow: hidden;
+  line-height: 24px;
+  margin-bottom: 20px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  color: #fff;
+}
+main .news ul li a p {
+  display: block;
+  float: left;
+  width: 530px;
+  height: 65px;
+  overflow: hidden;
+  margin-bottom: 20px;
+  font-size: 16px;
+  color: #fff;
+}
+
+/*news tab style*/
+main .news .tabs .tab {
+  width: 190px;
+  height:auto;
+  display: block;
+  margin-top: 5px;
+}
+main .news .tabs .tab:nth-child(first) {
+  margin-left: 150px;
+}
+main .news .tabs .tab label {
+  color: #000;
+  transition: all 0.15s ease-out 0s;
+  z-index: 1;
+}
+main .news .tabs .tab label p {
+  line-height: 70px;
+  text-align: center;
+  font-weight: bolder;
+  font-size: 16px;
+}
+main .news .tabs .tab > .content {
+  width: 1220px;
+  height:auto;
+  display: none;
+  background: url('../images/news/newsbackground.png') no-repeat;
+  position: relative;
+  float: left;
+}
+main .news .tabs .tab > input[type=radio]:checked ~ .content {
+  display:block;
+}
+.tab > input[type=radio]:checked + label {
+  border: 0;
+}
+main .news .tabs .tab #tab1 + label{
+  left: 347px;
+}
+main .news .tabs .tab #tab2 + label{
+  left: 346px;
+}
+main .news .tabs .tab #tab3 + label{
+  left: 343px;
+}
+
+
+/*news container*/
+main .news .tab .content .con-toparea {
+  width: 100%;
+  height: 45px;
+  display: block;
+  float: none;
+  padding-top: 40px;
+  margin-bottom: 20px;
+}
+main .news .tab .content.esport .titleimg {
+  background:url('../images/main/mainskin.png') -1194px -399px no-repeat;
+  margin-right: 20px;
+}
+main .news .tab .content.promotion .titleimg {
+  background:url('../images/main/mainskin.png') -1194px -467px no-repeat;
+  margin-right: 20px;
+}
+main .news .tab .content.competition .titleimg {
+  background:url('../images/main/mainskin.png') -1457px -910px no-repeat;
+  margin-right: 20px;
+}
+main .news .tab .content.esport ul,
+main .news .tab .content.promotion ul,
+main .news .tab .content.competition ul {
+  width: 1050px;
+  margin: 0 auto;
+}
+main .news .tab .content.esport ul li,
+main .news .tab .content.promotion ul li,
+main .news .tab .content.competition ul li {
+  display: block;
+  margin: 20px 0;
+}
+main .news .tab .content.competition {
+  left: -190px;
+}
+main .news .tab .content.esport {
+  left: -380px;
+}
+main .news .tab .content .bottomarea {
+  height: 150px;
+}
+
+/*promotion list*/
+main .news .tab .content.promotion ul li a .activitybox {
+  width: 1050px;
+  height: 190px;
+  display: inline-block;
+  overflow:hidden;
+  position: relative;
+  border: 2px solid #000;
+  margin: 10px 0;
+}
+main .news .tab .content.promotion ul li a .activitybox h1 {
+  position: absolute;
+  z-index: 1;
+  bottom: 70px;
+  padding-left: 10px;
+  width: 95%;
+  color: #fff;
+  margin-bottom: 0;
+}
+main .news .tab .content.promotion ul li a .activitybox img {
+  width: 1050px;
+  height: auto;
+  -webkit-transform: translateZ(0);
+  opacity: 1;
+  transform: translateZ(0);
+  -webkit-transition-duration: .3s;
+  transition-duration: .3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+main .news .tab .content.promotion ul li a:hover img {
+-webkit-transform: scale(1.1) translateZ(0);
+/* transform: scale(1.2) translateZ(0); */
+}
+main .news .tab .content.promotion ul li a .activitybox .moretext {
+  position: absolute;width: 1046px;
+  height: 186px;
+  background-color: rgba(0,0,0,0.7);
+  bottom: 0;
+  z-index: 1;
+  color: #ffdf00;
+  opacity: 0;
+  -webkit-transition: opacity 0.4s ease;
+  transition: opacity 0.4s ease;
+}
+main .news .tab .content.promotion ul li a:hover .activitybox .moretext {
+  opacity: 1;
+  border: 2px solid #fc0;
+}
+main .news .tab .content.promotion ul li a .activitybox .moretext p {
+  width: 100%;
+  text-align: center;
+  font-weight: bolder;
+  font-size: 16px;
+  color: #fff;
+  margin: 15px 0;
+}
+main .news .tab .content.promotion ul li a .activitybox .moretext span {
+  width: 150px;
+  font-size: 14px;
+  color: #fc0;
+  line-height: 32px;
+  height: 32px;
+  border: 2px solid #fc0;
+  border-radius: 50px;
+  font-weight: bold;
+  text-align: center;
+  margin: 0 auto;
+  margin-top:70px;
+  display: block;
+  float: none;
+  text-indent: -9999px;
+  background: url('../images/main/mainskin.png') 4px -530px no-repeat;
+}
+main .news .tab .content.promotion ul li a .activitybox .moretext p,
+main .news .tab .content.promotion ul li a .activitybox .moretext span {
+  transition: -webkit-transform 0.4s ease-out;
+  -webkit-transition: -webkit-transform 0.4s ease-out;
+  transition: transform 0.4s ease-out;
+  transition: transform 0.4s ease-out, -webkit-transform 0.4s ease-out;
+  -webkit-transform: translate3d(0, 5px, 0);
+  transform: translate3d(0, 5px, 0);
+}
+main .news .tab .content.promotion ul li a:hover .activitybox .moretext p,
+main .news .tab .content.promotion ul li a:hover .activitybox .moretext span {
+  -webkit-transform: translate3d(0, 15px, 0);
+  transform: translate3d(0, 15px, 0);
+}
+main .news .lightbox .content main h1 {
+  font-size: 36px;
+  color: #ffdf00;
+  line-height: 45px;
+  white-space: normal;
+  text-overflow: inherit;
+}
+main .news .lightbox .content main span {
+  color: #8e8e8e;
+  width: auto;
+}
+main .news .lightbox .content main hr {
+  width: 100%;
+  height:1px;
+  border:none;
+  border-top:1px solid #fff;
+  margin: 10px 0;
+  display: block;
+  float: left;
+}
+main .news .lightbox .content .bottomarea .btnapply {
+  width: 160px;
+  height: 40px;
+  border-radius: 20px;
+  margin: 0 auto;
+  background: none;
+  color: #f12513;
+  border: 1px solid #f12513;
+}
+main .news .lightbox .lightbox_contxt {
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+main .news .lightbox .lightbox_contxt p,
+.news .newscontent .newscontent_txt p {
+  clear: left;
+  color: #ddd;
+}
+main .news .lightbox .lightbox_contxt ul,
+main .news .lightbox .lightbox_contxt ol,
+.news .newscontent .newscontent_txt ul,
+.news .newscontent .newscontent_txt ol {
+  width: 1050px;
+  margin: 0 auto;
+  margin-left: 20px;
+}
+main .news .lightbox .lightbox_contxt ul,
+.news .newscontent .newscontent_txt ul {
+  list-style-type: disc;
+  color: #fff;
+}
+main .news .lightbox .lightbox_contxt ol,
+.news .newscontent .newscontent_txt ol {
+  list-style-type: decimal;
+  color: #fff;
+}
+main .news .lightbox .lightbox_contxt ul li,
+main .news .lightbox .lightbox_contxt ol li,
+.news .newscontent .newscontent_txt ul li,
+.news .newscontent .newscontent_txt ol li {
+  clear: left;
+  margin: 0;
+  display: list-item;
+  color: #fff;
+}
+main .news .lightbox .lightbox_contxt ul li span,
+.news .newscontent .newscontent_txt ul li span {
+  display: list-item;
+  color: #fff;
+}
+main .news .lightbox .lightbox_contxt span,
+.news .newscontent .newscontent_txt span {
+  font-family: 'Microsoft YaHei UI','Segoe UI','Lucida Grande',Verdana,Arial,Helvetica,sans-serif!important;
+  clear: left;
+  float: none;
+  display: inline;
+  color: #fff;
+}
+.news .newscontent .newscontent_txt h1,
+main .news .tab .content.promotion .lightbox .content main h1 {
+  font-size: 36px;
+  float: none;
+  color: #fff;
+}
+.news .newscontent .newscontent_txt h2,
+main .news .tab .content.promotion .lightbox .lightbox_contxt h2 {
+  font-size: 24px;
+  margin-bottom: .7em;
+  float: none;
+  color: #fff;
+}
+.news .newscontent .newscontent_txt h3,
+main .news .tab .content.promotion .lightbox .lightbox_contxt h3 {
+  font-size: 21px;
+  float: none;color: #fff;
+}
+.news .newscontent h4,
+main .news .tab .content.promotion .lightbox .lightbox_contxt h4 {
+  font-size: 18px;float: none;color: #fff;
+}
+.news .newscontent .newscontent_txt h5,
+main .news .tab .content.promotion .lightbox .lightbox_contxt h5 {
+  font-size: 16px;
+  float: none;
+  color: #fff;
+}
+.news .newscontent .newscontent_txt h6,
+main .news .tab .content.promotion .lightbox .lightbox_contxt h6 {
+  font-size: 12px;
+  text-transform: uppercase;
+  float: none;
+  color: #fff;
+}
+.news .newscontent .newscontent_txt a,
+main .news .tab .content.promotion .lightbox .lightbox_contxt a {
+  text-decoration: none;
+  color: #fff;
+  float: none;
+}
+.news .newscontent .newscontent_txt table,
+main .news .tab .content.promotion .lightbox .lightbox_contxt table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.news .newscontent .newscontent_txt td,
+main .news .tab .content.promotion .lightbox .lightbox_contxt td {
+  vertical-align: top;
+  border: 1px solid #ddd;
+  padding: 5px;
+}
+.news .newscontent .newscontent_txt th,
+main .news .tab .content.promotion .lightbox .lightbox_contxt th {
+  vertical-align: top;
+  border: 1px solid #ddd;
+  padding: 5px;
+}
+
+
+
+/*competition esport list*/
+
+main .news .tab .content.esport ul li label,
+main .news .tab .content.esport ul li a,
+main .news .tab .content.competition ul li label,
+main .news .tab .content.competition ul li a {
+  color: #000;
+  text-align: left;
+  text-decoration: none;
+  width: 1000px;
+  height: 150px;
+  display: block;
+  box-shadow: 5px 5px 0px 0px;
+  background-color: #272727;
+  border: 2px solid #000;
+  color: #000;
+  padding: 20px;
+}
+main .news .tab .content.esport ul li a .gamingimgbox,
+main .news .tab .content.competition ul li a .gamingimgbox {
+  width: 430px;
+  height: 150px;
+  display: block;
+  float: left;
+  overflow:hidden;
+  border: 2px solid #000;
+}
+main .news .tab .content.esport ul li a .gamingimgbox img,
+main .news .tab .content.competition ul li a .gamingimgbox img {
+  width: 430px;
+  height: 150px;
+  display: block;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-transition-duration: .3s;
+  transition-duration: .3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+main .news .tab .content.esport ul li a:hover,
+main .news .tab .content.competition ul li a:hover {
+  color: #ffdf00;
+}
+main .news .tab .content.esport ul li a:hover h1,
+main .news .tab .content.competition ul li a:hover h1 {
+  color: #ffdf00;
+}
+main .news .tab .content.esport ul li a:hover img,
+main .news .tab .content.competition ul li a:hover img {
+  -webkit-transform: scale(1.1) translateZ(0);
+   /*transform: scale(1.2) translateZ(0); */
+}
+main .news .tab .content.esport h1,
+main .news .tab .content.competition h1 {
+  width: 530px;
+  color: rgb(34, 34, 34);
+}
+
+main .news .pagination {
+  margin-top: 40px;
+}
+main .news .newscontent {
+  background:rgba(34,34,34,.7);
+  height: auto;
+  display: block;
+  min-height: 500px;
+  border-radius: 6px;
+  box-shadow: 0 0 6px rgba(0,0,0,.8);
+  padding: 50px 40px;
+}
+
+main .news .newscontent h1 {
+  font-size: 36px;
+  color: #fdc200;
+  width: 100%;
+  white-space: normal;
+  line-height: 48px;
+}
+main .news .newscontent span {
+  color: #999;
+  width: 200px;
+  margin-bottom: 20px;
+}
+main .news .newscontent .newscontent_txt img {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  height: auto;
+}
+main .news .newscontent .newscontent_txt {
+  border-top: 1px solid #999;
+  border-bottom: 1px solid #999;
+}
+main .news .newscontent .newscontent_txt,
+.news .hot_news {
+  padding: 20px;
+}
+main .news .newscontent .newscontent_txt p {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  line-height: 1.5;
+  font-size: 14px;
+}
+main .news .newscontent .newscon_title .titleimg {
+  background:url('../images/main/mainskin.png') -1194px -399px no-repeat;
+  margin-right: 20px;
+  width: 102px;
+}
+main .news .newscontent .systemcon_title .titleimg {
+  background:url('../images/main/mainskin.png') -1194px -910px no-repeat;
+  margin-right: 20px;
+  width: 102px;
+}
+main .news .newscontent .newscon_title,
+main .news .newscontent .systemcon_title {
+  width: auto;
+  height: auto;
+  display: block;
+  float: left;
+  position: relative;
+  margin-bottom: 20px;
+}
+main .news .newscontent .newscon_title a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 102px;
+  height: 45px;
+}
+main .news .newscontent .newscon_title span,
+main .news .newscontent .systemcon_title span {
+  width: 70px;
+  line-height: 22px;
+  height: 22px;
+  border-radius: 3px;
+  text-align: center;
+  color: #000000;
+  background-color: #ffdf00;
+  font-weight: bolder;
+  margin-top: 18px;
+  margin-bottom: 0;
+}
+main .news .newscontent .watcher {
+  float: right;
+  text-align: right;
+}
+main .news .newscontent .watcher i {
+  font-size: 15px;
+  margin-right: 10px;
+}
+.news .newscontent .newscontent_txt a.btnsys {
+  display: inline-block;
+  float: right;
+  font-size: 14px;
+  line-height: 1.5;
+  width: auto;
+  height: auto;
+  padding: 10px 15px;
+  color: #222;
+  margin-top: 50px;
+}
+.news .hot_news {
+  width: 100%;
+}
+.news .hot_news h2 {
+  font-style: normal;
+  font-size: 24px;
+  font-weight: bolder;
+  color: rgba(255, 223, 0,.8);
+  margin-bottom: 20px;
+}
+.news .hot_news .news_block {
+  width: calc(50% - 30px);
+  float: left;
+  margin-bottom: 30px;
+}
+.hot_news .news_block:nth-child(2n+1){
+  margin-right: 30px;
+}
+.news .news_block_img {
+  width: 100%;
+  height: 250px;
+  border-radius: 6px;
+  overflow: hidden;
+  position: relative;
+}
+.news .news_block .news_bg_img,
+.news .news_block .news_title {
+  transition: .3s ease;
+}
+.news .news_block .news_bg_img {
+  width: 100%;
+  height: 100%;
+  background-position: center center;
+  -webkit-background-size: cover;
+  background-size: cover;
+  position: absolute;
+}
+.news .news_block:hover .news_bg_img {
+  transform: scale(1.3);
+}
+.news .news_block .news_title {
+  margin-top: 10px;
+  text-shadow: 2px 2px 2px rgba(0,0,0,.4);
+}
+.news .news_block:hover .news_title {
+  color: #ffdf00;
+}
+.news .news_block .news_title {
+  font-size: 16px;
+  line-height: 1.7;
+  height: 62px;
+  overflow: hidden;
+  color: #fff;
+}
