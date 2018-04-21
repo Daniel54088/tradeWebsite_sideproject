@@ -1,0 +1,83 @@
+/*上半部*/
+
+.contact .content {
+    padding: 50px;
+}
+
+.contact .content .caption {
+    text-align: center;
+}
+
+.contact .content .caption img {
+
+    width: 50%;
+}
+
+.contact .content .caption h4 {
+    color: #ffbf1b;
+    margin-left: 8px;
+    border-bottom: 3px solid #ffbf1b;
+    width: 80px;
+    padding: 0;
+    margin: 0;
+    margin: 10px auto;
+}
+
+
+.contact .content .caption p {
+    padding: 0;
+    margin: 0;
+    color: #5c5c5f;
+    font-size: 0.8em;
+}
+
+/*下半部，輸入部分*/
+
+.contact .content .contact_wrap {
+  margin-top: 20px;
+}
+
+.contact .content .contact_wrap .contact_box .contact_content .form_row .form_group {
+  margin: 5px 0;
+}
+
+.form_row .form_group label{
+    padding: 0;
+    margin: 0;
+    color: #8036ea;
+    font-size: 0.8em;
+    width: 50px;
+}
+
+.contact .content .contact_wrap .contact_box .contact_content .form_row .form_group .input_mainpg{
+  width: 100%;
+}
+
+.contact .content .contact_wrap .contact_box .contact_content textarea{
+    padding: 0;
+    margin: 0;
+  width: 100%;
+  border: none;
+  border: 1px solid #5c5c5f;
+  border-radius: 5px;
+  padding:5px;
+  font-size: 0.8em;
+    color: #5c5c5f;
+    display: block;
+     height: 187px;
+    margin-top: 10px;
+}
+
+
+.contact .content .contact_wrap .contact_box .contact_content textarea:focus{
+  border: 1px solid #8036ea;
+    outline: none;
+    transition: all 0.15s ease-out 0s;
+}
+
+.btngroup{
+    width: 100%;
+    padding: 0;
+    margin: 20px 0;
+    text-align: right;
+}

@@ -1,0 +1,713 @@
+/*整體背景顏色*/
+
+body {
+    background-color: #fdfdff;
+    background-image: url("https://www.transparenttextures.com/patterns/brilliant.png");
+    /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+    background-color: #fdfdff;
+    background-image: url("https://www.transparenttextures.com/patterns/inspiration-geometry.png");
+    /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+    background-color: #fdfdff;
+    background-image: url("https://www.transparenttextures.com/patterns/light-wool.png");
+    /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+    background-color: #fdfdff;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    font-family: -apple-system, "Helvetica Neue", Helvetica, "Nimbus Sans L", Arial, "Liberation Sans", "PingFang SC", "Hiragino Sans GB", "Source Han Sans CN", "Source Han Sans SC", "Microsoft YaHei", "Wenquanyi Micro Hei", "WenQuanYi Zen Hei", "ST Heiti", SimHei, "WenQuanYi Zen Hei Sharp", sans-serif !important;
+}
+
+
+/*限制內容區塊的框*/
+
+.content {
+    background-color: #ffffff70;
+    box-shadow: 0 0 10px #c6cbce87;
+    overflow: hidden;
+    border: 1px solid #a0a8a84a;
+    border-radius: 5px;
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+hr {
+    border-top: 1px dashed #a0a8a84a;
+    padding: 0;
+    margin: 0;
+}
+
+i {
+    color: #5c5c5f;
+}
+
+
+a {
+    text-decoration: none !important;
+}
+
+
+
+.wrapper {
+    margin: 0 auto;
+    max-width: 1440px;
+}
+
+
+
+/*header*/
+
+.top_grayline {
+    margin: 0 auto;
+    height: 40px;
+}
+
+.header_yellowline {
+    margin: 0 auto;
+    border-bottom: 1px solid #615c7b3b;
+}
+
+
+
+
+
+/*下拉式選單*/
+
+.top_box {
+    float: right;
+    text-align: right;
+    margin-top: 5px;
+}
+
+.top_float {
+    padding: 0 0 0 10px;
+    width: 100%;
+}
+
+.top i {
+    vertical-align: middle;
+    color: #8036ea;
+}
+
+.top .top_box img {
+    width: 29px;
+    margin: 0;
+    padding: 0;
+}
+
+.top_float .top .top_box a {
+    padding: 0 10px;
+}
+
+
+
+
+
+
+/*按鈕+logo列*/
+
+header .top-menu ul {
+    margin: 0;
+    display: flex;
+    padding: 15px 15%;
+}
+
+header .top-menu ul li {
+    display: inline-block;
+    margin-left: -4px;
+    margin-bottom: -3px;
+    text-align: center;
+    flex: 1;
+}
+
+
+header .top-menu ul li a {
+    color: #5c5c5f;
+    display: block;
+}
+
+header .top-menu ul li a:hover,
+header .top-menu ul li a.active {
+    color: #8036ea;
+}
+
+header .top-menu ul li a h5 {
+    margin: 15px 0;
+    font-size: 1em;
+    font-family: 'Overpass';
+    display: block;
+}
+
+
+header .top-menu h5:after {
+    content: '';
+    position: relative;
+    left: 50%;
+    bottom: 0;
+    width: 0%;
+    height: 3px;
+    background-color: #8036ea;
+    transform: translateX(-50%);
+    transition: all 0.2s;
+    display: block;
+}
+
+header .top-menu ul li:hover h5:after {
+    width: 60%;
+}
+
+
+
+
+
+.logo_middle:before {
+    content: ‘’;
+    display: inline-block;
+    vertical-align: middle;
+    width: 0;
+    height: 100%;
+}
+
+header .top-menu ul li .logo {
+    vertical-align: middle;
+    margin: 9px 0;
+}
+
+header .top-menu ul li .logo img {
+    width: 100px;
+}
+
+.logo_middle {
+    flex: 2 !important;
+}
+
+
+
+
+
+
+/*公告*/
+
+.bulletin {
+    overflow: hidden;
+    width: 80%;
+    display: inline-block;
+    margin-right: -4px;
+}
+
+.bulletin ul {
+    margin: 0;
+    padding: 0;
+    height: 50px;
+    overflow: hidden;
+}
+
+.bulletin ul li {
+    vertical-align: middle;
+    list-style-type: none;
+    padding: 10px 0;
+}
+
+.bulletin p {
+    font-size: 0.8em;
+    color: #5c5c5f;
+    display: inline-block;
+    margin-right: -4px;
+    margin-left: 4px;
+}
+
+
+
+
+
+
+
+/*slide*/
+
+.slide {
+    width: 100%;
+    max-height: 500px;
+    overflow: hidden;
+}
+
+.slide .banner_frame {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+.slide .banner_frame img {
+    width: 100%;
+    min-height: 200px;
+    overflow: hidden;
+}
+
+
+
+
+
+
+/*新聞/優惠頁籤*/
+
+.tab_position ul {
+    text-align: center;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+.tab_position ul li {
+    margin: 0;
+    display: inline-block;
+    margin-right: -4px;
+    padding: 20px 15px;
+}
+
+.tab_position ul li a h3 {
+    color: #5c5c5f;
+    font-size: 1.4em;
+}
+
+.tab_position ul li a h3:hover {
+    color: #8036ea;
+}
+
+.pagination {
+    margin-top: 0;
+}
+
+
+
+
+/*news*/
+
+.news_1 {
+    margin-bottom: 20px;
+}
+
+.page-navigation {
+    margin-top: 20px;
+}
+
+
+
+/*news的左圖片*/
+
+.news_img_left {
+    display: inline-block;
+    margin-left: -4px;
+    width: 40%;
+    margin-right: 15px;
+}
+
+
+.news_img_left img {
+    width: 100%;
+    padding: 1px;
+    margin: 0;
+}
+
+
+
+
+/*news的右文字*/
+
+.news_text_right {
+    display: inline-block;
+    margin-right: -4px;
+    width: 55%;
+    vertical-align: middle;
+}
+
+.news_text_right p {
+    color: #5c5c5f;
+    font-size: 0.8em;
+    padding: 0;
+    margin: 0;
+}
+
+
+.news_text_right h4 {
+    color: #ffbf1b;
+}
+
+.news_text_right h5 {
+    color: #ccc8c4;
+    font-size: 1em;
+}
+
+
+
+
+/*瀏覽數量*/
+
+.news_eye {
+    text-align: right;
+    margin-right: 10px;
+}
+
+.news_eye p {
+    display: inline-block;
+    margin-right: -4px;
+    font-size: 0.8em;
+    color: #5c5c5f;
+}
+
+
+
+
+
+/*小姊姊開黑中*/
+
+.live_bg {
+    padding: 40px 15px;
+    background-color: #f0f0f1;
+}
+
+.liveing_img {
+    width: 100%;
+    text-align: center;
+    overflow: hidden;
+}
+
+.liveing {
+    border-bottom: 2px solid #e0dfe0;
+    margin-bottom: 20px;
+    color: #fcfaf4;
+    padding-bottom: 2px;
+}
+
+.liveing_img img {
+    width: 85%;
+    margin: 0 auto;
+    border: 1px solid #fff;
+}
+
+.liveing h2 {
+    margin: 53px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.liveing_text {
+    position: relative;
+    padding: 0 20px;
+}
+
+.liveing_text h4 {
+    color: #885bcc;
+    font-size: 1.5em;
+    text-align: center;
+    margin: 15px 0;
+}
+
+.liveing_text .liveingtext {
+    color: #333;
+    font-size: 0.8em;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+
+
+
+
+/*小姊姊開黑行程*/
+
+.live_list {
+    width: 100%;
+}
+
+.live_list h4 {
+    color: #666;
+    text-align: center;
+    margin: 20px 0;
+    font-weight: 400;
+}
+
+.live_list_1 {
+    margin-bottom: 30px;
+}
+
+.live_bg h3 {
+    text-align: center;
+    margin: 30px;
+    color: #f17013;
+    font-weight: 400;
+    margin-top: 52px;
+}
+
+.live_list_img {
+    width: 70%;
+    margin: 0 auto;
+    border: 1px solid #fff;
+}
+
+.live_list_img img {
+    width: 100%;
+}
+
+.live_list_text {
+    vertical-align: middle;
+    text-align: center;
+}
+
+.live_list_text h5 {
+    font-size: 1em;
+}
+
+.live_list_text ul,
+.live_list_text ul li {
+    display: inline-block;
+    margin-right: -4px;
+    padding: 0;
+    margin: 0;
+}
+
+.live_list_text p {
+    color: #333;
+    font-weight: 400;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+
+
+/*小姊姊開黑，遊戲頁籤*/
+
+.game_type {
+    position: absolute;
+    top: 0;
+    right: 20px;
+    padding: 3px 5px;
+    font-weight: 500 !important;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 0.5em;
+    color: #fff;
+}
+
+
+
+/*英雄聯盟*/
+
+.game_01 {
+    background: #ffbe34;
+}
+
+
+/*DOTA2*/
+
+.game_02 {
+    background: #d01c1c;
+}
+
+
+/*CS:GO*/
+
+.game_03 {
+    background: #68925a;
+}
+
+
+/*绝地求生*/
+
+.game_04 {
+    background: #ef8c38;
+}
+
+
+/*王者荣耀*/
+
+.game_05 {
+    background: #4f85bb;
+}
+
+
+
+
+
+footer {
+    text-align: center;
+    background-color: #634d80;
+    background-image: url("../images/shattered.png");
+    padding: 30px 0;
+    border-top: 2px solid #8036ea;
+}
+
+.footer_title img {
+    padding: 0;
+    margin: 0;
+    width: 35px;
+    position: absolute;
+    top: -72px;
+    margin: 0 auto;
+}
+
+.footer_content p {
+    font-size: 0.8em;
+    color: #fff;
+    padding: 0;
+    margin: 0;
+    padding-bottom: 5px;
+    display: inline-block;
+    margin: 0 15px;
+}
+
+.footer_content p:hover {
+    color: #ffbf1b !important;
+}
+
+
+
+
+
+
+@media screen and (max-width: 769px) {
+
+
+    .news_img_left {
+        display: block;
+        width: 100%;
+        margin-right: 0;
+    }
+
+
+    .news_text_right {
+        display: block;
+        width: 100%;
+        vertical-align: middle;
+    }
+}
+
+
+
+
+
+
+/*按鈕樣式，未改*/
+
+.btnsys {
+    font-size: 14px;
+    border: 1px solid #000;
+    width: 80px;
+    height: 30px;
+    display: block;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 30px;
+    transition: all 0.15s ease-out 0s;
+    font-weight: bolder;
+    float: left;
+    background-color: #ffdf00;
+    color: #000;
+    cursor: pointer;
+}
+
+.btnsys:hover {
+    background-color: #ec6c3a;
+    color: #000;
+}
+
+
+.btndefault {
+    transition: all 0.15s ease-out 0s;
+    background: linear-gradient(45deg, #8036ea 0%,#a67ae8 100%);
+    border-radius: 30px;
+    margin: 0;
+    padding: 15px 80px;
+    color: #fff;
+    text-align: center;
+    font-size: 1em;
+}
+
+.btndefault:hover {
+    color: #fff;
+    background: -webkit-linear-gradient(left, #febf01 0%, #febf01 100%);
+    transition: all 0.15s ease-out 0s;
+}
+
+
+
+/*清除浮動*/
+
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    font-weight: 400 !important;
+    letter-spacing: 0.6px !important;
+}
+
+
+h2,
+h3,
+h4 {
+    letter-spacing: 1.3px !important;
+}
+
+
+
+
+/*還不知道是用在哪，先留著*/
+
+
+/*Title Image*/
+
+.con-toparea {
+    width: 100%;
+    height: 35px;
+    display: block;
+    float: left;
+    padding-top: 40px;
+}
+
+.titleimg {
+    width: 211px;
+    height: 45px;
+    display: block;
+    float: left;
+    margin-right: 115px;
+}
+
+
+/*input style*/
+
+.input_mainpg {
+    color: #5c5c5f;
+    font-size: 1em;
+    padding: 10px 1px;
+    border: none;
+    border-bottom: 1px solid #8036ea;
+    text-align: left;
+    background-color: transparent;
+    cursor: text;
+}
+
+
+.input_mainpg:focus {
+    border-bottom: 1px solid #ffbf1b;
+    outline: none;
+    transition: all 0.15s ease-out 0s;
+    cursor: text;
+}
+
+.necessary {
+    color: rgb(234, 93, 113)!important;
+    position: relative!important;
+    margin: 0!important;
+    line-height: 40px!important;
+}
