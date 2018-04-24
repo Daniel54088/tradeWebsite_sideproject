@@ -18,10 +18,10 @@ export default class Bulletin extends React.Component {
             <div className="container-fluid">
                 <div className="row">
                     <div className="col-md-10">
-                      <Carousel effect="fade" autoplay autoplaySpeed="3000">
-                        <p><i className="fas fa-bullhorn fa-2x"></i>2018迎新年，​季排行榜积分奖励调整通知。2018迎新年，​季排行榜积分奖励调整通知。</p>
-                        <p><i className="fas fa-bullhorn fa-2x"></i>訊息二</p>
-                        <p><i className="fas fa-bullhorn fa-2x"></i>警告安斯</p>
+                      <Carousel effect="fade" autoplay>
+                        <div><i className="fas fa-bullhorn fa-2x"></i>n life's earnest battle they only prevail, who daily march onward and never say fail.</div>
+                        <div><i className="fas fa-bullhorn fa-2x"></i>Gaming Adds ADA/ETH and ADA/BTC Trading Pairs</div>
+                        <div><i className="fas fa-bullhorn fa-2x"></i>Gaming Launches Mac Client</div>
                       </Carousel>
                     </div>
 

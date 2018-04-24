@@ -1,55 +1,62 @@
+
 /*公告*/
 
 .bulletin {
-    height: 50px;
-    border-bottom: 2px solid #fdc200;
-    margin: 0 auto;
-    padding-top: 2px;
-    background-color: #000;
+    overflow: hidden;
+    width: 80%;
+    display: inline-block;
+    margin-right: -4px;
 }
 
-.bulletin {
+.bulletin ul {
+    margin: 0;
+    padding: 0;
+    height: 50px;
     overflow: hidden;
 }
 
 .bulletin ul li {
     vertical-align: middle;
     list-style-type: none;
+    padding: 10px 0;
 }
 
 .bulletin p {
-    font-size: 13px;
-    font-weight: 400;
-    color: #F3F3F3;
+    font-size: 0.8em;
+    color: #5c5c5f;
     display: inline-block;
-    margin-left: -4px;
+    margin-right: -4px;
+    margin-left: 4px;
 }
 
 
 
 
-/*新聞/優惠，假tab按鈕*/
+
+
+/*新聞/優惠頁籤*/
 
 .tab_position ul {
-    width: 100%;
     text-align: center;
+    text-align: center;
+    padding: 0;
+    margin: 0;
 }
 
 .tab_position ul li {
+    margin: 0;
     display: inline-block;
-    margin-left: -4px;
-    margin: 30px;
+    margin-right: -4px;
+    padding: 20px 15px;
 }
 
-.tab_news,
-.tab_race {
-    color: #fff;
+.tab_position ul li a h3 {
+    color: #5c5c5f;
+    font-size: 1.4em;
 }
 
-
-.tab_news:hover,
-.tab_race:hover {
-    color: #ec6c3a;
+.tab_position ul li a h3:hover {
+    color: #8036ea;
 }
 
 .pagination {
@@ -57,11 +64,17 @@
 }
 
 
-.recommendation hr {
-    margin-top: 30px;
+
+
+/*news*/
+
+.news_1 {
+    margin-bottom: 20px;
 }
 
-
+.page-navigation {
+    margin-top: 20px;
+}
 
 
 
@@ -71,7 +84,7 @@
     display: inline-block;
     margin-left: -4px;
     width: 40%;
-    margin-right: 20px;
+    margin-right: 15px;
 }
 
 
@@ -84,119 +97,48 @@
 
 
 
-
-
-
-
-
-
 /*news的右文字*/
 
 .news_text_right {
     display: inline-block;
-    margin-left: -4px;
+    margin-right: -4px;
     width: 55%;
-    vertical-align: bottom;
+    vertical-align: middle;
 }
 
-.news_text_right h3,
-.race_text_bottom h3 {
-    color: #fdc200;
-}
-
-.news_text_right p,
-.race_text_bottom p {
-    color: #fff;
-    font-size: 12px;
+.news_text_right p {
+    color: #5c5c5f;
+    font-size: 0.8em;
+    padding: 0;
+    margin: 0;
 }
 
 
-.news_text_right h4,
-.race_text_bottom h4 {
-    color: #FEBD0A;
-    font-weight: 400;
+.news_text_right h4 {
+    color: #ffbf1b;
 }
 
-.news_text_right h5,
-.race_text_bottom h5 {
-    color: #ddd;
+.news_text_right h5 {
+    color: #ccc8c4;
+    font-size: 1em;
 }
-
-
-
-
-
-
-
-
-/*race的上半部圖片*/
-
-.race_img_top {
-    width: 100%;
-    height: 150px;
-    overflow: hidden;
-}
-
-.race_img_top img {
-    width: 100%;
-}
-
-
-
-
-
-
-
-
-
-
-/*race的下半部文字*/
-
-.race_text_bottom {
-    width: 100%;
-}
-
-.news_eye {
-    float: right;
-    padding-right: 5px;
-}
-
-
-
-
-
-
 
 
 
 
 /*瀏覽數量*/
 
-.race_eye {
-    float: right;
-    margin-top: -15px;
+.news_eye {
+    text-align: right;
+    margin-right: 10px;
 }
 
-
-
-.news_eye p,
-.race_eye p {
+.news_eye p {
     display: inline-block;
-    margin-left: -4px;
-    color: #666;
-    font-size: 12px;
-    font-weight: 400;
+    margin-right: -4px;
+    font-size: 0.8em;
+    color: #5c5c5f;
 }
-
-.race_eye p,
-.news_text_right .news_eye p {
-    color: #fff;
-}
-
-
-
-
-
 
 
 
@@ -204,22 +146,28 @@
 
 /*小姊姊開黑中*/
 
+.live_bg {
+    padding: 40px 15px;
+    background-color: #f0f0f1;
+}
+
 .liveing_img {
     width: 100%;
-    height: 150px;
     text-align: center;
     overflow: hidden;
 }
 
 .liveing {
-    border-bottom: 2px solid rgba(241, 112, 19, .5);
-    margin-bottom: 50px;
+    border-bottom: 2px solid #e0dfe0;
+    margin-bottom: 20px;
     color: #fcfaf4;
+    padding-bottom: 2px;
 }
 
 .liveing_img img {
-    width: 100%;
-    padding: 0 20px;
+    width: 85%;
+    margin: 0 auto;
+    border: 1px solid #fff;
 }
 
 .liveing h2 {
@@ -234,45 +182,19 @@
 }
 
 .liveing_text h4 {
-    font-weight: 400;
-    color: #333;
+    color: #885bcc;
+    font-size: 1.5em;
+    text-align: center;
+    margin: 15px 0;
 }
 
 .liveing_text .liveingtext {
     color: #333;
-    font-size: 12px;
-    font-weight: 400;
+    font-size: 0.8em;
+    text-align: center;
+    padding: 0;
+    margin: 0;
 }
-
-
-
-
-
-/*標籤*/
-
-.Liveing_title {
-    position: relative;
-    width: 100%;
-    color: #FFDA00;
-}
-
-.live_type {
-    position: absolute;
-    top: 1px;
-    right: 65px;
-    color: #fff;
-    background-color: #D0021B;
-    padding: 1px;
-    font-weight: 700;
-    border: 2px #D0021B solid;
-    border-radius: 10px;
-}
-
-
-
-
-
-
 
 
 
@@ -295,10 +217,6 @@
     margin-bottom: 30px;
 }
 
-.live_bg {
-    background-color: #fff;
-}
-
 .live_bg h3 {
     text-align: center;
     margin: 30px;
@@ -308,10 +226,9 @@
 }
 
 .live_list_img {
-    display: inline-block;
-    margin-left: -4px;
-    margin-right: 0px;
-    width: 60%;
+    width: 70%;
+    margin: 0 auto;
+    border: 1px solid #fff;
 }
 
 .live_list_img img {
@@ -319,10 +236,12 @@
 }
 
 .live_list_text {
-    display: inline-block;
-    margin-left: -4px;
-    width: 40%;
     vertical-align: middle;
+    text-align: center;
+}
+
+.live_list_text h5 {
+    font-size: 1em;
 }
 
 .live_list_text ul,
@@ -333,18 +252,68 @@
     margin: 0;
 }
 
-.live_list_text h5 {
-    font-weight: 400;
-    margin-left: 10px;
-    color: #666;
-}
-
 .live_list_text p {
     color: #333;
     font-weight: 400;
     font-size: 12px;
     font-weight: 500;
 }
+
+
+
+/*小姊姊開黑，遊戲頁籤*/
+
+.game_type {
+    position: absolute;
+    top: 0;
+    right: 20px;
+    padding: 3px 5px;
+    font-weight: 500 !important;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 0.5em;
+    color: #fff;
+}
+
+
+
+/*英雄聯盟*/
+
+.game_01 {
+    background: #ffbe34;
+}
+
+
+/*DOTA2*/
+
+.game_02 {
+    background: #d01c1c;
+}
+
+
+/*CS:GO*/
+
+.game_03 {
+    background: #68925a;
+}
+
+
+/*绝地求生*/
+
+.game_04 {
+    background: #ef8c38;
+}
+
+
+/*王者荣耀*/
+
+.game_05 {
+    background: #4f85bb;
+}
+
+
+
+
 
 
 .ant-tabs-nav{

@@ -6,6 +6,7 @@ export default class CantWithdrawal extends React.Component {
         super(props);
         this.state = {
         }
+    }
 
 
     render() {

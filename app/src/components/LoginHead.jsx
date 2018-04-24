@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Link, IndexLink, browserHistory } from 'react-router';
+import Bulletin from './Bulletin.jsx';
 import { Menu, Dropdown , Icon} from 'antd';
 const MenuItemGroup = Menu.ItemGroup;
 
@@ -122,42 +123,28 @@ export default class LoginHead extends React.Component {
       );
 
         return (
-        <div className="wrapper notlo">
+
           <div className="top_float clearfix">
             <div className="top clearfix">
-            <div className="top_box top_line">
+               <Bulletin/>
+
+              <div className="top_box clearfix">
                 <Dropdown overlay={personalCenter}>
                   <a className="ant-dropdown-link">
-                    <i className="fas fa-user-circle fa-2x"></i>
-                    您好, skylying
-                    <i className="fas fa-angle-down fa-2x"></i>
+                      <img src={require('../images/header/23103.svg')} />
                   </a>
                 </Dropdown>
-            </div>
-            <div className="top_box top_line">
+
                 <Dropdown overlay={personalWallet}>
                   <a className="ant-dropdown-link" >
-                    <img src={require('../images/wallet.png')}/>
-                    個人錢包
-                    <i className="fas fa-angle-down fa-2x"></i>
+                    <img src={require('../images/header/163064.svg')} />
                   </a>
                 </Dropdown>
+
+              </div>
             </div>
-
-            <div className="top_box">
-                      <img  src={require('../images/silver_coin.png')}/>
-                      <p>1000,1000</p>
-                      <img  src={require('../images/gold_coin.png')}/>
-                      <p>1000,0001</p>
-                      <i className="fas fa-sync fa-1x"></i>
-                      <a href="" className="btndefault">登出</a>
-            </div>
-
-
-
           </div>
-        </div>
-      </div>
+
         )
     }
 }
