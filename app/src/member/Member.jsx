@@ -27,14 +27,11 @@ export default class Member extends React.Component {
           case 'betting':
           whichTab= '2';
           break;
-          case 'bethistory':
+          case 'mission':
           whichTab= '3';
           break;
-          case 'mission':
-          whichTab= '4';
-          break;
           default:
-          whichTab= '5';
+          whichTab= '4';
         }
 
         this.state = {
@@ -54,12 +51,9 @@ export default class Member extends React.Component {
         browserHistory.push('/member/betting');
       }else if(key == 3){
         this.setState({nowPage:'3'});
-        browserHistory.push('/member/bethistory');
-      }else if(key == 4){
-        this.setState({nowPage:'4'});
         browserHistory.push('/member/mission');
       }else{
-        this.setState({nowPage:'5'});
+        this.setState({nowPage:'4'});
         browserHistory.push('/member/accountmanagement');
       }
 
@@ -75,14 +69,13 @@ export default class Member extends React.Component {
                 <div className="row">
                   <div className="col-lg-10 col-sm-12 col-lg-offset-1">
                     <div className="title_bar">
-                      <span>skylying</span> 的个人中心
+                      <span>Hi, s981743@gmail.com</span>
                     </div>
                     <Tabs  activeKey={this.state.nowPage}  onChange={this.callback}>
-                      <TabPane tab="个人档案" key="1"><Profile/></TabPane>
-                      <TabPane tab="竞猜中" key="2"><BetHistory/></TabPane>
-                      <TabPane tab="竞猜历史" key="3"><BetHistory/></TabPane>
-                      <TabPane tab="常规任务" key="4"><Mission/></TabPane>
-                      <TabPane tab="帐户管理" key="5"><AccountManagement/></TabPane>
+                      <TabPane tab="Profile" key="1"><Profile/></TabPane>
+                      <TabPane tab="Distribution History" key="2"><BetHistory/></TabPane>
+                      <TabPane tab="Mission" key="3"><Mission/></TabPane>
+                      <TabPane tab="Bank Account" key="4"><AccountManagement/></TabPane>
                     </Tabs>
                  </div>
                </div>

@@ -38,21 +38,21 @@ export default class Profile extends React.Component {
               <div className="all_info">
                 <div className="head_sec">
                   <div className="avatar" style={{background:"url('http://placehold.it/100x100')"}}></div>
-                  <span className="user_name">skylying</span>
+                  <span className="user_name">Daniel Wang</span>
                   <div className="btn_group">
-                    <Link to={`/memberset`} className="btnsys"><i className="fa fa-edit"></i>编辑个人档案</Link>
-                    <a href="#" className="btnsys"><i className="fa fa-lock"></i>修改密码</a>
+                    <Link to={`/memberset`} className="btnsys"><i className="fa fa-edit"></i>edit profile</Link>
+                    <a href="#" className="btnsys"><i className="fa fa-lock"></i>change password</a>
                     <div className="clearfix"></div>
                   </div>
                   <div className="clearfix"></div>
                 </div>
                 <div className="info_sec">
                   <div className="info_row">
-                    <div className="title">真实姓名：</div>
-                    <span className="user_name">梅友仁</span>
+                    <div className="title">Real Name：</div>
+                    <span className="user_name">Daniel Wang</span>
                     <div className="vertify_notice">验证获得500银币</div>
                     <div className="btn_group">
-                      <a href="#" className="btnsys">验证</a>
+                      <a href="#" className="btnsys">verify</a>
                       <Tooltip placement="right" title={Tooltip1}>
                       <i className="fa fa-info-circle"></i>
                       </Tooltip>
@@ -60,11 +60,11 @@ export default class Profile extends React.Component {
                     </div>
                   </div>
                   <div className="info_row">
-                    <div className="title">信　　箱：</div>
+                    <div className="title">E-mail：</div>
                     <span className="user_name">asdjwiosadhhoifh@qq.com</span>
                     <div className="vertify_notice">验证获得200银币</div>
                     <div className="btn_group">
-                      <a href="#" className="btnsys">验证</a>
+                      <a href="#" className="btnsys">verify</a>
                       <Tooltip placement="right" title={Tooltip2}>
                       <i className="fa fa-info-circle"></i>
                       </Tooltip>
@@ -72,11 +72,11 @@ export default class Profile extends React.Component {
                     </div>
                   </div>
                   <div className="info_row">
-                    <div className="title">手　　机：</div>
+                    <div className="title">Mobile：</div>
                     <span className="user_name">15884785152</span>
                     <div className="vertify_notice">验证获得300银币</div>
                     <div className="btn_group">
-                      <a href="#" className="btnsys">验证</a>
+                      <a href="#" className="btnsys">verify</a>
                       <Tooltip placement="right" title={Tooltip3}>
                       <i className="fa fa-info-circle"></i>
                       </Tooltip>
@@ -150,7 +150,7 @@ export default class Profile extends React.Component {
                   <div className="coin_type">
                     <img  src={require('../images/main/gold_img.png')} alt="金币持有数"/>
                       <div className="coin_text">
-                        <h4>金币</h4>
+                        <h4>BTC</h4>
                         <p>1,999,999,999</p>
                       </div>
                   </div>
@@ -160,7 +160,7 @@ export default class Profile extends React.Component {
                   <div className="coin_type">
                     <img src={require('../images/main/sliver_img.png')} alt="银币持有数"/>
                       <div className="coin_text">
-                        <h4>银币</h4>
+                        <h4>ETH</h4>
                         <p>1,999,999,999</p>
                       </div>
                   </div>
@@ -170,7 +170,7 @@ export default class Profile extends React.Component {
                   <div className="coin_type">
                     <img  src={require('../images/main/rocket_img.png')} alt="火箭币持有数"/>
                       <div className="coin_text">
-                        <h4>火箭币</h4>
+                        <h4>ADA</h4>
                         <p>1,999,999,999</p>
                       </div>
                   </div>

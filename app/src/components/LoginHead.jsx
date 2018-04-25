@@ -32,17 +32,15 @@ export default class LoginHead extends React.Component {
         case 'withdrawal': //wallet頁
         whichTab= '2';
         break;
-        case 'bethistory'://member頁
+        case 'mission'://member頁
         case 'bonus'://wallet頁
         whichTab= '3';
         break;
-        case 'mission'://member頁
+        case 'accountmanagement'://member頁
         case 'history'://wallet頁
         whichTab= '4';
         break;
-        case 'accountmanagement'://member頁
-        whichTab= '5';
-        break;
+
         default:
         whichTab= '0';
       }
@@ -72,25 +70,22 @@ export default class LoginHead extends React.Component {
         <Menu>
           <MenuItemGroup title="竞猜">
               <Menu.Item>
-                <Link  to={{ pathname: `/member/profile` }} data-tab='profile' onClick={this.tabswitch}>个人档案</Link>
+                <Link  to={{ pathname: `/member/profile` }} data-tab='profile' onClick={this.tabswitch}>profile</Link>
               </Menu.Item>
               <Menu.Item>
-                <Link  to={{ pathname: `/member/betting` }} data-tab='betting' onClick={this.tabswitch}>竞猜中</Link>
+                <Link  to={{ pathname: `/member/betting` }} data-tab='betting' onClick={this.tabswitch}>Distribution History</Link>
               </Menu.Item>
               <Menu.Item>
-                <Link  to={{ pathname: `/member/bethistory` }} data-tab='bethistory' onClick={this.tabswitch}>竞猜历史</Link>
+                  <Link to={{ pathname: `/member/mission` }} data-tab='mission' onClick={this.tabswitch}>Mission</Link>
               </Menu.Item>
               <Menu.Item>
-                  <Link to={{ pathname: `/member/mission` }} data-tab='mission' onClick={this.tabswitch}>常规任务</Link>
-              </Menu.Item>
-              <Menu.Item>
-                  <Link to={{ pathname: `/member/accountmanagement` }} data-tab='accountmanagement' onClick={this.tabswitch}>帐户管理</Link>
+                  <Link to={{ pathname: `/member/accountmanagement` }} data-tab='accountmanagement' onClick={this.tabswitch}>Bank Account</Link>
               </Menu.Item>
           </MenuItemGroup>
 
           <MenuItemGroup title="个人">
               <Menu.Item>
-                <Link to={{ pathname: `/memberset` }} data-tab='memberset' onClick={this.tabswitch}>编辑个人资料</Link>
+                <Link to={{ pathname: `/memberset` }} data-tab='memberset' onClick={this.tabswitch}>Edit profile</Link>
               </Menu.Item>
           </MenuItemGroup>
         </Menu>
