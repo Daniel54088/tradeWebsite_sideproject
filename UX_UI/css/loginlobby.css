@@ -1,0 +1,131 @@
+
+
+/*註冊*/
+
+.join_style .content p {
+    padding: 0;
+    margin: 0;
+    color: #8036ea;
+    font-size: 0.8em;
+    width: 100%;
+}
+
+.join_style .content .register_content {
+    padding: 0;
+    margin: 0;
+    margin: 20px 0;
+}
+
+.join_style .content .register_content .input_mainpg {
+    width: 100%;
+}
+
+/*註冊按鈕*/
+
+.join_style .content .btngroup {
+    text-align: center;
+    margin: 35px 0 25px 0;
+}
+
+.join_style .content h4 {
+    color: #ffbf1b;
+    margin-left: 8px;
+    width: 80px;
+    padding: 0;
+    margin: 0;
+    margin: 10px auto;
+    text-align: center;
+}
+
+.join_style .content .first{
+  padding: 0;
+  margin: 0;
+  width: 45px;
+  height: 45px;
+  border-radius:99em;
+  position: relative;
+  display: inline-block;
+  margin-right: -5px;
+}
+
+.join_style .content .first-line{
+  display: inline-block;
+  margin-right: -4px;
+    width: 50px;
+    height: 3px;
+    background-color: #8036ea;
+    transition: all 0.2s;
+    margin: 20px 0;
+    margin-right: -7px;
+}
+
+
+.join_style .content .empty{
+  border: 3px solid #8036ea;
+}
+
+.join_style .content .active{
+  background: #8036ea;
+}
+
+.join_style .content .first p{
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.6em;
+  color: #8036ea;
+}
+
+/*忘記密碼*/
+
+#forgot .content .forgot_step{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/*紫色按鈕*/
+
+.loginlobby .content .btngroup{
+  margin: 40px;
+  text-align: center;
+}
+
+/*隱藏功能*/
+
+#loginlobby{
+  display: block;
+}
+
+#register{
+  display: none;
+}
+
+#signin{
+  display: none;
+}
+
+#forgot{
+  display: none;
+}
+
+/*返回按鈕*/
+
+.join_style .content .join_back {
+  margin-left: 40px;
+}
+
+.join_style .content .join_back h5,
+.join_style .content .join_back i{
+  color: #8036ea;
+  display: inline;
+}
+
+.join_style .content .caption img{
+  width: 100%;
+}
+
+.join_style .content .caption p{
+  color: #5c5c5f;
+}
