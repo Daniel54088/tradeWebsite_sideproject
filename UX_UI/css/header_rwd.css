@@ -1,0 +1,149 @@
+@media screen and (max-width: 1024px) {
+
+
+    .top_grayline {
+        display: none;
+    }
+
+    .top_box {
+        margin: 10px;
+    }
+
+    /*漢堡start*/
+
+    .hamburger-menu {
+        padding: 0;
+        margin: 0;
+        background: none;
+        border: none;
+        display: inline-block;
+    }
+    .hamburger-menu:focus {
+        outline: none;
+    }
+
+    .icon-bar {
+        padding: 0;
+        margin: 0;
+        background-color: #8036ea;
+        display: block;
+        height: 4px;
+        margin: 5px 0;
+        width: 30px;
+    }
+
+    /*漢堡end*/
+
+
+    /*RWD的header按鈕*/
+
+
+    .header_yellowline {
+        overflow-y: hidden;
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+        left: 0;
+        top: 0;
+        margin: 0 auto;
+        border-bottom: none;
+        background: #2c2a2f;
+        z-index: 100;
+        display: none;
+        overflow: hidden;
+    }
+
+
+
+    header .top-menu {
+
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    header .top-menu ul {
+        margin: 0;
+        display: block !important;
+        padding: 15px 30px;
+    }
+
+    header .top-menu ul li {
+        display: block !important;
+        text-align: center;
+    }
+
+
+    header .top-menu ul li a h5,
+    header .top-menu ul li .logo h5 {
+        margin: 20px 0;
+        font-size: 2em;
+        font-family: 'Overpass';
+        display: block;
+    }
+
+
+    header .top-menu h5:after {
+        display: none;
+    }
+
+
+    /*Logo圖片隱藏*/
+
+    .logo_middle {
+        display: none !important;
+    }
+
+    /*Top按鈕出現*/
+
+    header .top-menu ul li .logo h5 {
+        display: block;
+    }
+
+    /*X*/
+
+    .header_close {
+        display: block;
+        text-align: right;
+        position: relative;
+        right: 10px;
+        top: 10px;
+        padding: 0;
+        margin: 0;
+    }
+
+    .header_close img {
+        width: 30px;
+        cursor: pointer;
+    }
+
+
+    /*顯示隱藏的按鈕div*/
+
+
+    .top_769 {
+        display: block;
+    }
+
+    /*contact的送出按鈕置中*/
+
+    .btngroup {
+        text-align: center;
+    }
+
+    .content {
+        margin-top: 20px;
+    }
+
+
+    /*join*/
+
+    .join_style .content .join_back h5{
+        display: none;
+    }
+
+    .join_style .content .join_back{
+        margin-left: 10px;
+    }
+}

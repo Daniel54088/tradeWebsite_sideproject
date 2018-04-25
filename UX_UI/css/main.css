@@ -1,21 +1,15 @@
 /*整體背景顏色*/
 
 body {
-    background-color: #fdfdff;
-    background-image: url("https://www.transparenttextures.com/patterns/brilliant.png");
-    /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
-    background-color: #fdfdff;
-    background-image: url("https://www.transparenttextures.com/patterns/inspiration-geometry.png");
-    /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
-    background-color: #fdfdff;
     background-image: url("https://www.transparenttextures.com/patterns/light-wool.png");
-    /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
     background-color: #fdfdff;
     width: 100%;
     height: 100%;
     overflow-x: hidden;
     font-family: -apple-system, "Helvetica Neue", Helvetica, "Nimbus Sans L", Arial, "Liberation Sans", "PingFang SC", "Hiragino Sans GB", "Source Han Sans CN", "Source Han Sans SC", "Microsoft YaHei", "Wenquanyi Micro Hei", "WenQuanYi Zen Hei", "ST Heiti", SimHei, "WenQuanYi Zen Hei Sharp", sans-serif !important;
 }
+
+
 
 
 /*限制內容區塊的框*/
@@ -29,6 +23,17 @@ body {
     margin-top: 80px;
     margin-bottom: 80px;
 }
+
+/*大區塊各個頁面推內距*/
+
+.register .content,
+.join_style .content,
+.contact .content,
+.loginlobby .content{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
 
 hr {
     border-top: 1px dashed #a0a8a84a;
@@ -54,6 +59,8 @@ a {
 
 
 
+
+
 /*header*/
 
 .top_grayline {
@@ -64,6 +71,17 @@ a {
 .header_yellowline {
     margin: 0 auto;
     border-bottom: 1px solid #615c7b3b;
+}
+
+
+
+
+/*寬度768才出現*/
+
+.top_769 {
+    margin: 0 auto;
+    height: 40px;
+    display: none;
 }
 
 
@@ -97,6 +115,8 @@ a {
 .top_float .top .top_box a {
     padding: 0 10px;
 }
+
+
 
 
 
@@ -137,6 +157,10 @@ header .top-menu ul li a h5 {
     display: block;
 }
 
+header .top-menu ul li .logo h5 {
+    display: none;
+}
+
 
 header .top-menu h5:after {
     content: '';
@@ -154,9 +178,6 @@ header .top-menu h5:after {
 header .top-menu ul li:hover h5:after {
     width: 60%;
 }
-
-
-
 
 
 .logo_middle:before {
@@ -179,6 +200,15 @@ header .top-menu ul li .logo img {
 .logo_middle {
     flex: 2 !important;
 }
+
+
+
+/*叉叉按鈕*/
+
+.header_close {
+    display: none;
+}
+
 
 
 
@@ -221,6 +251,8 @@ header .top-menu ul li .logo img {
 
 
 
+
+
 /*slide*/
 
 .slide {
@@ -240,6 +272,8 @@ header .top-menu ul li .logo img {
     min-height: 200px;
     overflow: hidden;
 }
+
+
 
 
 
@@ -278,6 +312,8 @@ header .top-menu ul li .logo img {
 
 
 
+
+
 /*news*/
 
 .news_1 {
@@ -287,6 +323,8 @@ header .top-menu ul li .logo img {
 .page-navigation {
     margin-top: 20px;
 }
+
+
 
 
 
@@ -305,6 +343,8 @@ header .top-menu ul li .logo img {
     padding: 1px;
     margin: 0;
 }
+
+
 
 
 
@@ -338,6 +378,8 @@ header .top-menu ul li .logo img {
 
 
 
+
+
 /*瀏覽數量*/
 
 .news_eye {
@@ -351,6 +393,8 @@ header .top-menu ul li .logo img {
     font-size: 0.8em;
     color: #5c5c5f;
 }
+
+
 
 
 
@@ -407,6 +451,8 @@ header .top-menu ul li .logo img {
     padding: 0;
     margin: 0;
 }
+
+
 
 
 
@@ -473,12 +519,14 @@ header .top-menu ul li .logo img {
 
 
 
+
+
 /*小姊姊開黑，遊戲頁籤*/
 
 .game_type {
     position: absolute;
     top: 0;
-    right: 20px;
+    right: 7%;
     padding: 3px 5px;
     font-weight: 500 !important;
     border-radius: 10px;
@@ -489,11 +537,15 @@ header .top-menu ul li .logo img {
 
 
 
+
+
 /*英雄聯盟*/
 
 .game_01 {
     background: #ffbe34;
 }
+
+
 
 
 /*DOTA2*/
@@ -503,6 +555,8 @@ header .top-menu ul li .logo img {
 }
 
 
+
+
 /*CS:GO*/
 
 .game_03 {
@@ -510,11 +564,15 @@ header .top-menu ul li .logo img {
 }
 
 
+
+
 /*绝地求生*/
 
 .game_04 {
     background: #ef8c38;
 }
+
+
 
 
 /*王者荣耀*/
@@ -528,6 +586,8 @@ header .top-menu ul li .logo img {
 
 
 footer {
+    position: relative;
+    bottom: 0;
     text-align: center;
     background-color: #634d80;
     background-image: url("../images/shattered.png");
@@ -583,6 +643,38 @@ footer {
 
 
 
+/**/
+
+
+.caption{
+    text-align: center;
+}
+
+.caption img {
+    width: 60%;
+}
+
+.caption h4 {
+    color: #ffbf1b;
+    margin-left: 8px;
+    width: 80px;
+    padding: 0;
+    margin: 0;
+    margin: 10px auto;
+    text-align: center;
+}
+
+
+.caption p {
+    padding: 0;
+    margin: 0;
+    color: #5c5c5f;
+    font-size: 0.8em;
+}
+
+
+
+
 
 
 /*按鈕樣式，未改*/
@@ -612,7 +704,7 @@ footer {
 
 .btndefault {
     transition: all 0.15s ease-out 0s;
-    background: linear-gradient(45deg, #8036ea 0%,#a67ae8 100%);
+    background: linear-gradient(45deg, #8036ea 0%, #a67ae8 100%);
     border-radius: 30px;
     margin: 0;
     padding: 15px 80px;
@@ -626,6 +718,8 @@ footer {
     background: -webkit-linear-gradient(left, #febf01 0%, #febf01 100%);
     transition: all 0.15s ease-out 0s;
 }
+
+
 
 
 
@@ -662,26 +756,7 @@ h4 {
 
 
 
-/*還不知道是用在哪，先留著*/
 
-
-/*Title Image*/
-
-.con-toparea {
-    width: 100%;
-    height: 35px;
-    display: block;
-    float: left;
-    padding-top: 40px;
-}
-
-.titleimg {
-    width: 211px;
-    height: 45px;
-    display: block;
-    float: left;
-    margin-right: 115px;
-}
 
 
 /*input style*/
@@ -706,8 +781,16 @@ h4 {
 }
 
 .necessary {
-    color: rgb(234, 93, 113)!important;
-    position: relative!important;
-    margin: 0!important;
-    line-height: 40px!important;
+    color: #e2223d;
+}
+
+
+
+/*錯誤訊息*/
+
+.has_error {
+    font-size: 0.8em !important;
+    color: #ec1313 !important;
+    display: none;
+    padding-left: 2px !important;
 }

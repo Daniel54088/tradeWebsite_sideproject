@@ -5,17 +5,20 @@
     <title>Gaming</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width , initial-scale=1.0 , user-scalable=0">
-    <link href="css/bootstrap.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link href="css/bootstrap.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/earlyaccess/notosanstc.css">
     <link href="https://use.fontawesome.com/releases/v5.0.4/css/all.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Molengo|Mukta|Overpass" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/header_rwd.css">
 </head>
 
 <body>
-    <div class="header_yellowline">
+    <div class="header_yellowline" id="yellowline">
         <div class="wrapper">
+                        <div class="header_close">
+                        <img src="images/header/128338.svg" id="Ham_close"></div>
             <header>
                 <div class="top-menu">
                     <ul>
@@ -34,9 +37,9 @@
                                 <h5>Promotion</h5>
                             </a>
                         </li>
-                        <li class="logo_middle">
+                        <li>
                             <a href="index.html" class="logo">
-                                <img src="images/header/801837.svg" alt="">
+                                <h5>Top</h5><img src="images/header/801837.svg" alt="" class="logo_middle">
                             </a>
                         </li>
                         <li>
@@ -50,8 +53,8 @@
                             </a>
                         </li>
                         <li>
-                            <a href="tutorial/index.html">
-                                <h5>Sign in</h5>
+                            <a href="join.html">
+                                <h5>Join</h5>
                             </a>
                         </li>
                     </ul>
@@ -59,7 +62,7 @@
             </header>
         </div>
     </div>
-    <div class="top_grayline">
+    <div class="top_grayline" id="grayline">
         <div class="top_float clearfix">
             <div class="top clearfix">
                 <div class="bulletin">
@@ -103,6 +106,22 @@
             </div>
         </div>
     </div>
+
+    <div class="top_769">
+        <div class="top_float clearfix">
+            <div class="top clearfix">
+                <div class="top_box clearfix">
+                    <button class="hamburger-menu" id="Ham">
+  <span class="icon-bar"></span>
+  <span class="icon-bar"></span>
+  <span class="icon-bar"></span>
+</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
     <div class="slide">
         <div class="banner_frame">
             <img src="images/big-banner/banner_01.jpg" alt=""></div>
@@ -152,7 +171,7 @@
                     <div class="liveing">
                         <div class="liveing_img"><a href=""><img src="images/1218324023441.jpg" alt=""></a></div>
                         <div class="liveing_text">
-                            <h4>Billy Herrington</h4>
+                            <h4>Billy</h4>
                             <p class="game_type game_01 clearfix">CS:GO</p>
                             <p class="liveingtext">i want to play a game.</p>
                         </div>
@@ -208,6 +227,9 @@
         </div>
     </footer>
     <script src="js/bootstrap.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/mine.js"></script>
+
 </body>
 
 </html>
