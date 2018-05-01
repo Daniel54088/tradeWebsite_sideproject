@@ -1,0 +1,161 @@
+main .content {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+/*Back按鈕*/
+
+.newscontent .btngroup{
+    padding: 0;
+    margin: 0;
+    padding-top: 10px;
+    padding-bottom: 30px;
+}
+
+
+/*新聞標題*/
+
+main .news .newscontent h3 {
+    color: #ffbf1b;
+    padding: 0;
+    margin: 0;
+    font-size: 1.5em;
+    overflow: hidden;
+}
+
+
+/*Data*/
+
+main .news .newscontent p {
+    margin: 0;
+    padding: 0;
+    width: auto;
+    font-size: 1em;
+    color: #5c5c5f;
+}
+
+
+/*瀏覽數*/
+
+main .news .newscontent .watcher {
+    padding: 0;
+    margin: 0;
+    text-align: right;
+    color: #5c5c5f;
+}
+
+main .news .newscontent .watcher i {
+    color: #5c5c5f;
+}
+
+
+
+/*大圖*/
+
+main .news .newscontent .newscontent_txt img {
+    margin: 0;
+    padding: 0;
+    width: 70%;
+    border-radius: 15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+main .news .newscontent .newscontent_txt {
+    text-align: center;
+}
+
+
+main .news .newscontent .newscontent_txt,
+.news .newscontent .newscontent_txt {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+
+/*內文*/
+
+main .news .newscontent .newscontent_txt p {
+    font-size: 1em;
+    text-align: left;
+    color: #5c5c5f;
+}
+
+
+
+/*More文章，大圖*/
+
+main .content .hot_news .news_block .news_block_img {
+    height: 220px;
+    border-radius: 6px;
+    overflow: hidden;
+    position: relative;
+    border: 1px solid #615c7b3b;
+}
+
+
+/*More*/
+
+.hot_news {
+    background-color: #f0f0f1;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+main .content .hot_news h4 {
+    padding: 0;
+    margin: 0;
+    font-size: 1.5em;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #885bcc;
+}
+
+
+/*More標題*/
+
+.hot_news .news_title {
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    text-align: center;
+    color: #885bcc;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+/*More Hover*/
+
+main .content .news_block_img img {
+    width: 100%;
+}
+
+main .content .news_block .news_bg_img,
+main .content .news_block .news_title {
+    transition: .3s ease;
+}
+
+main .content .news_block .news_bg_img {
+    width: 100%;
+    height: 100%;
+    background-position: center center;
+    -webkit-background-size: cover;
+    background-size: cover;
+    position: absolute;
+}
+
+main .content .news_block:hover .news_bg_img {
+    transform: scale(1.3);
+}
+
+
+.clearfix:after {
+    content: " " !important;
+    visibility: hidden !important;
+    display: block !important;
+    font-size: 0 !important;
+    clear: both !important;
+    height: 0 !important;
+}

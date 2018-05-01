@@ -1,0 +1,69 @@
+.promotion .content nav{
+    width: 85%;
+    margin: 0 auto;
+}
+
+.promotion .promotion_item {
+    overflow: hidden;
+    position: relative;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border: 3px solid #8752db;
+}
+
+.promotion .promotion_item:hover .promo_img {
+    transform: scale(1.2);
+}
+
+.promotion .promotion_item .promo_img {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: 0 center;
+    transition: .3s ease;
+}
+
+.promotion .promotion_item:hover .moretext {
+    opacity: 1;
+    transition: .5s ease;
+}
+
+.promotion .promotion_item .moretext {
+    position: absolute;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #ffffffba;
+    font-size: 1.5em;
+    text-align: center;
+    border: 2px solid #fff;
+    top: 0;
+    left: 0;
+    transition: .5s ease;
+}
+
+.promotion .promotion_item .moretext p {
+    color: #885bcc;
+    margin-bottom: 0;
+}
+
+.promotion .promotion_item .all_text {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.promotion .promotion_item.end .moretext {
+    font-size: 30px;
+    color: #ddd;
+    border-color: #639;
+    opacity: 1;
+}
+
+.promotion .tab_position,
+.promotion .promotion_item {
+    position: relative;
+    width: 85%;
+    left: 50%;
+    transform: translateX(-50%);
+}

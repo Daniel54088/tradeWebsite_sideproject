@@ -6,11 +6,8 @@ body {
     width: 100%;
     height: 100%;
     overflow-x: hidden;
-    font-family: -apple-system, "Helvetica Neue", Helvetica, "Nimbus Sans L", Arial, "Liberation Sans", "PingFang SC", "Hiragino Sans GB", "Source Han Sans CN", "Source Han Sans SC", "Microsoft YaHei", "Wenquanyi Micro Hei", "WenQuanYi Zen Hei", "ST Heiti", SimHei, "WenQuanYi Zen Hei Sharp", sans-serif !important;
+    font-family: -apple-system,'Overpass', "Helvetica Neue", Helvetica, "Nimbus Sans L", Arial, "Liberation Sans", "PingFang SC", "Hiragino Sans GB", "Source Han Sans CN", "Source Han Sans SC", "Microsoft YaHei", "Wenquanyi Micro Hei", "WenQuanYi Zen Hei", "ST Heiti", SimHei, "WenQuanYi Zen Hei Sharp", sans-serif !important;
 }
-
-
-
 
 /*限制內容區塊的框*/
 
@@ -29,8 +26,15 @@ body {
 .register .content,
 .join_style .content,
 .contact .content,
-.loginlobby .content{
+.loginlobby .content,
+.promotion .content,
+.product_detail .content{
     padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+
+.product .content{
     padding-bottom: 50px;
 }
 
@@ -66,6 +70,7 @@ a {
 .top_grayline {
     margin: 0 auto;
     height: 40px;
+    max-width: 1200px;
 }
 
 .header_yellowline {
@@ -445,18 +450,12 @@ header .top-menu ul li .logo img {
 }
 
 .liveing_text .liveingtext {
-    color: #333;
+    color: #5c5c5f;
     font-size: 0.8em;
     text-align: center;
     padding: 0;
     margin: 0;
 }
-
-
-
-
-
-
 
 /*小姊姊開黑行程*/
 
@@ -496,6 +495,7 @@ header .top-menu ul li .logo img {
 .live_list_text {
     vertical-align: middle;
     text-align: center;
+    color: #5c5c5f;
 }
 
 .live_list_text h5 {
@@ -529,7 +529,7 @@ header .top-menu ul li .logo img {
     right: 7%;
     padding: 3px 5px;
     font-weight: 500 !important;
-    border-radius: 10px;
+    border-radius: 15px;
     text-align: center;
     font-size: 0.5em;
     color: #fff;
@@ -677,35 +677,28 @@ footer {
 
 
 
-/*按鈕樣式，未改*/
+/*按鈕樣式*/
 
-.btnsys {
-    font-size: 14px;
-    border: 1px solid #000;
-    width: 80px;
-    height: 30px;
-    display: block;
-    border-radius: 5px;
+.btnsmall {
+    font-size: 0.8em;
+    border-radius: 99px;
     text-align: center;
-    line-height: 30px;
     transition: all 0.15s ease-out 0s;
-    font-weight: bolder;
-    float: left;
-    background-color: #ffdf00;
-    color: #000;
-    cursor: pointer;
+    color: #ffbe34;
+    border: 2px solid #ffbe34;
+    padding: 8px 18px;
 }
 
-.btnsys:hover {
-    background-color: #ec6c3a;
-    color: #000;
+.btnsmall:hover {
+    background-color: #fbc13f;
+    color: #fff;
 }
 
 
 .btndefault {
     transition: all 0.15s ease-out 0s;
     background: linear-gradient(45deg, #8036ea 0%, #a67ae8 100%);
-    border-radius: 30px;
+    border-radius: 99px;
     margin: 0;
     padding: 15px 80px;
     color: #fff;
@@ -719,20 +712,34 @@ footer {
     transition: all 0.15s ease-out 0s;
 }
 
+.btn_back {
+    transition: all 0.15s ease-out 0s;
+    background: transparent;
+    border-radius: 99px;
+    margin: 0;
+    padding: 8px 25px 8px 20px;
+    color: #8036ea;
+    text-align: center;
+    font-size: 1em;
+    border: 2px solid #8036ea;
+}
 
+.btn_back i{
+    color: #8036ea;
+}
 
+.btn_back:hover {
+    color: #fff;
+    background: #8036ea;
+    transition: all 0.15s ease-out 0s;
+}
+
+.btn_back:hover i{
+    color: #fff;
+}
 
 
 /*清除浮動*/
-
-.clearfix:after {
-    visibility: hidden;
-    display: block;
-    font-size: 0;
-    content: " ";
-    clear: both;
-    height: 0;
-}
 
 body,
 h1,
