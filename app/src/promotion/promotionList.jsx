@@ -138,7 +138,7 @@ export default class PromotionList extends React.Component {
                         <div className="col-sm-10 col-sm-offset-1">
                             <div className="tab_position">
                               <Tabs  defaultActiveKey="1" onChange={this.callback}>
-                                <TabPane tab="优惠公告" key="1">
+                                <TabPane tab="Promotion" key="1">
                                   {ActivityIsNotNull.map(function(item,index){ //房間的array做map渲染
                                      return(
                                       <PromotionItem key={index} title={item.title} id={item.id}/>
@@ -147,7 +147,7 @@ export default class PromotionList extends React.Component {
 
 
                                 </TabPane>
-                                <TabPane tab="活动公告" key="2">
+                                <TabPane tab="Activities" key="2">
                                   {EventIsNotNull.map(function(item,index){ //房間的array做map渲染
                                      return(
                                       <PromotionItem key={index} title={item.title} id={item.id}/>

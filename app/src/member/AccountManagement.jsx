@@ -27,10 +27,10 @@ export default class AcccountManagement extends React.Component {
                       </button>
                       <div className="click_modal add_account">
                           <div className="title_bar">
-                            新增帳戶
+                            New Account
                           </div>
                           <div className="form_group">
-                            <label htmlFor="ture_name">真实姓名：</label>
+                            <label htmlFor="ture_name">True Name：</label>
                             <div className="form_item">
                               <input id="ture_name" className="input_mainpg" type="text" placeholder="请输入真实姓名"/>
                             </div>
@@ -83,42 +83,42 @@ export default class AcccountManagement extends React.Component {
             <div className="clearfix"></div>
             <div className="account_list">
               <div className="account_item default">
-                <div className="name">王大明</div>
+                <div className="name">Daniel Wang</div>
                 <div className="num">621-483-591-838-4346</div>
                 <div className="account_local">
                   <div className="bank">
-                      <span>中国农业银行</span>
-                      <span>紫金山路分理处</span>
+                      <span>ANZ</span>
+                      <span>York and Market St</span>
                   </div>
-                  <div className="bank_location">福建省福州市</div>
+                  <div className="bank_location">Sydney NSW 2000</div>
+                </div>
+                <div className="check_default">
+                  <i className="fa fa-check-circle"></i>Default
+                </div>
+              </div>
+              <div className="account_item">
+                <div className="name">Daniel Wang</div>
+                <div className="num">621-483-591-838-4346</div>
+                <div className="account_local">
+                  <div className="bank">
+                      <span>NAB</span>
+                      <span>Swanston St</span>
+                  </div>
+                  <div className="bank_location">Melbourne VIC 3000</div>
                 </div>
                 <div className="check_default">
                   <i className="fa fa-check-circle"></i>默认
                 </div>
               </div>
               <div className="account_item">
-                <div className="name">王大明</div>
+                <div className="name">Daniel Wang</div>
                 <div className="num">621-483-591-838-4346</div>
                 <div className="account_local">
                   <div className="bank">
-                      <span>中国农业银行</span>
-                      <span>紫金山路分理处</span>
+                      <span>Commonwealth</span>
+                      <span>Queen Street Mall</span>
                   </div>
-                  <div className="bank_location">福建省福州市</div>
-                </div>
-                <div className="check_default">
-                  <i className="fa fa-check-circle"></i>默认
-                </div>
-              </div>
-              <div className="account_item">
-                <div className="name">王大明</div>
-                <div className="num">621-483-591-838-4346</div>
-                <div className="account_local">
-                  <div className="bank">
-                      <span>中国农业银行</span>
-                      <span>紫金山路分理处</span>
-                  </div>
-                  <div className="bank_location">福建省福州市</div>
+                  <div className="bank_location">Brisbane QLD 4000</div>
                 </div>
                 <div className="check_default">
                   <i className="fa fa-check-circle"></i>默认

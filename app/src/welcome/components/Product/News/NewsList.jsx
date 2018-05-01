@@ -123,7 +123,7 @@ export default class NewsList extends React.Component {
         <div className="col-md-8">
             <div className="tab_position">
               <Tabs defaultActiveKey="1" onChange={this.callback}>
-                <TabPane className="tab_race" tab="电竞新闻" key="1">
+                <TabPane className="tab_race" tab="TOP NEWS" key="1">
                   {NewsIsNotNull.map(function(item,index){ //房間的array做map渲染
                      return(
                       <NewsItem key={index} title={item.title}/>
@@ -131,7 +131,7 @@ export default class NewsList extends React.Component {
                   })}
 
                 </TabPane>
-                <TabPane className="tab_race" tab="赛事推荐" key="2">
+                <TabPane className="tab_race" tab="HOT STORIES" key="2">
                   {RecommendIsNotNull.map(function(item,index){ //房間的array做map渲染
                      return(
                       <NewsItem key={index} title={item.title}/>
