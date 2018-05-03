@@ -42,6 +42,6 @@ module.exports = {
         // 如需jquery请解锁
         // new webpack.ProvidePlugin({ $: "jquery" }),
         new webpack.HotModuleReplacementPlugin(),
-        new OpenBrowserPlugin({ url: 'http://localhost:8080/login' })
+        new OpenBrowserPlugin({ url: 'http://localhost:8080/signin' })
     ]
 };

@@ -19,7 +19,6 @@ import Help from './guidepage/help.jsx';
 import Init from './main.jsx';
 import Information from './information/Information.jsx';
 import Inplay from './inplay/inplay.jsx'
-import Login from './loginlobby/Login.jsx';
 import Member from './member/Member.jsx';
 import Memberset from './member/Memberset.jsx';
 import NotFoundPage from './nofind/nofind.jsx';
@@ -29,6 +28,7 @@ import RankingList from './ranking/rankingList.jsx'
 import RankingReward from './ranking/rankingReward.jsx';
 import Register from './loginlobby/Register.jsx';
 import SearchList from './search/searchList.jsx'
+import SignIn from './loginlobby/SignIn.jsx';
 import Tutorial from './tutorial/tutorial.jsx'
 import Term from './guidepage/term.jsx'
 import Wallet from './wallet/Wallet.jsx';
@@ -46,7 +46,7 @@ ReactDOM.render(
         <Route path="/" component={Init} >
             <IndexRoute component={Welcome}/>
             <Route path="history" component={Historys} />
-            <Route path="login" component={Login} />
+            <Route path="signin" component={SignIn} />
             <Route path="register" component={Register} />
             <Route path="memberset" component={Memberset} />
             <Route path="forgetpassword" component={ForgetPassword} />

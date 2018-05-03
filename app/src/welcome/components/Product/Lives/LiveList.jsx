@@ -22,20 +22,20 @@ export default class LiveList extends React.Component {
       return (
         <div className="col-md-4 live_bg">
             <div className="liveing">
-                  <div className="Liveing_title"><h3>小姊姊开黑中</h3><p className="live_type clearfix">Live</p></div>
+                  <div className="Liveing_title"><h3>HOT Cryptocurrency</h3></div>
 
                 <div className="liveing_img"><Link><img src={require("../../../../images/1218324023441.jpg")}/></Link></div>
 
                 <div className="liveing_text">
 
-                <h4>雪晴兒</h4><p className="game_type game_01 clearfix">LOL</p>
+                <h4>BTC</h4><p className="game_type game_01 clearfix">BTC</p>
                 <p className="liveingtext">我是雪晴儿, 陪我一起玩英雄联盟吧  </p>
 
                 </div><div className="news_eye clearfix"><i className="fas fa-eye  fa-1x"></i><p>1231</p></div>
             </div>
 
 
-            <h4>小姊姊开黑行程</h4>
+            <h4>HOT Pairs</h4>
 
             <div className="live_list">
 

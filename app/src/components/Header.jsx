@@ -60,14 +60,14 @@ export default class Header extends React.Component {
                         </li>
 
                         <li >
-                            <Link to={`/tutorial`}>                             
+                            <Link to={`/tutorial`}>
                                 <h5>Tutorial</h5>
                             </Link>
                         </li>
 
                         <li>
-                            <Link to={`/login`}>                             
-                                <h5>Sign in</h5>
+                            <Link to={`/signin`}>                             
+                                <h5>Sign In</h5>
                             </Link>
                        </li>
 
