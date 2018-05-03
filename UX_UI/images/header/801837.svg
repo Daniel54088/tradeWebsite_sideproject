@@ -3,9 +3,15 @@
 <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 463.3 125.2" style="enable-background:new 0 0 463.3 125.2;" xml:space="preserve">
 <style type="text/css">
-	.st0{fill:#8752DB;}
-	.st1{font-family:'HYGangYiTi-HEW';}
-	.st2{font-size:120px;}
+	.st0{enable-background:new    ;}
+	.st1{fill:#8752DB;}
 </style>
-<text transform="matrix(1 0 0 1 -7.1662 90.7387)" class="st0 st1 st2">Gaming</text>
+<g class="st0">
+	<path class="st1" d="M81.9,2.9v10.4H20.1V87h42V54.9H31.2V44.5h50.6V97H0.3V2.9H81.9z"/>
+	<path class="st1" d="M157.4,30.7V97H96.5V56.9h41.6v-16H96.5V30.7H157.4z M115.7,86.7h22.4V67.2h-22.4V86.7z"/>
+	<path class="st1" d="M274.7,30.7V97h-19.2v-56h-22.9v56h-18.7v-56H191v56h-19.2V30.7H274.7z"/>
+	<path class="st1" d="M308.3,0.1v16h-19.2v-16H308.3z M308.3,30.7V97h-19.2V30.7H308.3z"/>
+	<path class="st1" d="M385.7,30.7V97h-19.2v-56h-24.6v56h-19.2V30.7H385.7z"/>
+	<path class="st1" d="M463.1,30.7v94.2h-63v-10.2h43.4V97h-43.4V30.7H463.1z M419.3,86.7h24.2V40.9h-24.2V86.7z"/>
+</g>
 </svg>
