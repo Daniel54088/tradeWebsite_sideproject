@@ -51,5 +51,6 @@ $(function() {
         $("#forgot").css("display","none"); 
         $("#loginlobby").css("display","block");      
     });
+    /*test*/
 
 });
