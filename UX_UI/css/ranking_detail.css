@@ -1,0 +1,69 @@
+.ranking_detail .content .btngroup{
+	padding: 0;
+    margin: 0;
+    padding-top: 20px;
+}
+
+.ranking_detail .content h3{
+	padding: 0;
+	margin:0;
+	text-align: center;
+	color: #ffbf1b;
+    width: 250px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.ranking_detail .content h5{
+	color: #5c5c5f;
+	text-align: center;
+    margin-bottom: 20px;
+}
+
+.ranking_detail .content h3 i{
+	color: #ffbf1b;
+}
+
+
+.ranking_detail .content .ranking_img img{
+	width: 100%;
+	border-radius: 15px;
+}
+
+.First_place h4,
+.Second_place h4,
+.Third_place h4,
+.fourth_place h4,
+.fifth_place h4{
+	padding: 0;
+	margin: 0;
+	color: #8036ea;
+    margin:15px 0;
+}
+
+.First_place p,
+.Second_place p,
+.Third_place p,
+.fourth_place p,
+.fifth_place p{
+	padding: 0;
+	margin: 0;
+    font-size: 0.8em;
+    color: #5c5c5f;
+    margin-top: 5px;
+}
+
+.First_place img{
+	width: 20px;
+}
+
+.ranking_detail hr{
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+.btngroup_ranking{
+	width: 50%;
+	display: inline-block;
+	margin-right: -3px;
+}

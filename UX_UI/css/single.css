@@ -1,0 +1,30 @@
+/*教學*/
+
+.tutorial .content .single_img img{
+	padding: 0;
+	margin: 0;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	width: 100%;
+}
+
+/*關於*/
+
+.about .content .profession img{
+	width: 100%;
+}
+
+.about .content .profession h4{
+	padding: 0;
+	margin: 0;
+    color: #ffbf1b;
+    margin: 10px auto;
+}
+
+.about .content .profession p,
+.tutorial p{
+    color: #5c5c5f;
+    font-size: 0.8em;
+    padding: 0;
+    margin: 0;
+}
