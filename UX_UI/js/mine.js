@@ -54,9 +54,9 @@ $(function() {
 
     /*Product_detail_Tab*/
 
-        var Now = 1;
+    var Now = 1;
 
-    $("#TAB1 , #TAB2").click(function(){
+    $("#TAB1 , #TAB2").click(function() {
 
 
         /*關掉現在畫面上的content*/
@@ -77,5 +77,17 @@ $(function() {
         Now = N;
 
     });
+
+    /*help toggle*/
+
+    $(".help_title").click(function() {
+
+        var N = this.id.substr(3);
+        $("#help_content" + N).slideToggle();
+
+    });
+
+
+
 
 });

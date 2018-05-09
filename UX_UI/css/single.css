@@ -22,9 +22,52 @@
 }
 
 .about .content .profession p,
-.tutorial p{
+.tutorial p,
+.help .content p{
     color: #5c5c5f;
     font-size: 0.8em;
     padding: 0;
     margin: 0;
 }
+
+.help .content h3{
+	padding: 0;
+	margin: 0;
+	color: #885bcc;
+    margin: 10px auto;
+    margin-top: 20px;
+}
+
+.help_title{
+	padding: 0;
+	margin: 0;
+	background:#e8e8e8;
+	padding: 10px;
+	border:1px solid #b7b7b7;
+	margin-top: -2px;
+	cursor: pointer;
+}
+
+.help_content{
+	display: none;
+	padding: 0;
+	margin: 0;
+	background:#fdfdfd;
+	padding: 15px 10px;
+	border-left:1px solid #b7b7b7;
+	border-right:1px solid #b7b7b7;
+	border-bottom:1px solid #b7b7b7;
+}
+
+.help_title h5{
+	padding: 0;
+	margin: 0;
+	color: #717177;
+}
+
+.help_1{
+	padding: 0;
+	margin: 0;
+	margin: 5px 0;
+}
+

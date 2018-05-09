@@ -31,7 +31,8 @@ body {
 .product_detail .content,
 .tutorial .content,
 .about .content,
-.ranking_detail .content{
+.ranking_detail .content,
+.help .content{
     padding-top: 50px;
     padding-bottom: 50px;
 }
