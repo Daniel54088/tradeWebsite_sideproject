@@ -1,0 +1,149 @@
+@media screen and (max-width: 1024px) {
+
+  .top_grayline {
+      display: none;
+  }
+
+  .top_box {
+      margin: 13px;
+  }
+  /*RWD的LOGO*/
+  .RwdLogo{
+    width: 30px;
+    height: 30px;
+    border: 1px solid red;
+    float:  left;
+    margin: 13px;
+    position: relative;
+    z-index: 101;
+  }
+
+  /*RWD的header按鈕*/
+
+  .header_yellowline {
+      overflow-y: hidden;
+      width: 100vw;
+      height: 100vh;
+      position: fixed;
+      left: 0;
+      top: 0;
+      margin: 0 auto;
+      border-bottom: none;
+      background: #2c2a2f;
+      z-index: 100;
+      opacity: 0;
+      overflow: hidden;
+  }
+
+    /*hamuger open & close*/
+   .showRWDMenu{
+     animation-name: show;
+     animation-duration: .5s;
+     animation-fill-mode: both;
+     animation-timing-function: ease;
+     -webkit-animation-timing-function: ease;
+     -webkit-animation-name: show;  /* Safari 4.0 - 8.0 */
+     -webkit-animation-duration: 0.5s;  /* Safari 4.0 - 8.0 */
+     -webkit-animation-fill-mode: both; /* Safari 4.0 - 8.0 */
+   }
+   @keyframes show {
+     from {opacity:0;z-index:100;}
+     to   {opacity:1;z-index:102;}
+   }
+    /*hamuger open & close end*/
+
+  header .top-menu {
+
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+  }
+
+  header .top-menu ul {
+      margin: 0;
+      display: block;
+      padding: 15px 30px;
+  }
+
+  header .top-menu ul li {
+      display: block;
+      text-align: center;
+      height:50px;
+  }
+
+
+  header .top-menu ul li a h5,
+  header .top-menu ul li .logo h5 {
+      margin: 20px 0;
+      font-size: 2em;
+      font-family: 'Overpass';
+      display: block;
+  }
+
+
+  header .top-menu h5:after {
+      display: none;
+  }
+
+  /*Logo圖片隱藏*/
+  .logo_middle {
+      display: none !important;
+  }
+
+
+  /*顯示隱藏的按鈕div*/
+  .top_769 {
+      display: block;
+
+  }
+
+  /*漢堡start*/
+
+  .hamburger-menu {
+      padding: 0;
+      margin: 0;
+      background: none;
+      border: none;
+      display: inline-block;
+      position: relative;
+      z-index: 101;
+
+  }
+  .hamburger-menu:focus {
+      outline: none;
+  }
+
+  .icon-bar {
+      padding: 0;
+      margin: 0;
+      background-color: #8036ea;
+      display: block;
+      height: 4px;
+      margin: 5px 0;
+      width: 30px;
+  }
+
+  /*漢堡end*/
+
+  /*X*/
+
+  .header_close {
+      display: block;
+      text-align: right;
+      position: relative;
+      right: 10px;
+      top: 10px;
+      padding: 0;
+      margin: 0;
+  }
+  .header_close img {
+      width: 30px;
+      cursor: pointer;
+  }
+
+
+
+
+
+}

@@ -13,6 +13,7 @@ require('console-polyfill');
 
 import './main.css';
 import './main_2.css';
+import './header_rwd.css';
 
 let user ={};
 let wallet ={};

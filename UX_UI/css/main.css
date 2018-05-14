@@ -28,7 +28,11 @@ body {
 .contact .content,
 .loginlobby .content,
 .promotion .content,
-.product_detail .content{
+.product_detail .content,
+.tutorial .content,
+.about .content,
+.ranking_detail .content,
+.help .content{
     padding-top: 50px;
     padding-bottom: 50px;
 }
@@ -70,7 +74,7 @@ a {
 .top_grayline {
     margin: 0 auto;
     height: 40px;
-    max-width: 1200px;
+    max-width: 1280px;
 }
 
 .header_yellowline {
@@ -419,7 +423,7 @@ header .top-menu ul li .logo img {
 }
 
 .liveing {
-    border-bottom: 2px solid #e0dfe0;
+    border-bottom: 1px dashed #e0dfe0;
     margin-bottom: 20px;
     color: #fcfaf4;
     padding-bottom: 2px;
@@ -440,6 +444,7 @@ header .top-menu ul li .logo img {
 .liveing_text {
     position: relative;
     padding: 0 20px;
+    margin-bottom: 20px;
 }
 
 .liveing_text h4 {
@@ -516,71 +521,6 @@ header .top-menu ul li .logo img {
     font-size: 12px;
     font-weight: 500;
 }
-
-
-
-
-
-/*小姊姊開黑，遊戲頁籤*/
-
-.game_type {
-    position: absolute;
-    top: 0;
-    right: 7%;
-    padding: 3px 5px;
-    font-weight: 500 !important;
-    border-radius: 15px;
-    text-align: center;
-    font-size: 0.5em;
-    color: #fff;
-}
-
-
-
-
-
-/*英雄聯盟*/
-
-.game_01 {
-    background: #ffbe34;
-}
-
-
-
-
-/*DOTA2*/
-
-.game_02 {
-    background: #d01c1c;
-}
-
-
-
-
-/*CS:GO*/
-
-.game_03 {
-    background: #68925a;
-}
-
-
-
-
-/*绝地求生*/
-
-.game_04 {
-    background: #ef8c38;
-}
-
-
-
-
-/*王者荣耀*/
-
-.game_05 {
-    background: #4f85bb;
-}
-
 
 
 

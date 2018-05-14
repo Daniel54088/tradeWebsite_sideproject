@@ -9,10 +9,23 @@ export default class Header extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
+           HamToggleClass:'header_yellowline',
+           Hamopen: false,
         }
+        this.toggleRWDMenu = this.toggleRWDMenu.bind(this);
     }
 
+    toggleRWDMenu(e){
+      console.log(this.state.Hamopen);
+       if(!this.state.Hamopen){
+         let toggle =  cx({'header_yellowline showRWDMenu': true});
+         this.setState({HamToggleClass:toggle,Hamopen:true});
+       }else{
+         let toggle =  cx({'header_yellowline': true});
+         this.setState({HamToggleClass:toggle,Hamopen:false});
+       }
 
+    }
 
     render() {
 
@@ -26,8 +39,11 @@ export default class Header extends React.Component {
 
         return (
           <div className="AllHeader">
-          <div className="header_yellowline">
+          <div className={this.state.HamToggleClass}>
             <div className="wrapper">
+              <div className="header_close">
+                <img  src={require('../images/header/128338.svg')} id="Ham_close"  onClick={this.toggleRWDMenu}/>
+              </div>
              <header>
                 <div className="top-menu">
                    <ul>
@@ -66,7 +82,7 @@ export default class Header extends React.Component {
                         </li>
 
                         <li>
-                            <Link to={`/signin`}>                             
+                            <Link to={`/signin`}>
                                 <h5>Sign In</h5>
                             </Link>
                        </li>
@@ -77,9 +93,26 @@ export default class Header extends React.Component {
            </div>
           </div>
 
+          <div className="top_769">
+              <div className="top_float clearfix">
+                  <div className="top clearfix">
+                        <Link className="RwdLogo" to={`/`}></Link>
+                      <div className="top_box clearfix">
+                          <button className="hamburger-menu" id="Ham" onClick={this.toggleRWDMenu}>
+                            <span className="icon-bar"></span>
+                            <span className="icon-bar"></span>
+                            <span className="icon-bar"></span>
+                          </button>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
         <div className="top_grayline">
             {headTemplate}
         </div>
+
+
 
         </div>
         )

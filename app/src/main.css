@@ -395,8 +395,17 @@ h4 {
     line-height: 40px!important;
 }
 
+/*寬度768才出現*/
 
+.top_769 {
+    margin: 0 auto;
+    height: 40px;
+    display: none;
+}
 
+  .header_close{
+    display: none;
+  }
 
 
 
