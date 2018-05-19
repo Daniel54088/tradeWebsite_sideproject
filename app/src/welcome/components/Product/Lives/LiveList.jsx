@@ -19,29 +19,27 @@ export default class LiveList extends React.Component {
 
     render() {
 
+
+      let CryptocurrenciesArray = [
+        {name:'BTC', price:'$8000.10', image:require('../../../../images/coins/opengraph.png')},
+        {name:'ETH', price:'$688.10', image:require('../../../../images/coins/eth.png')},
+        {name:'XRP', price:'$0.67843', image:require('../../../../images/coins/Ripple.png')},
+        {name:'XMR', price:'$10.10', image:require('../../../../images/coins/xmr.png')},
+        {name:'LTC', price:'$146.10', image:require('../../../../images/coins/litecoin.svg')}
+      ]
+
       return (
         <div className="col-md-4 live_bg">
-            <div className="liveing">
-                  <div className="Liveing_title"><h3>HOT Cryptocurrency</h3></div>
+          <div className="Liveing_title"><h3>Cryptocurrencies</h3></div>
 
-                <div className="liveing_img"><Link><img src={require("../../../../images/1218324023441.jpg")}/></Link></div>
-
-                <div className="liveing_text">
-
-                <h4>BTC</h4><p className="game_type game_01 clearfix">BTC</p>
-                <p className="liveingtext">我是雪晴儿, 陪我一起玩英雄联盟吧  </p>
-
-                </div><div className="news_eye clearfix"><i className="fas fa-eye  fa-1x"></i><p>1231</p></div>
-            </div>
-
-
-            <h4>HOT Pairs</h4>
 
             <div className="live_list">
+              {CryptocurrenciesArray.map(function(item,index){ //房間的array做map渲染
+                return(
+                  <LiveItem key={index} name={item.name} price={item.price} image={item.image}/>
+                );
+              })}
 
-              <LiveItem/>
-              <LiveItem/>
-              <LiveItem/>
               </div>
 
 

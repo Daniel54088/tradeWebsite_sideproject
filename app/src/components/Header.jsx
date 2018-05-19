@@ -32,7 +32,7 @@ export default class Header extends React.Component {
       //新增登入前後改變 headTemplate
       var headTemplate =   <LoginHead  callback={this.props.callback}/> ;
       //根據不同頁來亮燈不同 menu item
-      let fpkClass = cx({'active': location.pathname == '/fpk'});
+      let tradeClass = cx({'active': location.pathname == '/trade'});
       let rankingClass = cx({'active': location.pathname == '/ranking'});
       let promotionClass = cx({'active': location.pathname == '/promotion'});
       let contactClass = cx({'active': location.pathname == '/contact'});
@@ -48,8 +48,8 @@ export default class Header extends React.Component {
                 <div className="top-menu">
                    <ul>
                         <li>
-                          <Link to={`/fpk`} className={fpkClass}>
-                            <h5>Game</h5>
+                          <Link to={`/trade`} className={tradeClass}>
+                            <h5>Trade</h5>
                           </Link>
                         </li>
 

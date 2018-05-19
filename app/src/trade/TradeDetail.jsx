@@ -1,7 +1,7 @@
 import React from 'react';
 
 
-export default class FpkDetail extends React.Component {
+export default class TradeDetail extends React.Component {
     constructor(props) {
         super(props);
         this.state = {

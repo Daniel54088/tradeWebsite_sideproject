@@ -43,12 +43,6 @@
     margin: 0;
 }
 
-.tab_position ul li {
-    margin: 0;
-    display: inline-block;
-    margin-right: -4px;
-    padding: 20px 15px;
-}
 
 .tab_position ul li a h3 {
     color: #5c5c5f;
@@ -67,6 +61,13 @@
 
 
 /*news*/
+
+.news_title{
+  text-align: center;
+  margin: 30px;
+  color: #f17013;
+  font-weight: 400
+}
 
 .news_1 {
     margin-bottom: 20px;
@@ -162,12 +163,13 @@
     margin-bottom: 20px;
     color: #fcfaf4;
     padding-bottom: 2px;
+    margin-bottom: 30px;
 }
 
 .liveing_img img {
     width: 85%;
     margin: 0 auto;
-    border: 1px solid #fff;
+    max-width: 100px;
 }
 
 .liveing h2 {
@@ -193,7 +195,9 @@
     font-size: 0.8em;
     text-align: center;
     padding: 0;
-    margin: 0;
+    margin: 0 0 20 0;
+    font-weight: bold;
+    font-size: 15px;
 }
 
 
@@ -206,12 +210,6 @@
     width: 100%;
 }
 
-.live_list h4 {
-    color: #666;
-    text-align: center;
-    margin: 20px 0;
-    font-weight: 400;
-}
 
 .live_list_1 {
     margin-bottom: 30px;
@@ -222,17 +220,19 @@
     margin: 30px;
     color: #f17013;
     font-weight: 400;
-    margin-top: 52px;
+
 }
 
 .live_list_img {
     width: 70%;
     margin: 0 auto;
-    border: 1px solid #fff;
+    text-align: center;
+
 }
 
 .live_list_img img {
     width: 100%;
+    max-width: 100px;
 }
 
 .live_list_text {
@@ -254,9 +254,9 @@
 
 .live_list_text p {
     color: #333;
-    font-weight: 400;
-    font-size: 12px;
-    font-weight: 500;
+    margin-top: 30px;
+    font-size: 15px;
+    font-weight: bold;
 }
 
 
@@ -309,27 +309,4 @@
 
 .game_05 {
     background: #4f85bb;
-}
-
-
-
-
-
-
-.ant-tabs-nav{
-	left: 50%;
-	transform: translateX(-50%);
-	font-size: 36px;
-}
-.ant-tabs-nav-scroll{
-	width: 100% !important;
-}
-.ant-tabs-ink-bar{  /*新聞賽事推薦分頁tab的顏色*/
-	background-color: #F24B0C !important;
-}
-.ant-tabs-nav .ant-tabs-tab-active .ant-tabs-tab-inner{/*新聞賽事推薦分頁tab的顏色*/
-	color: #F24B0C !important;
-}
-.ant-tabs-tab-inner:hover{/*新聞賽事推薦分頁tab的顏色*/
-	color: #fdc200 !important;
 }

@@ -1,27 +1,27 @@
 import React from 'react';
-import FpkList from './FpkList.jsx'
+import TradeList from './TradeList.jsx'
 import Header from '../components/Header.jsx';
 import Footer from '../components/Footer.jsx';
-import './fpk.css';
+import './trade.css';
 import {Link, browserHistory } from 'react-router';
 import { Tabs } from 'antd';
 const TabPane = Tabs.TabPane;
 
 let whichTab ;
-export default class FpkTab extends React.Component {
+export default class TradeTab extends React.Component {
     constructor(props) {
         super(props);
         switch(location.search) { //根據進來的domain網址來判斷預設的tab
-          case '?game=lol':
+          case '?market=btc':
           whichTab= '1';
           break;
-          case '?game=dota2':
+          case '?market=eth':
           whichTab= '2';
           break;
-          case '?game=csgo':
+          case '?market=xvg':
           whichTab= '3';
           break;
-          case '?game=pubg':
+          case '?market=xrp':
           whichTab= '4';
           break;
           default:
@@ -38,23 +38,23 @@ export default class FpkTab extends React.Component {
       switch(key) { //根據進來的domain網址來判斷預設的tab
         case '1':
         this.setState({nowPage:'1'});
-        browserHistory.push('/fpk?game=lol');
+        browserHistory.push('/trade?market=btc');
         break;
         case '2':
         this.setState({nowPage:'2'});
-        browserHistory.push('/fpk?game=dota2');
+        browserHistory.push('/trade?market=eth');
         break;
         case '3':
         this.setState({nowPage:'3'});
-        browserHistory.push('/fpk?game=csgo');
+        browserHistory.push('/trade?market=xvg');
         break;
         case '4':
         this.setState({nowPage:'4'});
-        browserHistory.push('/fpk?game=pubg');
+        browserHistory.push('/trade?market=xrp');
         break;
         default:
         this.setState({nowPage:'5'});
-        browserHistory.push('/fpk?game=pvp');
+        browserHistory.push('/trade?market=usdt');
       }
 
     }
@@ -70,11 +70,11 @@ export default class FpkTab extends React.Component {
                         <div className="row">
                             <div className="col-md-10 col-md-offset-1 fpk_1 content2">
                               <Tabs  activeKey={this.state.nowPage}  onChange={this.callback}>
-                                <TabPane tab="LOL" key="1"><FpkList/></TabPane>
-                                <TabPane tab="DOTA2" key="2"><FpkList/></TabPane>
-                                <TabPane tab="CS:GO" key="3"><FpkList/></TabPane>
-                                <TabPane tab="PUBG" key="4"><FpkList/></TabPane>
-                                <TabPane tab="王者榮耀" key="5"><FpkList/></TabPane>
+                                <TabPane tab="BTC" key="1"><TradeList/></TabPane>
+                                <TabPane tab="ETH" key="2"><TradeList/></TabPane>
+                                <TabPane tab="XVG" key="3"><TradeList/></TabPane>
+                                <TabPane tab="XRP" key="4"><TradeList/></TabPane>
+                                <TabPane tab="USDT" key="5"><TradeList/></TabPane>
                               </Tabs>
                             </div>
                         </div>

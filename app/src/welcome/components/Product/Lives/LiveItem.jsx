@@ -14,25 +14,17 @@ export default class LiveItem extends React.Component {
 
 
       return (
-        <div className="live_list_1">
+        <div className="liveing">
 
-            <div className="live_list_img"><img src={require("../../../../images/1218323476908.jpg")}/></div><div className="live_list_text">
+            <div className="liveing_img"><Link><img src={this.props.image}/></Link></div>
 
-                <h4>果果baby</h4>
+            <div className="liveing_text">
 
-                <ul>
-                    <li><i className="far fa-calendar-alt fa-1x"></i></li>
-                    <li><p>12/9</p></li>
-                </ul>
-
-                <ul>
-                    <li><i className="far fa-clock fa-1x"></i></li>
-                    <li><p>16:00 ~ 19:00</p></li>
-                </ul>
+            <h4>{this.props.name}</h4><p className="game_type game_01 clearfix">24h</p>
+            <p className="liveingtext">Last Price: {this.props.price}</p>
 
             </div>
-          <hr/>
-       </div>
+        </div>
         )
     }
 }

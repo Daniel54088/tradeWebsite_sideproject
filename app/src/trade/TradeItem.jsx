@@ -2,7 +2,7 @@ import React from 'react';
 
 
 
-export default class FpkItem extends React.Component {
+export default class TradeItem extends React.Component {
     constructor(props) {
         super(props);
         this.state = {

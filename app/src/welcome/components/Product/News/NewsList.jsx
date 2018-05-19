@@ -1,97 +1,75 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import {Spin,Tabs,Pagination} from 'antd'; //等待選轉組件
+import {Spin,Pagination} from 'antd'; //等待選轉組件
 import NewsItem from './NewsItem.jsx';
-const TabPane = Tabs.TabPane;
+
 
 let  NewsArray= [];
-let RecommendArray= [];
 export default class NewsList extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
           NewsArray:  [[],[]],
-          RecommendArray:  [[],[]],
           CurrentPage:1,
           nowPageTotal:0,
         }
-        this.callback = this.callback.bind(this);
+
         this.getNews = this.getNews.bind(this);
-        this.getRecommend = this.getRecommend.bind(this);
+
         this.changePage = this.changePage.bind(this);
     }
 
     componentDidMount(){
         this.getNews();
-        this.getRecommend();
+        var ws = new WebSocket('wss://stream.binance.com:9443/ws/ethbtc@ticker');
+
+        ws.onmessage = function(event) {
+          var data = event.data;
+          console.log(data);
+        }
     }
 
     getNews(){
        NewsArray = [{ //之後根據清單修改array內容
-          title: '(PUBG)2/14 牡羊宝宝第一局，游戏结束时间',
+          title: 'Can XRP recover from this?', image:require('../../../../images/1218323476908.jpg')
         }, {
-          title: '(PUBG)2/14 第一局，牡羊宝宝拾获的第一把枪械种类',
+          title: 'XXXX Adds Top 10 Cryptocurrencies to its Platform',
         }, {
-          title: '(PUBG)2/14 牡羊宝宝第二局，游戏结束时间',
+          title: 'Markets Market Crash Continues',
         }, {
-          title: '(PUBG)2/14 第二局，牡羊宝宝拾获的第一件防弹衣等级',
+          title: 'Investors are going to buy bitcoin whether advisors like it or not',
         }, {
-        title: '(PUBG)2/14 第二局，Nest冠军IG直接晋级德杯8强',
+        title: 'Bitcoin Price Rises Slowly as $8,500 Becomes the new Target',
         }, {
-        title: '(Dota2布加勒斯特八强对阵出炉：小组赛复仇战就此展开',
+        title: 'Blockchain and Master Data Management',
       }, {
-      title: '(PUBG)2/14 第二局，Nest冠军IG直接晋级德杯8强',
+      title: 'Blockchain Offers Diverse Possibilities for Expanding ',
     }, {
-    title: '(PUBG)2/14 第二局，Nest冠军IG直接晋级德杯8强',
+    title: 'Is this the future for XMR?',
     }, {
-      title: '(PUBG)2/14 第二局，Nest冠军IG直接晋级德杯8强',
+      title: 'JPMorgan Co-President Jerry Pinto: Cryptocurrency “Will Play a Role” in Future',
     }, {
-      title: '(PUBG)2/14 第二局，Nest冠军IG直接晋级德杯8强',
+      title: 'Why ETH is going down?',
     }, {
-      title: '(PUBG)2/14 第二局，Nest冠军IG直接晋级德杯8强',
+      title: 'ETH Price Rises Slowly as $700 Becomes the new Targe',
     }];
       NewsArray =  this.setPages(NewsArray);
       this.setState({NewsArray:NewsArray,nowPageTotal: NewsArray.length});
     }
 
-    getRecommend(){
-       RecommendArray = [{ //之後根據清單修改array內容
-          title: 'TACO空降reddit：谈ID由来和离开SK原因',
-        }, {
-          title: '状态再战OMG AJ率BLG客战重庆',
-        }, {
-          title: '【DOTA2】iG.Vitality新赛季人员调整公告',
-        }, {
-          title: 'CG再次迎来阵容变动 东南亚小将Ahjit加入',
-        }, {
-        title: 'DAC主场明星礼品偷跑 来领取你的皮鞋吧',
-        }, {
-        title: '(PUBG)2/14 第二局，Nest冠军IG直接晋级德杯8强',
-      }];
-      RecommendArray = this.setPages(RecommendArray);
-      this.setState({RecommendArray:RecommendArray});
-    }
 
-    callback(key){ //按下 新聞或賽事推薦tab後要更換的state
 
-      if(key == '2'){
-        this.setState({nowPageTotal:RecommendArray.length});
-      }else{
-        this.setState({nowPageTotal:NewsArray.length});
-      }
-      this.setState({CurrentPage:1});
-    }
 
 
     setPages(orderArray){ //傳入array做 頁數處理 出來會變成巢狀迴圈
 
       let result = [];//最後結果
-      let tenArray = []; //4個一組的array
-      let pages = Math.ceil(orderArray.length/4);
+      let tenArray = []; //5個一組的array
+      let pages = Math.ceil(orderArray.length/5);
 
       for(let i=0; i < pages; i++){
          tenArray=[];//每組一次頁 都要先清空 不然會疊加
-         for(let y= (i*4);y <= (i*4+3);y++){
+         for(let y= (i*5);y <= (i*5+4);y++){
             if(!orderArray[y]){  //沒有資料就結束
               break;
             }
@@ -115,32 +93,20 @@ export default class NewsList extends React.Component {
 
 
     render() {
-      let  NewsIsNotNull = this.state.NewsArray[this.state.CurrentPage - 1];   //現在頁數的news內容
+      let  NewsIsNotNull = this.state.NewsArray[this.state.CurrentPage - 1];   //現在頁數的News內容
       if(!NewsIsNotNull ){NewsIsNotNull  = [];}//如果沒有資料必須塞空陣列，不然會有error
-      let  RecommendIsNotNull = this.state.RecommendArray[this.state.CurrentPage - 1];
-      if(!RecommendIsNotNull ){RecommendIsNotNull  = [];}
+
       return (
         <div className="col-md-8">
+                <h2 className="news_title">News</h2>
             <div className="tab_position">
-              <Tabs defaultActiveKey="1" onChange={this.callback}>
-                <TabPane className="tab_race" tab="TOP NEWS" key="1">
                   {NewsIsNotNull.map(function(item,index){ //房間的array做map渲染
                      return(
-                      <NewsItem key={index} title={item.title}/>
+                      <NewsItem key={index} title={item.title} price={item.price}/>
                      );
                   })}
 
-                </TabPane>
-                <TabPane className="tab_race" tab="HOT STORIES" key="2">
-                  {RecommendIsNotNull.map(function(item,index){ //房間的array做map渲染
-                     return(
-                      <NewsItem key={index} title={item.title}/>
-                     );
-                  })}
-                </TabPane>
-              </Tabs>
             </div>
-
             <Pagination defaultCurrent={1} total={this.state.nowPageTotal *10} onChange={this.changePage} current={this.state.CurrentPage}  />
         </div>
 

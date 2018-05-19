@@ -21,11 +21,6 @@ body {
 
 .content {
     background-color: #ffffff70;
-    box-shadow: 0 0 10px #c6cbce87;
-    overflow: hidden;
-    border: 1px solid #a0a8a84a;
-    border-radius: 5px;
-    margin-top: 80px;
     margin-bottom: 80px;
 }
 
@@ -251,20 +246,47 @@ footer {
 
     .news_img_left {
         display: block;
-        width: 100%;
+        width: 100% !important;
         margin-right: 0;
     }
 
 
     .news_text_right {
         display: block;
-        width: 100%;
+        width: 100% !important;
         vertical-align: middle;
     }
 }
 
 
+**/
 
+
+.caption{
+    text-align: center;
+}
+
+.caption img {
+    width: 60%;
+}
+
+.caption h4 {
+    color: #ffbf1b;
+    margin-left: 8px;
+    width: 80px;
+    padding: 0;
+    margin: 0;
+    margin: 10px auto;
+    text-align: center;
+}
+
+
+.caption p {
+    padding: 0;
+    margin: 0;
+    color: #5c5c5f;
+    font-size: 0.8em;
+}
 
 
 
@@ -331,7 +353,7 @@ h4,
 h5,
 h6,
 p {
-    font-weight: 400 !important;
+    font-weight: 400 ;
     letter-spacing: 0.6px !important;
 }
 
