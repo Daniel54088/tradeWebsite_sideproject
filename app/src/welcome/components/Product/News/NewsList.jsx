@@ -21,38 +21,33 @@ export default class NewsList extends React.Component {
 
     componentDidMount(){
         this.getNews();
-        var ws = new WebSocket('wss://stream.binance.com:9443/ws/ethbtc@ticker');
 
-        ws.onmessage = function(event) {
-          var data = event.data;
-          console.log(data);
-        }
     }
 
     getNews(){
        NewsArray = [{ //之後根據清單修改array內容
-          title: 'Can XRP recover from this?', image:require('../../../../images/1218323476908.jpg')
+          title: 'Investors are going to buy bitcoin whether advisors like it or not', image:require('../../../../images/news/news1.jpg')
         }, {
-          title: 'XXXX Adds Top 10 Cryptocurrencies to its Platform',
+          title: 'XXXX Adds Top 10 Cryptocurrencies to its Platform',image:require('../../../../images/news/news2.jpg')
         }, {
-          title: 'Markets Market Crash Continues',
+          title: 'Markets  Crash Continues', image:require('../../../../images/news/news3.jpg')
         }, {
-          title: 'Investors are going to buy bitcoin whether advisors like it or not',
+          title: 'Can XRP recover from this?', image:require('../../../../images/news/news4.jpg')
         }, {
-        title: 'Bitcoin Price Rises Slowly as $8,500 Becomes the new Target',
+        title: 'Bitcoin Price Rises Slowly as $8,500 Becomes the new Target',image:require('../../../../images/news/news5.jpg')
         }, {
-        title: 'Blockchain and Master Data Management',
-      }, {
-      title: 'Blockchain Offers Diverse Possibilities for Expanding ',
-    }, {
-    title: 'Is this the future for XMR?',
-    }, {
-      title: 'JPMorgan Co-President Jerry Pinto: Cryptocurrency “Will Play a Role” in Future',
-    }, {
-      title: 'Why ETH is going down?',
-    }, {
-      title: 'ETH Price Rises Slowly as $700 Becomes the new Targe',
-    }];
+        title: 'Blockchain and Master Data Management', image:require('../../../../images/news/news6.jpg')
+        }, {
+        title: 'Blockchain Offers Diverse Possibilities for Expanding ', image:require('../../../../images/news/news7.jpg')
+        }, {
+        title: 'Is this the future for XMR?', image:require('../../../../images/news/news1.jpg')
+        }, {
+        title: 'JPMorgan Co-President Jerry Pinto: Cryptocurrency “Will Play a Role” in Future', image:require('../../../../images/news/news2.jpg')
+        }, {
+        title: 'Why ETH is going down?', image:require('../../../../images/news/news3.jpg')
+        }, {
+        title: 'ETH Price Rises Slowly as $700 Becomes the new Targe', image:require('../../../../images/news/news4.jpg')
+        }];
       NewsArray =  this.setPages(NewsArray);
       this.setState({NewsArray:NewsArray,nowPageTotal: NewsArray.length});
     }
@@ -64,12 +59,12 @@ export default class NewsList extends React.Component {
     setPages(orderArray){ //傳入array做 頁數處理 出來會變成巢狀迴圈
 
       let result = [];//最後結果
-      let tenArray = []; //5個一組的array
+      let tenArray = []; //4個一組的array
       let pages = Math.ceil(orderArray.length/5);
 
       for(let i=0; i < pages; i++){
          tenArray=[];//每組一次頁 都要先清空 不然會疊加
-         for(let y= (i*5);y <= (i*5+4);y++){
+         for(let y= (i*4);y <= (i*4+3);y++){
             if(!orderArray[y]){  //沒有資料就結束
               break;
             }
@@ -87,22 +82,24 @@ export default class NewsList extends React.Component {
     }
 
     changePage(page){
+      document.documentElement.scrollTop =500;
 
       this.setState({CurrentPage:page});
     }
 
 
     render() {
+
       let  NewsIsNotNull = this.state.NewsArray[this.state.CurrentPage - 1];   //現在頁數的News內容
       if(!NewsIsNotNull ){NewsIsNotNull  = [];}//如果沒有資料必須塞空陣列，不然會有error
 
       return (
-        <div className="col-md-8">
+        <div className="col-md-8" id="mainNews">
                 <h2 className="news_title">News</h2>
             <div className="tab_position">
                   {NewsIsNotNull.map(function(item,index){ //房間的array做map渲染
                      return(
-                      <NewsItem key={index} title={item.title} price={item.price}/>
+                      <NewsItem key={index} title={item.title} image={item.image}/>
                      );
                   })}
 

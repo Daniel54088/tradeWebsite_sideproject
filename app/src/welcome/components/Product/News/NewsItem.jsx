@@ -15,13 +15,16 @@ export default class NewsItem extends React.Component {
 
       return (
         <div className="news_1">
-            <div className="news_img_left"><img src={require("../../../../images/1218323476908.jpg")}/></div>
+            <div className="news_img_left"><img src={this.props.image}/></div>
             <div className="news_text_right">
                 <h3>{this.props.title}</h3>
                 <h4>2018-05-02 12:21:24</h4>
-                <p>gergergerge</p>
+                <p>ConcertVR today competed its ICO pre-sale, having reached the 1,200 Ether (Ethereum’s native currency) hard cap in less than four days. 1,200 Ether equates to about £325,000. The main round of the token sale will commence on April 15 and the hard cap for that is 60,000 ETH (roughly £16.25 million, at time of writing).…</p>
                 <div className="news_eye clearfix"><i className="fas fa-eye  fa-1x"></i>
                     <p>1231</p>
+                </div>
+                <div>
+                  <a className="readMore">Read more</a>
                 </div>
             </div>
           <hr/>

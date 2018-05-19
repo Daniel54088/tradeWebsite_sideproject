@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Link, IndexLink } from 'react-router';
-
+import {cx} from '../../../../mutipleClass.js';
 
 
 export default class LiveItem extends React.Component {
@@ -11,6 +11,7 @@ export default class LiveItem extends React.Component {
     }
 
     render() {
+      let upordownClass = cx({'up': Number(this.props.change) > 0,'down': Number(this.props.change) < 0 });
 
 
       return (
@@ -22,7 +23,7 @@ export default class LiveItem extends React.Component {
 
             <h4>{this.props.name}</h4><p className="game_type game_01 clearfix">24h</p>
             <p className="liveingtext">Last Price: {this.props.price}</p>
-
+            <p className="liveingtext">24h Change: <a className={upordownClass}>{this.props.change}  /  {this.props.percent}</a></p>
             </div>
         </div>
         )
