@@ -32,7 +32,6 @@ ReactDOM.render(
         <Route path="member/:type"  component={Member} />
         <Route path="wallet/:type"  component={Wallet} />
         <Route path="promotion"  component={PromotionList} />
-        <Route path="event"  component={PromotionList} />
         <Route path="trade" component={TradeTab} />
         <Route path="/" component={Init} >
             <IndexRoute component={Welcome}/>

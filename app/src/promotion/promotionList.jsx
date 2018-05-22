@@ -4,8 +4,7 @@ import Footer from '../components/Footer.jsx';
 import PromotionItem from './promotionItem.jsx';
 import './promotion.css'
 import {Link, browserHistory } from 'react-router';
-import { Tabs, Pagination } from 'antd';
-const TabPane = Tabs.TabPane;
+import { Pagination } from 'antd';
 
 
 window.addEventListener("popstate", function(e){ //監聽如果上下頁要重新ｒｅｌｏａｄ　for tab功能
@@ -17,56 +16,32 @@ let whichTab ;
 export default class PromotionList extends React.Component {
     constructor(props) {
         super(props);
-        if(location.pathname == '/promotion'){
-            whichTab= '1';
-        }else{
-            whichTab= '2';
-        }
+
         this.state = {
-          nowPage:whichTab,
-          activityArray:[],
+
           eventArray:[],
           CurrentPage:1,
           nowPageTotal:0,
         }
         this.callback = this.callback.bind(this);
-        this.getActivityList = this.getActivityList.bind(this);
         this.getEventList = this.getEventList.bind(this);
         this.changePage =   this.changePage.bind(this);
     }
 
     componentDidMount(){
-      this.getActivityList();
       this.getEventList();
     }
-
-    getActivityList(){
-      $.ajax({
-        method: "GET",
-        url: '/src/promotion/activity.json',
-        dataType:'json',
-        success: function(data){
-          let newActivityArray = data.data.activity;
-              newActivityArray =  this.setPages(newActivityArray); //做成頁數
-        this.setState({activityArray:newActivityArray,nowPageTotal: newActivityArray.length});
-        }.bind(this), //是個坑  無命名function奧在手動作bind
-
-        error: function(data){
-
-        },
-      });
-    } //end of   getActivityList
 
 
     getEventList(){
       $.ajax({
         method: "GET",
-        url: '/src/promotion/event.json',
+        url: '/src/promotion/activity.json',
         dataType:'json',
         success: function(data){
           let newEventArray = data.data.activity;
               newEventArray =  this.setPages(newEventArray); //做成頁數
-          this.setState({eventArray:newEventArray});
+          this.setState({eventArray:newEventArray,nowPageTotal:newEventArray.length});
         }.bind(this), //是個坑  無命名function奧在手動作bind
 
         error: function(data){
@@ -122,9 +97,7 @@ export default class PromotionList extends React.Component {
 
     render() {
 
-      let  ActivityIsNotNull = this.state.activityArray[this.state.CurrentPage - 1];   //現在頁數的news內容
-      if(!ActivityIsNotNull ){ActivityIsNotNull  = [];}//如果沒有資料必須塞空陣列，不然會有error
-
+      console.log(this.state.nowPageTotal);
       let  EventIsNotNull = this.state.eventArray[this.state.CurrentPage - 1];   //現在頁數的news內容
       if(!EventIsNotNull ){EventIsNotNull  = [];}//如果沒有資料必須塞空陣列，不然會有error
 
@@ -137,25 +110,13 @@ export default class PromotionList extends React.Component {
                     <div className="row">
                         <div className="col-sm-10 col-sm-offset-1">
                             <div className="tab_position">
-                              <Tabs  defaultActiveKey="1" onChange={this.callback}>
-                                <TabPane tab="Promotion" key="1">
-                                  {ActivityIsNotNull.map(function(item,index){ //房間的array做map渲染
-                                     return(
-                                      <PromotionItem key={index} title={item.title} id={item.id}/>
-                                     );
-                                  })}
 
-
-                                </TabPane>
-                                <TabPane tab="Activities" key="2">
                                   {EventIsNotNull.map(function(item,index){ //房間的array做map渲染
                                      return(
                                       <PromotionItem key={index} title={item.title} id={item.id}/>
                                      );
                                   })}
-=
-                                </TabPane>
-                             </Tabs>
+
                              <Pagination defaultCurrent={1} total={this.state.nowPageTotal *10} onChange={this.changePage} current={this.state.CurrentPage}  />
                             </div>
                         </div>

@@ -5,17 +5,19 @@ a:hover {
     text-decoration: none;
 }
 
-main{
+main {
     padding-top: 20px;
 }
 
-main .product .content{
+main .product .content {
     overflow: visible;
 }
 
+
+
 /*切換類別button*/
 
-main .product .content .toggle_button .list-inline{
+main .product .content .toggle_button .list-inline {
     text-align: center;
     padding: 0;
     margin: 0;
@@ -31,19 +33,22 @@ main .product .content .toggle_button .list-inline{
 }
 
 
-main .product .content .toggle_button .list-inline li a{
+main .product .content .toggle_button .list-inline li a {
     font-size: 1.2em;
     color: #ffbe34;
     padding: 21px;
     background: transparent;
 }
 
-main .product .content .toggle_button .list-inline li a:hover{
+main .product .content .toggle_button .list-inline li a:hover {
     color: #8036eb;
 }
 
 
-.product .content .product_1{
+
+/*產品欄位*/
+
+.product .content .product_box {
     margin: 0;
     padding: 0;
     background: #fffdf7;
@@ -52,26 +57,31 @@ main .product .content .toggle_button .list-inline li a:hover{
     padding-bottom: 10px;
     border-radius: 15px;
     border: 1px solid #ffe9bb;
+    margin-bottom: 20px;
 }
 
 
-.product .content .product_1 .product1_top{
-    width: 100%;
+.product .content .product1_top {
     text-align: center;
+    position: relative;
+    height: 220px;
+    overflow: hidden;
 }
 
-.product .content .product_1 .product1_top img{
-    border: 1px solid #ffe9bb;
-    width: 80%;
-    border-radius: 15px;
+.product .content .product1_top img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
-.product .content .product_1 .game1_bottom h4{
+.product .content .game1_bottom h4 {
     font-size: 1em;
     color: #92702b;
 }
 
-.product .content .product_1 .game1_bottom h3{
+.product .content .game1_bottom h3 {
     margin: 0;
     margin-top: 10px;
     margin-bottom: 10px;
@@ -79,28 +89,31 @@ main .product .content .toggle_button .list-inline li a:hover{
     color: #92702b;
 }
 
-.product .content .product_1 .game1_bottom .btngroup{
-	margin-top: 15px;
-	margin-bottom: 15px;
-
+.product .content .game1_bottom .btngroup {
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 
-.product_img_slide{
-	padding: 0;
-	margin: 0;
-	padding-top: 5px;
+.product_img_slide {
+    padding: 0;
+    margin: 0;
+    padding-top: 5px;
     text-align: center;
 }
 
-.product_img_slide i{
-	cursor: pointer;
-    color: #92702b;
+.product_img_slide i {
+    padding-top: 0;
+    margin: 0 3px;
+    cursor: pointer;
+    color: #ffbe34;
 }
+
+
 
 
 /*產品詳細頁*/
 
-.detail_right h4{
+.detail_right h4 {
     padding: 0;
     margin: 0;
     color: #fbc13f;
@@ -108,7 +121,7 @@ main .product .content .toggle_button .list-inline li a:hover{
     margin-bottom: 5px;
 }
 
-.detail_right h3{
+.detail_right h3 {
     padding: 0;
     margin: 0;
     margin-top: 5px;
@@ -116,7 +129,7 @@ main .product .content .toggle_button .list-inline li a:hover{
     color: #5c5c5f;
 }
 
-.detail_right h5{
+.detail_right h5 {
     font-size: 1.5em;
     color: #5c5c5f;
     padding: 0;
@@ -125,7 +138,7 @@ main .product .content .toggle_button .list-inline li a:hover{
     margin-bottom: 5px;
 }
 
-.detail_right p{
+.detail_right p {
     font-size: 0.8em;
     color: #89898c;
     padding: 0;
@@ -135,57 +148,59 @@ main .product .content .toggle_button .list-inline li a:hover{
 }
 
 
+
+
 /*slide*/
 
-.detail_slide{
-    width: 100%;
-    height: 300px;
-}
-
-.detail_slide{
-    width: 100%;
+.detail_slide {
+    position: relative;
     height: 300px;
     overflow: hidden;
-    border-radius: 15px;
 }
 
-.detail_slide .detail_img{
-    position: relative;
+.detail_slide .detail_img {
+    /*position: relative;
+    width: auto;
+    display: flex;*/
 }
 
-.detail_slide .detail_img img{
-    width: 100%;
-    height: 300px;
-}
 
 
 /*圖片全部水平*/
 
-.img_1,.img_2,.img_3{
+.detail_slide .detail_img img {
     position: absolute;
+    width: 100%;
+    height: 300px;
+    border-radius: 15px;
 }
+
+
 
 /*第一張*/
 
-#img_1{
+#img1 {
     left: 0;
 }
 
+
+
 /*第二張*/
 
-#img_2{
+#img2,
+#img3 {
     left: 100%;
 }
 
+
+
 /*第三張*/
 
-#img_3{
-    left: 200%;
-}
 
+/* + + - -*/
 
 .detail_quantity p,
-.detail_quantity i{
+.detail_quantity i {
     font-size: 1.2em;
     color: #5c5c5f;
     padding: 0;
@@ -193,18 +208,18 @@ main .product .content .toggle_button .list-inline li a:hover{
     display: inline-block;
 }
 
-.detail_quantity i{
+.detail_quantity i {
     color: #ffbe34;
-    cursor: pointer;  
+    cursor: pointer;
     padding: 3px 5px;
 }
 
 
-.detail_quantity .fa-window-minimize{
+.detail_quantity .fa-window-minimize {
     vertical-align: super;
 }
 
-.detail_quantity{
+.detail_quantity {
     margin: 0;
     padding: 0;
     padding-top: 10px;
@@ -213,19 +228,23 @@ main .product .content .toggle_button .list-inline li a:hover{
     margin-bottom: 3px;
     border-top: 1px dashed #615c7b3b;
     border-bottom: 1px dashed #615c7b3b;
+    -moz-user-select: none;
+    -webkit-user-select: none;
 }
 
-.detail_quantity #quantity_digital{
+.detail_quantity #quantity_digital {
     padding: 0;
     margin: 0;
     text-align: center;
     width: 30px !important;
 }
 
+
+
 /*加入購物車button大*/
 
 .product_detail .btnsmall {
-    font-size:1em;
+    font-size: 1em;
     border-radius: 99px;
     text-align: center;
     transition: all 0.15s ease-out 0s;
@@ -239,17 +258,19 @@ main .product .content .toggle_button .list-inline li a:hover{
     color: #fff;
 }
 
-.product_detail .btngroup{
-    padding:0;
-    margin:0;
-    padding-top:20px;
+.product_detail .btngroup {
+    padding: 0;
+    margin: 0;
+    padding-top: 20px;
     padding-bottom: 20px;
     text-align: left;
 }
 
+
+
 /*商品詳細頁-下半部*/
 
-.detail_bottom ul{
+.detail_bottom ul {
     padding: 0;
     margin: 0;
     margin-top: 20px;
@@ -257,15 +278,15 @@ main .product .content .toggle_button .list-inline li a:hover{
 }
 
 
-.detail_bottom ul li{
+.detail_bottom ul li {
     padding: 0;
     margin: 0;
     display: inline-block;
     margin-right: -5px;
 }
 
-.detail_bottom ul li a{
-      padding: 0;
+.detail_bottom ul li a {
+    padding: 0;
     margin: 0;
     letter-spacing: 1.3px;
     border: 1px solid #ffbe34;
@@ -274,28 +295,28 @@ main .product .content .toggle_button .list-inline li a:hover{
 }
 
 
-.detail_bottom p{
+.detail_bottom p {
     padding: 0;
     margin: 0;
     font-size: 0.8em;
     color: #5c5c5f;
 }
 
-.detail_bottom .content{
+.detail_bottom .content {
     margin-top: 0;
     margin-bottom: 0;
     border-radius: 0;
     border: 1px solid #ffbe34;
     margin-top: -1px;
     box-shadow: none;
-    padding:50px 16px;
+    padding: 50px 16px;
 }
 
-#CONTENT2{
+#CONTENT2 {
     display: none;
 }
 
-.tab_active{
+.tab_active {
     background-color: #ffbe34;
     color: #fff !important;
 }

@@ -1,0 +1,81 @@
+a,
+a:focus,
+a:hover {
+    outline: none;
+    text-decoration: none;
+}
+
+main {
+    padding-top: 20px;
+}
+
+main .member .content {
+    overflow: visible;
+}
+
+
+/*切換類別button*/
+
+main .member .content .toggle_button .list-inline {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    margin: 0 auto;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    background: #fff;
+    border-radius: 15px;
+    border: 3px double #ffe9bb;
+    position: relative;
+    top: -20px;
+    margin-bottom: 30px;
+}
+
+
+main .member .content .toggle_button .list-inline li a {
+    font-size: 1.2em;
+    color: #ffbe34;
+    padding: 21px;
+    background: transparent;
+}
+
+main .member .content .toggle_button .list-inline li a:hover {
+    color: #8036eb;
+}
+
+.line_box{
+    margin: 0;
+    padding: 20px;
+    border-radius: 5px;
+    border: 2px solid #ffe9bb;
+    background: #fff;
+}
+
+/*Profile*/
+
+main .member .content .profile h4{
+    padding: 0;
+    margin: 0;
+    color: #ffbe34;
+    padding: 25px 20px 10px 20px;
+}
+
+.profile .btngroup{
+    padding-top: 30px;
+    padding-bottom: 15px;
+}
+
+main .member .profile .profile_msg h3{
+    padding: 0;
+    margin: 0;
+
+}
+
+main .member .profile .profile_msg p{
+    margin: 0;
+    padding-top: 15px;
+    border-bottom:1px #a0a8a84a;
+    border-style: dashed;
+    color: #5c5c5f;
+    font-size: 0.8em;
+}

@@ -12,19 +12,19 @@
     <link href="https://use.fontawesome.com/releases/v5.0.4/css/all.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Molengo|Mukta|Overpass" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="../css/header_rwd.css">
-    <link rel="stylesheet" type="text/css" href="../css/promotion.css">
+    <link rel="stylesheet" type="text/css" href="../css/product.css">
 </head>
 
 <body>
     <div class="header_yellowline" id="yellowline">
         <div class="wrapper">
             <div class="header_close">
-                <img src="../images/header/128338.svg" id="Ham_close"></div>
+                <img src="../images/header/128338.png" srcset="../images/header/128338.svg" id="Ham_close"></div>
             <header>
                 <div class="top-menu">
                     <ul>
                         <li>
-                            <a href="../product/product_index.html" class="active">
+                            <a href="product_index.html" class="active">
                                 <h5>Product</h5>
                             </a>
                         </li>
@@ -40,7 +40,7 @@
                         </li>
                         <li>
                             <a href="../index.html" class="logo">
-                                <h5>Top</h5><img src="../images/header/801837.svg" alt="" class="logo_middle">
+                                <h5>Top</h5><img src="../images/header/801837.png" srcset="../images/header/801837.svg" alt="" class="logo_middle">
                             </a>
                         </li>
                         <li>
@@ -123,70 +123,31 @@
             </div>
         </div>
     </div>
-    <main class="promotion">
-        <div class="container content">
-            <div class="row">
-
-                <div class="col-md-4">
-
-                    <a href="ranking_detail.html" target="_self">
-                        <div class="promotion_item">
-                            <div class="promo_img">
-                                <img src="../images/1218324023441.jpg">
-                            </div>
-                            <div class="promotion_text">
-                                <h4>First Ranking</h4>
-                                <p>Stay up to date on the development of Bootstrap and reach out to the community with these helpful resources.</p>
-                            </div>
+    <main>
+        <div class="product">
+            <div class="container content">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="toggle_button">
+                            <ul class="list-inline">
+                                <li id="All"><a href="javascript:void(0)">All</a></li>
+                                <li id="Watch"><a href="javascript:void(0)">Watch</a></li>
+                                <li id="Actual"><a href="javascript:void(0)">Actual</a></li>
+                                <li class="active" id="Collection"><a href="javascript:void(0)">Collection</a></li>
+                            </ul>
                         </div>
-                    </a>
-
+                    </div>
+                    <div id="ProductItem">
+                    </div>
                 </div>
-
-
-                <div class="col-md-4">
-
-                    <a href="ranking_detail.html" target="_self">
-                        <div class="promotion_item">
-                            <div class="promo_img">
-                                <img src="../images/winter-landscape-2571788_1920.jpg">
-                            </div>
-                            <div class="promotion_text">
-                                <h4>Second Ranking</h4>
-                                <p>Stay up to date on the development of Bootstrap and reach out to the community with these helpful resources.</p>
-                            </div>
-                        </div>
-                    </a>
-                    
-                </div>
-
-
-                <div class="col-md-4">
-
-                    <a href="ranking_detail.html" target="_self">
-                        <div class="promotion_item">
-                            <div class="promo_img">
-                                <img src="../images/casino-3260372_1920.jpg">
-                            </div>
-                            <div class="promotion_text">
-                                <h4>Third Ranking</h4>
-                                <p>Stay up to date on the development of Bootstrap and reach out to the community with these helpful resources.</p>
-                            </div>
-                        </div>
-                    </a>
-                    
-                </div>
-
             </div>
-        </div>
-        </div>
     </main>
     <footer>
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
                     <div class="footer_title">
-                        <img src="../images/footer/footer_logo.svg" alt=""></div>
+                        <img src="../images/footer/footer_logo.png" srcset="../images/footer/footer_logo.svg" alt=""></div>
                     <div class="footer_content">
                         <a href="../about.html">
                             <p>About</p>
@@ -203,8 +164,10 @@
         </div>
         </div>
     </footer>
-    <script src="../js/bootstrap.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="../js/bootstrap.js"></script>
+    <script type="text/javascript" src="../js/array.js"></script>
+    <script type="text/javascript" src="../js/array_function.js"></script>
     <script type="text/javascript" src="../js/mine.js"></script>
 </body>
 

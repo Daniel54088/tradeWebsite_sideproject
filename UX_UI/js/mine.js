@@ -87,6 +87,76 @@ $(function() {
 
     });
 
+    /*quantity增加*/
+
+    N = 1;
+
+    $("#btn_up").click(function() {
+
+
+        if (N >= 1, N < 20) {
+
+            N++;
+
+        } else {
+
+            return;
+        }
+
+        /*結果寫入HTML*/
+
+        $("#quantity_digital").html(N);
+
+    });
+
+
+    /*quantity減少*/
+
+
+    $("#btn_down").click(function() {
+
+
+        if (N > 1) {
+
+            N--;
+
+        } else {
+
+            return;
+        }
+
+        /*結果寫入HTML*/
+
+        $("#quantity_digital").html(N);
+
+    });
+
+
+    /*product slide*/
+
+
+    $('.product_1 .fa-circle').click(
+
+        function() {
+
+            /*先關掉全部的圖*/
+
+            $('.product_1 .img_list').css("left", "100%");
+
+            var P = this.id.substr(5);
+
+            /*打開選中的*/
+
+            $('.product_1 #img' + P).css("left", "0");
+
+            /*point樣式改變*/
+
+            $(this).removeClass("far").addClass("fas");
+            $(this).siblings().removeClass("fas").addClass("far");
+
+        }
+
+    );
 
 
 

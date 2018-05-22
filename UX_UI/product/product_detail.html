@@ -12,19 +12,21 @@
     <link href="https://use.fontawesome.com/releases/v5.0.4/css/all.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Molengo|Mukta|Overpass" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="../css/header_rwd.css">
-    <link rel="stylesheet" type="text/css" href="../css/promotion.css">
+    <link rel="stylesheet" type="text/css" href="../css/product.css">
 </head>
 
 <body>
+
+
     <div class="header_yellowline" id="yellowline">
         <div class="wrapper">
-            <div class="header_close">
-                <img src="../images/header/128338.svg" id="Ham_close"></div>
+                        <div class="header_close">
+                        <img src="../images/header/128338.png" srcset="../images/header/128338.svg" id="Ham_close"></div>
             <header>
                 <div class="top-menu">
                     <ul>
                         <li>
-                            <a href="../product/product_index.html" class="active">
+                            <a href="product_index.html" class="active">
                                 <h5>Product</h5>
                             </a>
                         </li>
@@ -40,7 +42,7 @@
                         </li>
                         <li>
                             <a href="../index.html" class="logo">
-                                <h5>Top</h5><img src="../images/header/801837.svg" alt="" class="logo_middle">
+                                <h5>Top</h5><img src="../images/header/801837.png" srcset="../images/header/801837.svg" alt="" class="logo_middle">
                             </a>
                         </li>
                         <li>
@@ -63,6 +65,8 @@
             </header>
         </div>
     </div>
+
+    
     <div class="top_grayline" id="grayline">
         <div class="top_float clearfix">
             <div class="top clearfix">
@@ -103,90 +107,138 @@
                     <a href="member/deposit_bank.html">
                         <img src="../images/header/163064.png" srcset="../images/header/163064.svg" alt="" style="width: 23px;">
                     </a>
-                    <a href="../product/product_shopping.html">
+                    <a href="../member/deposit_bank.html">
                         <img src="" srcset="../images/header/71214.svg" alt="" style="width: 25px;">
                     </a>
                 </div>
             </div>
         </div>
     </div>
+
+
+
+
+
+
+
+
     <div class="top_769">
         <div class="top_float clearfix">
             <div class="top clearfix">
                 <div class="top_box clearfix">
                     <button class="hamburger-menu" id="Ham">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
+  <span class="icon-bar"></span>
+  <span class="icon-bar"></span>
+  <span class="icon-bar"></span>
+</button>
                 </div>
             </div>
         </div>
     </div>
-    <main class="promotion">
+
+
+
+    
+    <main class="product_detail">
         <div class="container content">
             <div class="row">
-
-                <div class="col-md-4">
-
-                    <a href="ranking_detail.html" target="_self">
-                        <div class="promotion_item">
-                            <div class="promo_img">
-                                <img src="../images/1218324023441.jpg">
-                            </div>
-                            <div class="promotion_text">
-                                <h4>First Ranking</h4>
-                                <p>Stay up to date on the development of Bootstrap and reach out to the community with these helpful resources.</p>
-                            </div>
-                        </div>
-                    </a>
-
+                <div class="col-md-10 col-md-offset-1">
+                    <div class="btngroup">
+                        <a href="javascript:void(0)" class="btn_back" onclick="javascript:history.back(-1);"><i class="fas fa-angle-left"></i> Back</a>
+                    </div>
                 </div>
 
 
-                <div class="col-md-4">
+                    <!--圖片的最外容器(不能超過這範圍)-->
 
-                    <a href="ranking_detail.html" target="_self">
-                        <div class="promotion_item">
-                            <div class="promo_img">
-                                <img src="../images/winter-landscape-2571788_1920.jpg">
-                            </div>
-                            <div class="promotion_text">
-                                <h4>Second Ranking</h4>
-                                <p>Stay up to date on the development of Bootstrap and reach out to the community with these helpful resources.</p>
-                            </div>
-                        </div>
-                    </a>
+                <div class="col-md-5 col-md-offset-1" style="padding-right:0;">
+
+
+                    <!--要跑的圖片們，可以增加-->
+                    <div class="detail_slide">
+                    <div class="detail_img">
+                        <img src="../images/product/a_product_1.jpg" alt="" id="img1" class="img_list">
+                        <img src="../images/product/a_product_2.jpg" alt="" id="img2" class="img_list">
+                        <img src="../images/product/a_product_3.jpg" alt="" id="img3"class="img_list">
+                    </div>
+
+                    </div>
+                    <div class="product_img_slide">
+                        <i class="fas fa-circle fa-xs" id="point1"></i>
+                        <i class="far fa-circle fa-xs" id="point2"></i>
+                        <i class="far fa-circle fa-xs" id="point3"></i>
+                    </div>
+                        
+                </div>
+
+
+
+
+                <div class="col-md-5">
+                    <div class="detail_right">
+                        <!--商品標題+返回鍵-->
+                        <h4>Watch</h4>
+                        <h3>Burning Cactus Patrol Patch</h3>
+                        <h5>$39</h5>
+                        <p>Add depth and dimension to your cheeks with this three-in-one ombré blush.
+                        </p>
+                    </div>
+                    <div class="detail_quantity">
+                        <p>Quantity：</p>
+                        <i class="fas fa-window-minimize" id="btn_down"></i>
+                        <p id="quantity_digital">1</p>
+                        <i class="fas fa-plus" id="btn_up"></i>
+                    </div>
+                    <div class="btngroup">
+                        <a class="btnsmall" href="javascript:void(0)">Add to Cart</a>
+                    </div>
+                </div>
+                <!--下半部分-->
+                <!--Tab-->
+                <div class="col-md-10 col-md-offset-1 detail_bottom">
+                    <ul>
+                        <li>
+                            <a href="javascript:void(0)" id="TAB1" class="tab_active">Product Description</a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)" id="TAB2">Ingredients</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-10 col-md-offset-1 detail_bottom" id="CONTENT1" >
+                    <div class="content">
+                        <p>About Viseart Petit Pro 3 Achieve pro-level results anywhere with this travel-friendly take on Viseart’s iconic eyeshadow palettes. Featuring the pigment-rich eyeshadow formula that has earned a cult following in the beauty industry, the Viseart Petit Pro 3 makes it easy to create full, dramatic eye makeup looks with just one palm-sized palette.
+                            <br>
+                            <br> Other Details
+                            <br> Size: 0.21oz
+                            <br> Not tested on animals
+                            <br> Paraben-Free
+                            <br> Petrochemical-Free
+                            <br> Silicone-Free
+                            <br> Mineral Oil-Free
+                            <br> Gluten-Free
+                        </p></div>
+                </div>
+
+                <div class="col-md-10 col-md-offset-1 detail_bottom" id="CONTENT2">
+                    <div class="content">
                     
+                    <p>
+                        Mica, Talc, Octyldodecyl Stearoyl Stearate, Calcium Sodium Borosilicate, Sodium Zinc Stearate, Calcium Aluminum Borosilicate, Silicon Dioxide, Aluminum Hydroxide (+/- May contain: Tin Oxide CI 77861,Titanium Dioxide CI 77891, Iron Oxides CI 7491/77492/77499, Red 40 CI 16035, Carmin CI 75470, Black 2 CI 77266, Chromium Hydroxide Green CL 77289, Chromium Oxide Green CL 77288, Ferric Ferrocyanide CL 77510, and Manganese Violet CL 77742).
+                    </p>
+</div>
                 </div>
-
-
-                <div class="col-md-4">
-
-                    <a href="ranking_detail.html" target="_self">
-                        <div class="promotion_item">
-                            <div class="promo_img">
-                                <img src="../images/casino-3260372_1920.jpg">
-                            </div>
-                            <div class="promotion_text">
-                                <h4>Third Ranking</h4>
-                                <p>Stay up to date on the development of Bootstrap and reach out to the community with these helpful resources.</p>
-                            </div>
-                        </div>
-                    </a>
-                    
-                </div>
-
             </div>
         </div>
-        </div>
     </main>
+
+    
     <footer>
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
                     <div class="footer_title">
-                        <img src="../images/footer/footer_logo.svg" alt=""></div>
+                        <img src="../images/footer/footer_logo.png" srcset="../images/footer/footer_logo.svg" alt=""></div>
                     <div class="footer_content">
                         <a href="../about.html">
                             <p>About</p>
@@ -203,9 +255,11 @@
         </div>
         </div>
     </footer>
-    <script src="../js/bootstrap.js"></script>
+    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="../js/bootstrap.js"></script>
     <script type="text/javascript" src="../js/mine.js"></script>
+    <script type="text/javascript" src="../js/array.js"></script>
 </body>
 
 </html>

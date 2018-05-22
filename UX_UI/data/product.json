@@ -1,0 +1,77 @@
+{
+    "status": true,
+    "data": [
+        {
+            "Id":1,
+            "ProductName": "iphone 8",
+            "Category": 1,
+            "Amount": 20,
+            "Description": "something Description",
+            "Price": 2000,
+            "Time": "2018-01-15T11:18:35.35",
+            "image1": "...",
+            "image2": "...",
+            "image3": "..."
+        },
+        {
+          "Id":2,
+          "ProductName": "iphone 8",
+          "Category": 3,
+          "Amount": 20,
+          "Description": "something Description",
+          "Price": 2000,
+          "Time": "2018-01-15T11:18:35.35",
+          "image1": "...",
+          "image2": "...",
+          "image3": "..."
+        },
+        {
+          "Id":3,
+          "ProductName": "iphone 8",
+          "Category": 4,
+          "Amount": 20,
+          "Description": "something Description",
+          "Price": 2000,
+          "Time": "2018-01-15T11:18:35.35",
+          "image1": "...",
+          "image2": "...",
+          "image3": "..."
+        },
+        {
+          "Id":4,
+          "ProductName": "iphone 8",
+          "Category": 2,
+          "Amount": 20,
+          "Description": "something Description",
+          "Price": 2000,
+          "Time": "2018-01-15T11:18:35.35",
+          "image1": "...",
+          "image2": "...",
+          "image3": "..."
+        },
+        {
+          "Id":5,
+          "ProductName": "iphone 8",
+          "Category": 3,
+          "Amount": 20,
+          "Description": "something Description",
+          "Price": 2000,
+          "Time": "2018-01-15T11:18:35.35",
+          "image1": "...",
+          "image2": "...",
+          "image3": "..."
+        },
+        {
+          "Id":6,
+          "ProductName": "iphone 8",
+          "Category": 1,
+          "Amount": 20,
+          "Description": "something Description",
+          "Price": 2000,
+          "Time": "2018-01-15T11:18:35.35",
+          "image1": "...",
+          "image2": "...",
+          "image3": "..."
+        }
+    ]
+}

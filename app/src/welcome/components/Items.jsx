@@ -21,6 +21,7 @@ export default class Items extends React.Component {
 
       let className = cx({
           'img': true,
+          'img-fluid': true,
           'left': this.props.id < this.props.CurrentId,
           'right': this.props.id > this.props.CurrentId
       });

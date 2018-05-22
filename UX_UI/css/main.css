@@ -32,13 +32,16 @@ body {
 .tutorial .content,
 .about .content,
 .ranking_detail .content,
-.help .content{
+.help .content,
+.index_top,
+.shopping .content{
     padding-top: 50px;
     padding-bottom: 50px;
 }
 
 
-.product .content{
+.product .content,
+.member .content{
     padding-bottom: 50px;
 }
 
@@ -285,34 +288,6 @@ header .top-menu ul li .logo img {
 
 
 
-
-
-
-
-/*新聞/優惠頁籤*/
-
-.tab_position ul {
-    text-align: center;
-    text-align: center;
-    padding: 0;
-    margin: 0;
-}
-
-.tab_position ul li {
-    margin: 0;
-    display: inline-block;
-    margin-right: -4px;
-    padding: 20px 15px;
-}
-
-.tab_position ul li a h3 {
-    color: #5c5c5f;
-    font-size: 1.4em;
-}
-
-.tab_position ul li a h3:hover {
-    color: #8036ea;
-}
 
 .pagination {
     margin-top: 0;
@@ -629,10 +604,11 @@ footer {
     padding: 8px 18px;
 }
 
-.btnsmall:hover {
+.btnsmall:hover{
     background-color: #fbc13f;
     color: #fff;
 }
+
 
 
 .btndefault {
@@ -708,6 +684,25 @@ h4 {
 
 /*input style*/
 
+
+.form_group {
+  margin: 5px 0;
+}
+
+.form_group label{
+    padding: 0;
+    margin: 0;
+    color: #885bcc;
+    font-size: 1em;
+    width: auto;
+    font-weight: 400;
+}
+
+.form_group .input_mainpg{
+  width: 100%;
+}
+
+
 .input_mainpg {
     color: #5c5c5f;
     font-size: 1em;
@@ -730,6 +725,8 @@ h4 {
 .necessary {
     color: #e2223d;
 }
+
+
 
 
 

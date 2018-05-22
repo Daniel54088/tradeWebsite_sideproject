@@ -6,6 +6,11 @@ import './game_class.css';
 
 
 
+let ws;
+let ethws;
+let xrpws;
+let neows;
+let ltcws;
 
 export default class LiveList extends React.Component {
     constructor(props) {
@@ -23,16 +28,17 @@ export default class LiveList extends React.Component {
     componentDidMount(){
         this.getCoins('btc');
         this.getCoins('eth');
-        this.getCoins('xrp');
-        this.getCoins('neo');
-        this.getCoins('ltc');
+        //this.getCoins('xrp');
+        //this.getCoins('neo');
+        //this.getCoins('ltc');
     }
 
 
     getCoins(name){
 
       let newCoin;
-      let ws = new WebSocket('wss://stream.binance.com:9443/ws/'+name+'usdt@ticker');
+
+       ws = new WebSocket('wss://stream.binance.com:9443/ws/'+name+'usdt@ticker');
 
       ws.onmessage = function(event) {
         let data = event.data;
@@ -64,6 +70,12 @@ export default class LiveList extends React.Component {
         }
 
       }.bind(this);
+
+    }
+
+    componentWillUnmount(){
+      ws.close();
+
 
     }
 

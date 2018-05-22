@@ -1,0 +1,222 @@
+main{
+    padding-top: 0;
+}
+
+/*購物車*/
+
+main .shopping .content .shopping_content {
+    border-bottom: 1px dashed #a0a8a880;
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+/*商品圖片*/
+
+main .shopping .content .shopping_content .shopping_left {
+    width: 30%;
+    display: inline-block;
+    margin-right: -4px;
+    position: relative;
+}
+
+main .shopping .content .shopping_left img {
+    width: 100%;
+    z-index: 10;
+}
+
+
+
+
+
+/*名稱、數量、單價、總額*/
+
+main .shopping .content .shopping_content .shopping_right {
+    margin: 0;
+    padding: 0;
+    padding-left: 10px;
+    width: 70%;
+    display: inline-block;
+    margin-right: -4px;
+    vertical-align: -webkit-baseline-middle;
+}
+
+main .shopping .content .shopping_content .shopping_right .right_name {
+    width: 100px;
+    word-break: break-all;
+    text-align: left;
+}
+
+main .shopping .content .shopping_content .shopping_right h4 {
+    padding: 0;
+    margin: 0;
+}
+
+main .shopping .content .shopping_content .shopping_right ul {
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+main .shopping .content .shopping_content .shopping_right ul li {
+    margin: 0;
+    padding: 0;
+    padding: 0 10px;
+    flex: 1;
+    text-align: center;
+}
+
+
+
+
+
+/*產品移除*/
+
+main .shopping .content .shopping_content .shopping_right .product_remove {
+    padding: 0;
+    margin: 0;
+}
+
+.romove {
+    flex: 0.5 !important;
+}
+
+main .shopping .content .shopping_content .shopping_right .product_remove .btngroup .btnsmall {
+    padding: 3px 6px;
+    border-color: #919393;
+}
+
+main .shopping .content .shopping_content .shopping_right .product_remove .btngroup .btnsmall i {
+    color: #919393;
+}
+
+main .shopping .content .shopping_content .shopping_right .product_remove .btngroup .btnsmall:hover {
+    background-color: #919393;
+}
+
+main .shopping .content .shopping_content .shopping_right .product_remove .btngroup .btnsmall:hover i {
+    color: #fff;
+}
+
+
+
+
+
+
+/*購物車，欄位名稱*/
+
+.shopping_title {
+
+    padding: 0 !important;
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+    border-bottom: 2px solid #676969b8 !important;
+}
+
+
+.shopping_title .shopping_left,
+.shopping_title .right_name,
+.shopping_title .romove {
+    visibility: hidden;
+}
+
+.shopping_title .shopping_left img {
+    display: none;
+}
+
+.shopping_title .shopping_right ul li {
+    margin-bottom: 10px !important;
+}
+
+
+
+/*數量選取*/
+
+select {
+
+    color: #fff;
+    border: none;
+    background: #ffbe34;
+}
+
+select:focus {
+    outline: none;
+}
+
+
+/*出貨提醒*/
+
+main .shopping .content .shopping_msg{
+    padding:5px 10px;
+}
+
+main .shopping .content .shopping_msg h5{
+    padding:0;
+    margin: 0;
+    color: #8946e9;
+}
+
+main .shopping .content .shopping_msg p{
+    padding:0;
+    margin: 0; 
+    font-size: 0.8em;
+    color: #5c5c5f;
+}
+
+
+/*運費試算*/
+
+main .shopping .content .freight_test {
+    padding: 20px 0;
+    background: #eae6da36;
+    border-radius: 5px;
+}
+
+main .shopping .content .freight_test h4 {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    color: #ffbe34;
+}
+
+main .shopping .content .freight_test ul {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    margin: 10px 0;
+}
+
+main .shopping .content .freight_test ul li {
+    margin: 0;
+    padding: 0;
+    font-size: 1em;
+    color: #5c5c5f;
+}
+
+.test_title {
+    color: #adadb1 !important;
+    font-size: 0.9em !important;
+}
+
+.test_final {
+    color: #8036ea !important;
+    font-size: 1.2em !important;
+}
+
+main .shopping .content .freight_test .btngroup {
+
+    padding: 0;
+    margin: 20px 0;
+    margin-top: 40px;
+    text-align: center;
+}
+
+main .shopping .content .freight_test hr {
+    border: 1px dashed #fff;
+}
+
+main .shopping .content .freight_test .btngroup .btndefault {
+    padding: 15px 55px !important;
+}
