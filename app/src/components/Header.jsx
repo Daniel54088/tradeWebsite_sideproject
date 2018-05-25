@@ -12,11 +12,11 @@ export default class Header extends React.Component {
            HamToggleClass:'header_yellowline',
            Hamopen: false,
         }
-        this.toggleRWDMenu = this.toggleRWDMenu.bind(this);
+
     }
 
-    toggleRWDMenu(e){
-      console.log(this.state.Hamopen);
+     toggleRWDMenu = (e) =>{
+
        if(!this.state.Hamopen){
          let toggle =  cx({'header_yellowline showRWDMenu': true});
          this.setState({HamToggleClass:toggle,Hamopen:true});

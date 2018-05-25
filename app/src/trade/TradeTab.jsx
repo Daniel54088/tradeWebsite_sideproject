@@ -18,7 +18,7 @@ export default class TradeTab extends React.Component {
           case '?market=eth':
           whichTab= '2';
           break;
-          case '?market=xvg':
+          case '?market=xmr':
           whichTab= '3';
           break;
           case '?market=xrp':
@@ -29,9 +29,16 @@ export default class TradeTab extends React.Component {
         }
           this.state = {
               nowPage:   whichTab,
+              btcArray: [],
           }
           this.callback = this.callback.bind(this);
+          this.getBTCMarket = this.getBTCMarket.bind(this);
     }
+
+    componentDidMount(){
+      this.getBTCMarket();
+    }
+
 
     callback(key){
 
@@ -46,7 +53,7 @@ export default class TradeTab extends React.Component {
         break;
         case '3':
         this.setState({nowPage:'3'});
-        browserHistory.push('/trade?market=xvg');
+        browserHistory.push('/trade?market=xmr');
         break;
         case '4':
         this.setState({nowPage:'4'});
@@ -54,13 +61,37 @@ export default class TradeTab extends React.Component {
         break;
         default:
         this.setState({nowPage:'5'});
-        browserHistory.push('/trade?market=usdt');
+        browserHistory.push('/trade?market=ltc');
       }
+
+    } //end of callback function
+
+    getBTCMarket(){
+        let coinArray = ['ETH','XRP','XMR','LTC'];
+        let itemArray  = [];
+
+      coinArray.map(function(item,index){
+        $.ajax({
+          method: "GET",
+          url: 'https://min-api.cryptocompare.com/data/histoday?fsym='+ item+'&tsym=BTC&limit=10&aggregate=1&e=CCCAGG',
+
+          success: function(data){
+            itemArray.push(data.Data);
+  
+
+          }.bind(this), //是個坑  無命名function奧在手動作bind
+
+          error: function(data){
+
+          },
+        });
+      });
+      this.setState({btcArray:itemArray});
 
     }
 
     render() {
-
+        console.log(this.state.btcArray[0]);
       return (
         <div>
           <Header callback={this.callback}/>
@@ -70,11 +101,11 @@ export default class TradeTab extends React.Component {
                         <div className="row">
                             <div className="col-md-10 col-md-offset-1 fpk_1 content2">
                               <Tabs  activeKey={this.state.nowPage}  onChange={this.callback}>
-                                <TabPane tab="BTC" key="1"><TradeList/></TabPane>
-                                <TabPane tab="ETH" key="2"><TradeList/></TabPane>
-                                <TabPane tab="XVG" key="3"><TradeList/></TabPane>
-                                <TabPane tab="XRP" key="4"><TradeList/></TabPane>
-                                <TabPane tab="USDT" key="5"><TradeList/></TabPane>
+                                <TabPane tab="BTC Market" key="1"><TradeList dataArray={this.state.btcArray}/></TabPane>
+                                <TabPane tab="ETH Market" key="2"><TradeList/></TabPane>
+                                <TabPane tab="XMR Market" key="3"><TradeList/></TabPane>
+                                <TabPane tab="XRP Market" key="4"><TradeList/></TabPane>
+                                <TabPane tab="LTC Market" key="5"><TradeList/></TabPane>
                               </Tabs>
                             </div>
                         </div>

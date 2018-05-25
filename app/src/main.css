@@ -430,7 +430,22 @@ h4 {
   }
 
 
+/*覆蓋 antd-tab bar 顏色*/
 
+
+.ant-tabs-bar{
+  font-weight: bold;
+}
+.ant-tabs-nav .ant-tabs-tab-active{
+  color: #8036ea;
+}
+
+.ant-tabs-nav .ant-tabs-tab:hover{
+  color: #8036ea;
+}
+.ant-tabs-ink-bar{
+  background-color: #8036ea;
+}
 
   /*CSSTransition   換頁面的轉換效果*/
   .example-enter{

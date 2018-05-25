@@ -65,7 +65,7 @@ main .product .content .toggle_button .list-inline li a:hover {
     text-align: center;
     position: relative;
     height: 220px;
-    overflow: hidden;
+
 }
 
 .product .content .product1_top img {
@@ -180,18 +180,21 @@ main .product .content .toggle_button .list-inline li a:hover {
 /*第一張*/
 
 #img1 {
-    left: 0;
+    left: 0px;
 }
-
 
 
 /*第二張*/
 
-#img2,
-#img3 {
-    left: 100%;
+#img2 {
+    left: 357px;
+    opacity: 0;
 }
 
+#img3{
+   left: 714px;
+   opacity: 0;
+}
 
 
 /*第三張*/

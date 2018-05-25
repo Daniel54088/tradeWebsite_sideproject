@@ -147,7 +147,7 @@ $(function() {
 
         /*把HTML清空*/
 
-        $("#ProductItem").html('');
+        $("#ProductItem").html('<div>123</div>');
 
         /*把篩選後的陣列CateArray放到HTML*/
 
@@ -156,7 +156,12 @@ $(function() {
             ProductHTML(i, CateArray);
         }
 
+        test();
+
     });
+
+
+
 
 
 
@@ -219,5 +224,69 @@ $(function() {
     });
 
 
+function test(){
+    $(".fas,.fa-circle,.fa-xs").click(function(){
+        console.log(23);
+          //取得目前按哪個按鈕的id
+          var id = $(this).attr('id');
+
+          //前面過濾掉只剩數字123
+          id = id.substr(5,1);
+
+          switch (id) {
+            case '1':
+
+            //把所有圖片往右擺並漸層消失
+            $(this).parent().siblings(".product1_top").animate({
+              left: "0px",
+            }, {duration:500,queue:false} ,function() {
+                // Animation complete.
+            });
+
+            $(this).parent().siblings(".product1_top").children("#img"+id).animate({
+              opacity: 1,
+            }, 500 ,function() {
+                // Animation complete.
+            });
+
+              break;
+
+            case '2':
+            //把所有圖片往右擺並漸層消失
+            $(this).parent().siblings(".product1_top").animate({
+              left: "-357px",
+            }, {duration:500,queue:false} ,function() {
+                // Animation complete.
+            });
+            $(this).parent().siblings(".product1_top").children("#img"+id).animate({
+              opacity: 1,
+            }, 500 ,function() {
+                // Animation complete.
+            });
+
+            break;
+
+
+            case '3':
+            //把所有圖片往右擺並漸層消失
+            $(this).parent().siblings(".product1_top").animate({
+              left: "-714px",
+            }, {duration:500,queue:false} ,function() {
+                // Animation complete.
+            });
+            $(this).parent().siblings(".product1_top").children("#img"+id).animate({
+              opacity: 1,
+            }, 500 ,function() {
+                // Animation complete.
+            });
+
+            break;
+            default:
+
+          }
+
+    });
+}
+test();
 
 });
