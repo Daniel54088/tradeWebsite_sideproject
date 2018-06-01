@@ -32,7 +32,7 @@ export default class SignIn extends React.Component {
         return;
      }
 
-     console.log('checked');
+
     }//end of check
 
 
@@ -50,7 +50,7 @@ export default class SignIn extends React.Component {
 
                 </div>
 
-                <div className="col-md-4 col-md-offset-0 col-xs-8 col-xs-offset-1">
+                <div className="col-md-4 col-md-offset-0 col-xs-8 col-xs-offset-1" style={{marginTop:'50px',marginBottom:'50px'}}>
 
                     <div className="caption">
 
@@ -78,7 +78,10 @@ export default class SignIn extends React.Component {
                         <a className="btndefault registerbtn" onClick={this.check}>sent</a>
                     </div>
                     <Link to={`forgetpassword`} style={{'textAlign': 'center'}} id="forget_btn">
-                        <p>Forget password？</p>
+                        <span>Forget password？</span>
+                    </Link>
+                    <Link to={`register`} style={{'textAlign': 'center'}} id="forget_btn">
+                        <span>Create new account</span>
                     </Link>
                 </div>
                 <div className="col-md-4 col-xs-1">

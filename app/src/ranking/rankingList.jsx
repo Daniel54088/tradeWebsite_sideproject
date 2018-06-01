@@ -72,14 +72,10 @@ export default class RankingList extends React.Component {
           <section className="ranking">
             <div className="container-fluid">
               <div className="row">
-                <div className="col-lg-8 col-md-10 col-sm-12 col-lg-offset-2 col-md-offset-1">
+                <div className="col-lg-12 col-md-12 col-sm-12 ">
                   <div className="ranking_wrap">
                     <div className="board content">
-                      <div className="title_bar">
-                        <img src={game_pic}/ >{game_name}排行榜
-                        <Link to={`/rankingreward`} target="_blank" className="btndefault">排行榜奖励规则</Link>
-                        <div className="clearfix"></div>
-                      </div>
+
 
                       <Tabs>
                       <TabPane tab="周排行" key="1">

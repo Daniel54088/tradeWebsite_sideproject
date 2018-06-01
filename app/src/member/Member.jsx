@@ -67,7 +67,7 @@ export default class Member extends React.Component {
             <section className="member">
               <div className="container-fluid">
                 <div className="row">
-                  <div className="col-lg-10 col-sm-12 col-lg-offset-1">
+                  <div className="col-lg-12 col-sm-12 ">
                     <div className="title_bar">
                       <span>Hi, s981743@gmail.com</span>
                     </div>

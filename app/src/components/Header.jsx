@@ -34,8 +34,10 @@ export default class Header extends React.Component {
       //根據不同頁來亮燈不同 menu item
       let tradeClass = cx({'active': location.pathname == '/trade'});
       let rankingClass = cx({'active': location.pathname == '/ranking'});
-      let promotionClass = cx({'active': location.pathname == '/promotion'});
+      let TutorialClass = cx({'active': location.pathname == '/tutorial'});
       let contactClass = cx({'active': location.pathname == '/contact'});
+      let profileClass = cx({'active': location.pathname == '/member/profile'});
+      let signinClass = cx({'active': location.pathname == '/signin'});
 
         return (
           <div className="AllHeader">
@@ -59,8 +61,8 @@ export default class Header extends React.Component {
                           </Link>
                         </li>
                         <li>
-                            <Link to={`/promotion`} className={promotionClass}>
-                              <h5>Promotion</h5>
+                            <Link to={`/tutorial`} className={TutorialClass}>
+                              <h5>Tutorial</h5>
                             </Link>
                         </li>
                         <li className="logo_middle">
@@ -76,13 +78,13 @@ export default class Header extends React.Component {
                         </li>
 
                         <li >
-                            <Link to={`/tutorial`}>
-                                <h5>Tutorial</h5>
+                            <Link to={`/member/profile`} className={profileClass}>
+                                <h5>Profile</h5>
                             </Link>
                         </li>
 
                         <li>
-                            <Link to={`/signin`}>
+                            <Link to={`/signin`} className={signinClass}>
                                 <h5>Sign In</h5>
                             </Link>
                        </li>

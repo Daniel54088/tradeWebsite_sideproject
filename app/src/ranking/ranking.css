@@ -1,7 +1,6 @@
 /*共用背景樣式*/
 .ranking .board {
-  background-color: rgba(34,34,34,.6);
-  box-shadow: 0 0 6px rgba(0,0,0,.9);
+
   padding: 20px;
   margin: 50px 0;
 }
@@ -26,7 +25,7 @@
 .ranking .content .table_body .ranking_item .bonus {
   font-family: 'Impact';
   letter-spacing: 2px;
-  color: #fbc200;
+  color: #8036ea;
 }
 
 /*積分排行榜外層list*/
@@ -38,7 +37,7 @@
   font-size: 0;
   /*for fix inline-block blank*/
   padding: 20px;
-  background-color: #222;
+
   border: 3px solid #fdc200;
   border-radius: 4px;
   transition: .3s ease;
@@ -49,7 +48,7 @@
 }
 .ranking .list .item {
   position: relative;
-  margin-bottom: 20px;
+  margin-bottom: 60px;
 }
 .ranking .list .item > div {
   display: inline-block;
@@ -66,12 +65,10 @@
 }
 .ranking .list .item .ranking_title {
   width: calc(50% - 10px);
-  color: #fff;
-  font-weight: bold;
+  color: black;
   letter-spacing: 1px;
   font-size: 20px;
   line-height: 40px;
-  text-shadow: 1px 1px rgba(0,0,0,.9);
 }
 .ranking .list .item .ranking_title img {
   width: 40px;
@@ -87,7 +84,7 @@
 .ranking .list .item .mounth_rank p {
   margin-bottom: 0;
   font-size: 14px;
-  color: #ddd;
+  color: black;
 }
 .ranking .list .item .week_rank {
   border-right: 1px dashed #666;
@@ -287,155 +284,6 @@
 
 
 
-/*Ranking Reward*/
-.ranking .reward {
-  line-height: 1.7;
-}
-.ranking .reward .title {
-  color: #eee;
-  text-align: center;
-  text-shadow: 2px 2px #000;
-}
-.ranking .reward h3 {
-  background: -webkit-linear-gradient(top,#fdf2b5 0,#d2bf58 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  text-shadow: none;
-}
-.ranking .reward .title ul {
-  position: relative;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 80%;
-  text-align: left;
-  list-style: none;
-  padding: 40px 30px;
-  margin: 30px 0;
-
-  /*設定斜角與內邊框*/
-  background:
-    linear-gradient(-45deg, transparent 15px, #1b425e 0) right bottom,
-    linear-gradient(45deg, transparent 15px, #1b425e 0) left bottom,
-    linear-gradient(135deg, transparent 15px, #1b425e 0) left top,
-    linear-gradient(-135deg, transparent 15px, #1b425e 0) right top;
-  -webkit-background-size: 51% 51%;
-  background-size: 51% 51%;
-  background-repeat: no-repeat;
-  outline: 3px solid rgba(210, 191, 88,.4);
-  outline-offset: -20px;
-}
-
-.ranking .reward .title ul li {
-  position: relative;
-  margin: 5px 0;
-  padding-left: 7px;
-}
-.ranking .reward .title ul li span {
-  margin-right: 10px;
-}
-.ranking .reward .title ul li::before {
-  content: '';
-  position: absolute;
-
-  width: 23px;
-  height: 20px;
-  left: 0;
-  top: 0;
-  z-index: -1;
-}
-.ranking .reward .title p {
-  font-size: 16px;
-}
-.reward .title p:last-child {
-  font-size: 13px;
-}
-.reward .title p:last-child i {
-  padding: 0;
-  padding-right: 10px;
-}
-.reward .title p:last-child,
-.reward .title p:last-child i {
-  color: #fdf2b5;
-}
-.ranking .rewardbtn {
-  width: 132px;
-  height: 40px;
-  display: block;
-  background: url('../images/ranking/reward/rewardbtn.png')no-repeat;
-  text-align: center;
-  line-height: 40px;
-  color:#fff;
-  font-size: 18px;
-  margin: 20px auto;
-  /*add animation*/
-  animation: shake_animate 0.5s ease infinite;
-}
-.ranking .reward .rank_table {
-  width: 100%;
-  background-color: rgba(34,34,34,.5);
-  color: #fff;
-  padding: 30px;
-  border-radius: 6px;
-  margin: 45px auto 0 auto;
-  border-top: 3px solid #fbc200;
-  border-bottom: 3px solid #fbc200;
-  box-shadow: 2px 2px 4px rgba(0,0,0,.3);
-}
-.ranking .reward .rank_table h4,
-.ranking .reward .rank_table span {
-  display: inline-block;
-  vertical-align: middle;
-}
-.ranking .reward .rank_table h4 {
-  margin-right: 15px;
-  font-weight: 100;
-}
-.ranking .reward .rank_table img {
-  width: 20px;
-  margin-right: 5px;
-}
-.ranking .reward .rank_table a {
-  float: right;
-  padding: 5px 30px;
-  margin-right: 0;
-}
-.ranking .reward .rank_table hr {
-  border-top-color: #666;
-}
-.ranking .reward .rank_table table,
-.ranking .reward .rank_table table th {
-  text-align: center;
-}
-.ranking .reward .rank_table table {
-  width: 100%;
-}
-.ranking .reward .rank_table th,
-.ranking .reward .rank_table td {
-  padding: 5px 0;
-}
-.ranking .reward .rank_table table tr:hover {
-  background-color: rgba(255,255,255,.1);
-}
-.ranking .reward .rank_table table th {
-  background-color: #7c705b;
-  text-shadow: 1px 1px #222;
-}
-.ranking .reward .rank_table td {
-  background-color: rgba(221, 221, 221,.1);
-}
-.ranking .reward .rank_table table+p {
-  text-align: right;
-  font-size: 12px;
-  margin: 3px 0 0 0;
-}
-.ranking .reward .rank_table+p {
-  color: #ddd;
-  font-size: 14px;
-  margin-top: 15px;
-  padding-bottom: 10px;
-  border-bottom: 1px dashed #666;
-}
-
 /*Set to-top*/
 .ranking .to_top {
   float: right;
@@ -466,28 +314,11 @@
   }
 }
 
-/*for adjust width 1280px*/
-.ranking .col-lg-offset-2.col-sm-offset-1,
-.ranking .col-lg-offset-2.col-md-offset-1 {
-  margin-left: -15px;
+
+@media screen and (max-width: 767px) {
+
+.ranking .list .item > i{
+  display: none;
 }
-.ranking .container-fluid,
-.ranking .ranking_wrap {
-  width: 1280px;
-}
-.ranking .ranking_wrap {
-  background-color: rgba(34,34,34,.7);
-  box-shadow: 0 0 6px rgba(0,0,0,.9);
-  padding: 40px 0;
-  margin: 50px 0;
-}
-.ranking .board {
-  position: relative;
-  width: 80%;
-  left: 50%;
-  background-color: transparent;
-  box-shadow: none;
-  padding: 0;
-  margin: 0;
-  transform: translateX(-50%);
+
 }

@@ -97,7 +97,7 @@ export default class PromotionList extends React.Component {
 
     render() {
 
-      console.log(this.state.nowPageTotal);
+
       let  EventIsNotNull = this.state.eventArray[this.state.CurrentPage - 1];   //現在頁數的news內容
       if(!EventIsNotNull ){EventIsNotNull  = [];}//如果沒有資料必須塞空陣列，不然會有error
 
@@ -105,12 +105,9 @@ export default class PromotionList extends React.Component {
         <div>
         <Header callback={this.callback}/>
           <main className="promotion">
-            <div className="content">
-                <div className="container">
-                    <div className="row">
-                        <div className="col-sm-10 col-sm-offset-1">
-                            <div className="tab_position">
-
+            <div className="content container">
+                <div className="row">
+                    <div className="col-sm-12 col-sm-offset-1">
                                   {EventIsNotNull.map(function(item,index){ //房間的array做map渲染
                                      return(
                                       <PromotionItem key={index} title={item.title} id={item.id}/>
@@ -119,9 +116,7 @@ export default class PromotionList extends React.Component {
 
                              <Pagination defaultCurrent={1} total={this.state.nowPageTotal *10} onChange={this.changePage} current={this.state.CurrentPage}  />
                             </div>
-                        </div>
                     </div>
-                </div>
             </div>
           </main>
 

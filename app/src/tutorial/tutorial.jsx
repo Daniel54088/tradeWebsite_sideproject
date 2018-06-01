@@ -18,7 +18,7 @@ export default class Tutorial extends React.Component {
         <main className="about">
             <div className="container content">
                 <div className="row">
-                    <div className="col-md-10 col-md-offset-1">
+                    <div className="col-md-10 col-md-offset-1" style={{marginTop:'50px'}}>
                         <div className="caption">
 
                             <h4>About</h4>

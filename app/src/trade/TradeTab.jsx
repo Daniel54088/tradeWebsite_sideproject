@@ -7,7 +7,9 @@ import {Link, browserHistory } from 'react-router';
 import { Tabs } from 'antd';
 const TabPane = Tabs.TabPane;
 
+
 let whichTab ;
+
 export default class TradeTab extends React.Component {
     constructor(props) {
         super(props);
@@ -24,74 +26,123 @@ export default class TradeTab extends React.Component {
           case '?market=xrp':
           whichTab= '4';
           break;
-          default:
+          case '?market=ltc':
           whichTab= '5';
+          break;
+          default:
+          whichTab= '1';
         }
           this.state = {
               nowPage:   whichTab,
-              btcArray: [],
+              isLoading: true,
+              BTCArray: [],
+              ETHArray: [],
+              XMRArray: [],
+              XRPArray: [],
+              LTCArray: [],
           }
           this.callback = this.callback.bind(this);
-          this.getBTCMarket = this.getBTCMarket.bind(this);
+          this.getAllMarket = this.getAllMarket.bind(this);
     }
 
     componentDidMount(){
-      this.getBTCMarket();
+      //根據網址來判斷要拿哪個array
+      this.getAllMarket(this.state.nowPage);
     }
-
 
     callback(key){
 
       switch(key) { //根據進來的domain網址來判斷預設的tab
         case '1':
-        this.setState({nowPage:'1'});
+        this.setState({nowPage:'1',isLoading:true});
         browserHistory.push('/trade?market=btc');
+        this.getAllMarket(key);
         break;
         case '2':
-        this.setState({nowPage:'2'});
+        this.setState({nowPage:'2',isLoading:true});
         browserHistory.push('/trade?market=eth');
+        this.getAllMarket(key);
         break;
         case '3':
-        this.setState({nowPage:'3'});
+        this.setState({nowPage:'3',isLoading:true});
         browserHistory.push('/trade?market=xmr');
+        this.getAllMarket(key);
         break;
         case '4':
-        this.setState({nowPage:'4'});
+        this.setState({nowPage:'4',isLoading:true});
         browserHistory.push('/trade?market=xrp');
+        this.getAllMarket(key);
         break;
         default:
-        this.setState({nowPage:'5'});
+        this.setState({nowPage:'5',isLoading:true});
         browserHistory.push('/trade?market=ltc');
+        this.getAllMarket(key);
       }
 
     } //end of callback function
 
-    getBTCMarket(){
-        let coinArray = ['ETH','XRP','XMR','LTC'];
-        let itemArray  = [];
+
+    getAllMarket(coin){
+      let itemArray = [];
+      let coinArray = ['BTC','ETH','XMR','XRP','LTC'];
+      let coinIdx = Number(coin) - 1;
+      let coinName = coinArray[coinIdx];
+
+      //過濾這個 coin
+      coinArray.splice(coinIdx,1);
+
 
       coinArray.map(function(item,index){
         $.ajax({
           method: "GET",
-          url: 'https://min-api.cryptocompare.com/data/histoday?fsym='+ item+'&tsym=BTC&limit=10&aggregate=1&e=CCCAGG',
-
+          url: 'https://min-api.cryptocompare.com/data/histoday?fsym='+ item +'&tsym='+coinName+'&limit=60&aggregate=1&e=CCCAGG',
           success: function(data){
-            itemArray.push(data.Data);
-  
+
+            let coinObject = {};
+                coinObject.dataArray = data.Data; //塞資料
+                coinObject.name = item; //在塞coin 名稱
+
+                for(let y = 0;y < coinObject.dataArray.length ; y++){
+                  var time = new Date(parseInt(coinObject.dataArray[y].time+'000',10));
+                  coinObject.dataArray[y].time = (time.getMonth()+1)+'/'+time.getDate()
+                }
+
+                itemArray.push(coinObject);
+
+            switch (coinName) {
+              case 'BTC':
+                this.setState({BTCArray:itemArray,isLoading:false});
+                break;
+              case 'ETH':
+                this.setState({ETHArray:itemArray,isLoading:false});
+                break;
+              case 'XMR':
+                this.setState({XMRArray:itemArray,isLoading:false});
+                break;
+              case 'XRP':
+                this.setState({XRPArray:itemArray,isLoading:false});
+                break;
+              case 'LTC':
+                this.setState({LTCArray:itemArray,isLoading:false});
+                break;
+              default:
+
+            }
 
           }.bind(this), //是個坑  無命名function奧在手動作bind
-
           error: function(data){
-
           },
         });
-      });
-      this.setState({btcArray:itemArray});
+      }.bind(this));
+
 
     }
 
+
+
     render() {
-        console.log(this.state.btcArray[0]);
+
+
       return (
         <div>
           <Header callback={this.callback}/>
@@ -100,12 +151,13 @@ export default class TradeTab extends React.Component {
                     <div className="container-fluid">
                         <div className="row">
                             <div className="col-md-10 col-md-offset-1 fpk_1 content2">
+
                               <Tabs  activeKey={this.state.nowPage}  onChange={this.callback}>
-                                <TabPane tab="BTC Market" key="1"><TradeList dataArray={this.state.btcArray}/></TabPane>
-                                <TabPane tab="ETH Market" key="2"><TradeList/></TabPane>
-                                <TabPane tab="XMR Market" key="3"><TradeList/></TabPane>
-                                <TabPane tab="XRP Market" key="4"><TradeList/></TabPane>
-                                <TabPane tab="LTC Market" key="5"><TradeList/></TabPane>
+                                <TabPane tab="BTC Market" key="1"> <TradeList dataArray={this.state.BTCArray}/></TabPane>
+                                <TabPane tab="ETH Market" key="2"> <TradeList dataArray={this.state.ETHArray}/></TabPane>
+                                <TabPane tab="XMR Market" key="3"> <TradeList dataArray={this.state.XMRArray}/></TabPane>
+                                <TabPane tab="XRP Market" key="4"> <TradeList dataArray={this.state.XRPArray}/></TabPane>
+                                <TabPane tab="LTC Market" key="5"> <TradeList dataArray={this.state.LTCArray}/></TabPane>
                               </Tabs>
                             </div>
                         </div>

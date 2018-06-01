@@ -9,7 +9,7 @@ export default class Contact extends React.Component {
         }
 
     }
-    
+
     componentDidMount(){
       window.scrollTo(0, 0); //畫面回到最上層
     }
@@ -20,7 +20,7 @@ export default class Contact extends React.Component {
         <main className="contact">
         <div className="container content">
             <div className="row">
-                <div className="col-md-12">
+                <div className="col-md-12" style={{'margin':'50px 0 50px 0'}}>
                     <div className="caption">
                         <h4>Contact</h4>
                         <p>Stay up to date on the development of Bootstrap and reach out to the community with these helpful resources.</p>

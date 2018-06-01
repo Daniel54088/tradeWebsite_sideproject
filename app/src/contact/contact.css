@@ -6,6 +6,7 @@
 
 .contact .content .caption {
     text-align: center;
+    margin-bottom: 50px;
 }
 
 .contact .content .caption img {
@@ -38,7 +39,7 @@
 }
 
 .contact .content .contact_wrap .contact_box .contact_content .form_row .form_group {
-  margin: 5px 0;
+  margin: 10px 0;
 }
 
 .form_row .form_group label{
@@ -81,4 +82,3 @@
     margin: 20px 0;
     text-align: right;
 }
-

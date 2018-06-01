@@ -1,5 +1,5 @@
 import React from 'react';
-import {  AreaChart, Area, XAxis, YAxis,  Tooltip } from 'recharts';
+import {  LineChart,AreaChart, Area, XAxis, YAxis,  Tooltip,Line,CartesianGrid } from 'recharts';
 
 
 const data = [
@@ -30,15 +30,23 @@ export default class TradeItem extends React.Component {
     }
 
 
+
+
     render() {
-      console.log(1);
+      let dataArray = this.props.dataArray;
+      let color = '#8884d8';
+
+
+      if(this.props.name == 'ETH'){
+        color = 'blue';
+      }
 
       return (
         <div className="col-md-12 trade-bg">
             <div className="col-md-12 trade-head">
 
                 <div className="col-md-6 col-sm-6 trade-head-left">
-                  <h4>{this.props.title}</h4>
+                  <h4>{this.props.name}</h4>
                   <h4>Bitcoin</h4>
                 </div>
 
@@ -50,12 +58,12 @@ export default class TradeItem extends React.Component {
           </div>
 
           <div className="col-md-12 trade-chart"  ref="test">
-            <AreaChart width={this.state.nowWidth} height={(this.state.nowWidth/5.28)} data={data}
+            <AreaChart width={this.state.nowWidth} height={(this.state.nowWidth/2.8)} data={dataArray}
               margin={{top: 10, right: 30, left: 0, bottom: 0}}>
-              <XAxis dataKey="name"/>
+              <XAxis dataKey="time"/>
 
               <Tooltip/>
-              <Area type='monotone' dataKey='uv' stroke='#8884d8' fill='#8884d8' />
+              <Area dot={false} type='monotone' dataKey="open" stroke={color} fillOpacity={1} fill={color} />
             </AreaChart>
 
           </div>

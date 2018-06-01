@@ -42,7 +42,7 @@ export default class Register extends React.Component {
          message: 'Rigister Success!!',
          duration: 3,
        });
-     console.log('checked');
+
     }//end of check
 
 

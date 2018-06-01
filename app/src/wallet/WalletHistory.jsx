@@ -62,7 +62,7 @@ export default class WalletHistory extends React.Component {
 
       let startDateFormat = this.DateFormat(startDate);
       let endDateFormat = this.DateFormat(endDate);
-      console.log(type,startDateFormat, endDateFormat);
+      
 
     }
 

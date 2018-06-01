@@ -124,6 +124,7 @@ export default class LoginHead extends React.Component {
                <Bulletin/>
 
               <div className="top_box clearfix">
+                {/*
                 <Dropdown overlay={personalCenter}>
                   <a className="ant-dropdown-link">
                       <img src={require('../images/header/23103.svg')} />
@@ -134,7 +135,7 @@ export default class LoginHead extends React.Component {
                   <a className="ant-dropdown-link" >
                     <img src={require('../images/header/163064.svg')} />
                   </a>
-                </Dropdown>
+                </Dropdown>*/}
 
               </div>
             </div>

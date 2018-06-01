@@ -49,14 +49,14 @@ export default class Init extends React.Component {
         },
 
         success: function(data){
-          console.log(data);
+
           //通過Token確認後才會開始拿資料
            user = data.data;
 
         }.bind(this), //是個坑  無命名function奧在手動作bind
 
         error: function(data){
-          console.log(data);
+          
         },
       }).done(this.setData);
 

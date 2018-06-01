@@ -83,7 +83,7 @@ export default class LiveList extends React.Component {
 
     render() {
 
-      //console.log(this.state.BTC.b);
+    
       let CryptocurrenciesArray = [
         {name:'BTC', price:this.state.btc.b, change:this.state.btc.p, percent:this.state.btc.P  ,image:require('../../../../images/coins/opengraph.png')},
         {name:'ETH', price:this.state.eth.b, change:this.state.eth.p, percent:this.state.eth.P, image:require('../../../../images/coins/eth.png')},

@@ -19,51 +19,50 @@ export default class Ranking extends React.Component {
           <section className="ranking">
             <div className="container-fluid">
               <div className="row">
-                <div className="col-lg-8 col-sm-10 col-lg-offset-2 col-sm-offset-1">
+                <div className="col-lg-12 col-sm-12 ">
                   <div className="ranking_wrap">
                     <div className="board list">
-                      <div className="titleimg"></div>
-                      <Link to={`/rankingreward`} target="_blank" className="btndefault">排行榜奖励规则</Link>
+
                       <div className="clearfix"></div>
                       <div className="col-xs-12">
-                        <Link to={`/ranking/inplay`}>
+                        <Link to={`/ranking/topvolume`}>
                           <div className="item">
-                            <div className="ranking_title"><img  src={require('../images/main/rocket_img.png')}/>Top Volume</div>
+                            <div className="ranking_title"><img  src={require('../images/volume.png')}/>Greatest Volume</div>
                             <div className="week_rank">
-                              200
-                              <p>目前週排名</p>
+                              BTC
+                              <p>Best of week</p>
                             </div>
                             <div className="mounth_rank">
-                              800
-                              <p>目前月排名</p>
+                              BTC
+                              <p>Best of Month</p>
                             </div>
                             <i className="fas fa-chevron-right"></i>
                           </div>
                         </Link>
-                        <Link to={`/ranking/fpkgold`}>
+                        <Link to={`/ranking/topgain`}>
                           <div className="item">
-                            <div className="ranking_title"><img src={require('../images/main/gold_img.png')}/>Biggest % Gain</div>
+                            <div className="ranking_title"><img src={require('../images/up.png')}/>Greatest % Gain</div>
                             <div className="week_rank">
-                              20
-                              <p>目前週排名</p>
+                              ETH
+                              <p>Best of week</p>
                             </div>
                             <div className="mounth_rank">
-                              80
-                              <p>目前月排名</p>
+                              XRP
+                              <p>Best of Month</p>
                             </div>
                             <i className="fas fa-chevron-right"></i>
                           </div>
                         </Link>
-                        <Link to={`/ranking/fpksilver`}>
+                        <Link to={`/ranking/toploss`}>
                           <div className="item">
-                            <div className="ranking_title"><img  src={require('../images/main/sliver_img.png')}/>Biggest % Loss</div>
+                            <div className="ranking_title"><img  src={require('../images/down.png')}/>Greatest % Loss</div>
                             <div className="week_rank">
-                              2
-                              <p>目前週排名</p>
+                              LTC
+                              <p>Best of week</p>
                             </div>
                             <div className="mounth_rank">
-                              8
-                              <p>目前月排名</p>
+                              XMR
+                              <p>Best of Month</p>
                             </div>
                             <i className="fas fa-chevron-right"></i>
                           </div>
