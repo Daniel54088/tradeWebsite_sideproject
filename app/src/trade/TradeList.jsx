@@ -19,17 +19,19 @@ export default class TradeList extends React.Component {
 
 
     render() {
-  
+
 
       return (
-        <div>
+
+          <div className="row">
                   {this.props.dataArray.map(function(item,index){ //房間的array做map渲染
                     return(
                       <TradeItem key={index} name={item.name} dataArray={item.dataArray}/>
                     );
                   })}
 
-        </div>
+          </div>
+
         )
     }
 

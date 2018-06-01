@@ -42,22 +42,19 @@ export default class TradeItem extends React.Component {
       }
 
       return (
-        <div className="col-md-12 trade-bg">
+        <div className="col-xs-12 col-sm-6 col-md-6 col-lg-6 ">
+          <div className="trade-bg">
             <div className="col-md-12 trade-head">
 
-                <div className="col-md-6 col-sm-6 trade-head-left">
-                  <h4>{this.props.name}</h4>
-                  <h4>Bitcoin</h4>
+                <div className="col-md-12 col-sm-12 trade-head-left">
+                  <h4>{this.props.name} / BTC</h4>
                 </div>
 
-                <div className="col-md-6 col-sm-6 trade-head-right">
-                    <h4>$131</h4>
-                    <h4>$fewfw</h4>
-                </div>
 
           </div>
 
           <div className="col-md-12 trade-chart"  ref="test">
+
             <AreaChart width={this.state.nowWidth} height={(this.state.nowWidth/2.8)} data={dataArray}
               margin={{top: 10, right: 30, left: 0, bottom: 0}}>
               <XAxis dataKey="time"/>
@@ -68,7 +65,7 @@ export default class TradeItem extends React.Component {
 
           </div>
 
-
+        </div>
 
 
         </div>
