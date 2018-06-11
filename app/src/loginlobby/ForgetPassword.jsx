@@ -156,7 +156,7 @@ const steps = [
         <main>
           <section className="container ">
             <div className="clearfix"></div>
-              <div className="col-md-12 content">
+              <div className="col-md-12 content" style={{'marginTop':'30px'}}>
                      <Steps current={this.state.current}>
                        {steps.map(item => <Step key={item.title} title={item.title}  description={item.description} />)}
                      </Steps>

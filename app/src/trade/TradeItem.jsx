@@ -49,11 +49,76 @@ export default class TradeItem extends React.Component {
                 <div className="col-md-12 col-sm-12 trade-head-left">
                   <h4>{this.props.name} / BTC</h4>
                 </div>
-
-
-          </div>
+            </div>
 
           <div className="col-md-12 trade-chart"  ref="test">
+              <div className="row">
+                <div className="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                    <div className="Pairprice col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    $20
+                    </div>
+                      <div className="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                        <div className="title" >DAY</div>
+                      </div>
+
+                      <div className="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                            +0.79%
+                      </div>
+                      <div className="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                        <div className="title" >Month</div>
+                      </div>
+
+                      <div className="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                            +0.79%
+                      </div>
+
+
+                </div>
+
+                <div className="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+                  <div className="col-lg-1 col-md-1 col-sm-1 hidden-xs "><div className="stick"></div></div>
+
+                  <div className="col-lg-5 col-md-5 col-sm-5 col-xs-12">
+
+                    <div className="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                      <div className="key">Open 24H</div>
+                    </div>
+                    <div className="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                      <div className="value">23224</div>
+                    </div>
+
+                    <div className="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                      <div className="key">Open 24H</div>
+                    </div>
+                    <div className="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                      <div className="value">23224</div>
+                    </div>
+
+                  </div>
+
+                  <div className="col-lg-1 col-md-1 col-sm-1 hidden-xs "><div className="stick"></div></div>
+
+                  <div className="col-lg-5 col-md-5 col-sm-5 col-xs-12">
+
+                    <div className="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                      <div className="key">Open 24H</div>
+                    </div>
+                    <div className="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                      <div className="value">23224</div>
+                    </div>
+
+                    <div className="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                      <div className="key">Open 24H</div>
+                    </div>
+                    <div className="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                      <div className="value">23224</div>
+                    </div>
+                    
+                  </div>
+
+                </div>
+
+              </div>
 
             <AreaChart width={this.state.nowWidth} height={(this.state.nowWidth/2.8)} data={dataArray}
               margin={{top: 10, right: 30, left: 0, bottom: 0}}>

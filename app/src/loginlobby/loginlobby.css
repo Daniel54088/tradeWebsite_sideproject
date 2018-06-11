@@ -85,6 +85,14 @@
     margin-bottom: 20px;
 }
 
+@media screen and (max-width: 767px) {
+  .steps-action{
+        margin-bottom: 60px
+  }
+
+}
+
+
 /*紫色按鈕*/
 
 .loginlobby .content .btngroup{
@@ -92,6 +100,14 @@
   text-align: center;
 }
 
+
+
+/*登入連結*/
+
+.loginLink{
+  text-align: center;
+  margin: 20px  0px  10px  0px ;
+}
 
 
 /*返回按鈕*/

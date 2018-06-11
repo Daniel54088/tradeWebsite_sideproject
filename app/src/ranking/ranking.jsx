@@ -2,6 +2,8 @@ import React from 'react';
 import {Link } from 'react-router';
 import './ranking.css';
 
+
+
 export default class Ranking extends React.Component {
     constructor(props) {
         super(props);
@@ -12,6 +14,7 @@ export default class Ranking extends React.Component {
     }
 
 
+
     render() {
 
       return (
@@ -20,7 +23,7 @@ export default class Ranking extends React.Component {
             <div className="container-fluid">
               <div className="row">
                 <div className="col-lg-12 col-sm-12 ">
-                  <div className="ranking_wrap">
+                  <div className="ranking_wrap" id="rank">
                     <div className="board list">
 
                       <div className="clearfix"></div>

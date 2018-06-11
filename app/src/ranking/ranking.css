@@ -115,6 +115,7 @@
 }
 .ranking .content .table_head .title {
   font-size: 18px;
+  color: #ffbf1b;
 }
 .ranking .content .table_head .time,
 .ranking .content .table_head .date_range {
@@ -133,6 +134,7 @@
   opacity: .6;
   border-bottom: 1px solid #666;
   padding: 10px;
+  color: #ffbf1b;
 }
 .ranking .content .table_label > div {
   position: relative;
@@ -192,16 +194,7 @@
   padding: 10px 15px;
   border-bottom: 1px dashed rgba(102, 102, 102,.5);
 }
-.ranking .content .table_label > div,
-.ranking .content .table_body .ranking_item > div {
-  width: 25%;
-}
-.ranking .content .rank {
-  width: 20% !important;
-}
-.ranking .content .player {
-  width: 30% !important;
-}
+
 
 /*Set Table Body*/
 .ranking .content .table_body .ranking_list {
@@ -261,26 +254,7 @@
 }
 
 
-/*Set my_ranking item*/
-.ranking .my_ranking {
-  border-top: 2px solid #fbc300;
-  background-color: rgba(255,255,255,.1);
-  border-radius: 0 0 6px 6px;
-}
-.ranking .my_ranking .bonus {
-  position: relative;
-}
-.ranking .my_ranking .bonus .btnsys {
-  float: none;
-  text-shadow: none;
-  position: absolute;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
-}
-.table_body .my_ranking .ranking_item:hover {
-  background-color: rgba(0,0,0,.2);
-}
+
 
 
 
@@ -294,6 +268,9 @@
   width: 45px;
 }
 
+
+/* Ensure elements load hidden before ScrollReveal runs */
+.sr .item { visibility: hidden; }
 
 /*Animation*/
 @keyframes shake_animate {

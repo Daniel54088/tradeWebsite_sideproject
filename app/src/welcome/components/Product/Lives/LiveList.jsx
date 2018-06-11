@@ -5,12 +5,11 @@ import LiveItem from './LiveItem.jsx';
 import './game_class.css';
 
 
-
-let ws;
-let ethws;
-let xrpws;
-let neows;
-let ltcws;
+let btcws = {};
+let ethws = {};
+let xrpws = {};
+let neows = {};
+let ltcws = {};
 
 export default class LiveList extends React.Component {
     constructor(props) {
@@ -26,64 +25,70 @@ export default class LiveList extends React.Component {
     }
 
     componentDidMount(){
-        this.getCoins('btc');
-        this.getCoins('eth');
-        //this.getCoins('xrp');
-        //this.getCoins('neo');
-        //this.getCoins('ltc');
+        this.getCoins();
     }
 
 
-    getCoins(name){
+    getCoins(){
 
-      let newCoin;
 
-       ws = new WebSocket('wss://stream.binance.com:9443/ws/'+name+'usdt@ticker');
+      btcws = new WebSocket('wss://stream.binance.com:9443/ws/btcusdt@ticker');
+      ethws = new WebSocket('wss://stream.binance.com:9443/ws/ethusdt@ticker');
+      xrpws = new WebSocket('wss://stream.binance.com:9443/ws/xrpusdt@ticker');
+      neows = new WebSocket('wss://stream.binance.com:9443/ws/neousdt@ticker');
+      ltcws = new WebSocket('wss://stream.binance.com:9443/ws/ltcusdt@ticker');
 
-      ws.onmessage = function(event) {
-        let data = event.data;
+      let coinArray = [btcws,ethws,xrpws,neows,ltcws];
 
-        //轉成物件後再做處理
-        newCoin = JSON.parse(data);
-        newCoin.b = "$"+newCoin.b.substr(0,7);
-        newCoin.p = newCoin.p.substr(0,7);
-        newCoin.P = newCoin.P + '%';
+      coinArray.map(function(item,idx){
+          let newCoin;
 
-        switch (name) {
-          case 'btc':
-            this.setState({btc:newCoin});
+          item.onmessage = function(event) {
+          let data = event.data;
+          //轉成物件後再做處理
+          newCoin = JSON.parse(data);
+          newCoin.b = "$"+newCoin.b.substr(0,7);
+          newCoin.p = newCoin.p.substr(0,7);
+          newCoin.P = newCoin.P + '%';
+
+          switch (idx) {
+            case 0:
+              this.setState({btc:newCoin});
+              break;
+            case 1:
+              this.setState({eth:newCoin});
+              break;
+            case 2:
+              this.setState({xrp:newCoin});
+              break;
+            case 3:
+              this.setState({neo:newCoin});
             break;
-          case 'eth':
-            this.setState({eth:newCoin});
+            case 4:
+              this.setState({ltc:newCoin});
             break;
-          case 'xrp':
-            this.setState({xrp:newCoin});
-            break;
-          case 'neo':
-            this.setState({neo:newCoin});
-          break;
-          case 'ltc':
-            this.setState({ltc:newCoin});
-          break;
-          default:
+            default:
+          }
 
-        }
+        }.bind(this);
+      }.bind(this))
 
-      }.bind(this);
 
-    }
+    } //end of getcoins
 
     componentWillUnmount(){
-      ws.close();
-
-
+      btcws.close();
+      ethws.close();
+      xrpws.close();
+      neows.close();
+      ltcws.close();
     }
 
 
 
     render() {
 
-    
+
       let CryptocurrenciesArray = [
         {name:'BTC', price:this.state.btc.b, change:this.state.btc.p, percent:this.state.btc.P  ,image:require('../../../../images/coins/opengraph.png')},
         {name:'ETH', price:this.state.eth.b, change:this.state.eth.p, percent:this.state.eth.P, image:require('../../../../images/coins/eth.png')},

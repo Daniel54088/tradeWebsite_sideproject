@@ -10,43 +10,30 @@ export default class RankingItem extends React.Component {
 
     }
 
+
+
     render() {
-      let ranking_pic ;
-      switch(this.props.rank) { //根據排名有不同的顯示
-        case '1':
-          ranking_pic = <img src={require('../images/ranking/rankingno1.png')}/>;
-        break;
-        case '2':
-          ranking_pic =  <img src={require('../images/ranking/rankingno2.png')}/>;
-        break;
-        case '3':
-          ranking_pic =  <img src={require('../images/ranking/rankingno3.png')}/>;
-        break;
-        default:
-          ranking_pic =   <span>No. {this.props.rank}</span>;
-      }
 
 
 
       return (
-        <div className="ranking_item">
-          <div className="rank">
-            {ranking_pic}
-          </div>
-          <div className="player">
+        <div className="ranking_item col-md-12 col-xs-12">
 
-            <div className="name">{this.props.account}</div>
+          <div className="rank col-md-4 col-xs-4">
+             <span>No. {this.props.rank}</span>
           </div>
-          <div className="score">
 
-            <img src={this.props.pic}/>
-            <span>{this.props.amount_format}</span>
+          <div className="player col-md-4 col-xs-4">
+
+            <div className="name ">{this.props.account}</div>
           </div>
-          <div className="bonus">
+
+          <div className="score col-md-4 col-xs-4">
 
             <img src={this.props.pic}/>
             <span>{this.props.amount_format}</span>
           </div>
+
         </div>
         )
     }
