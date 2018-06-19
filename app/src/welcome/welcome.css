@@ -157,6 +157,15 @@
     color: #5c5c5f;
 }
 
+/* 按下分頁後的 消失效果*/
+#mainNews .tab_position{
+  transition:  opacity .2s;
+}
+
+#mainNews .tab_position.off{
+  opacity: 0;
+
+}
 
 
 

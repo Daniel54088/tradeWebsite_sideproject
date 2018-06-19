@@ -3,8 +3,10 @@ import ReactDOM from 'react-dom';
 import {Spin,Pagination} from 'antd'; //等待選轉組件
 import NewsItem from './NewsItem.jsx';
 
+import {cx} from '../../../../mutipleClass.js';
 
 let  NewsArray= [];
+let myVar ;
 export default class NewsList extends React.Component {
     constructor(props) {
         super(props);
@@ -12,6 +14,7 @@ export default class NewsList extends React.Component {
           NewsArray:  [[],[]],
           CurrentPage:1,
           nowPageTotal:0,
+          pagClass:'tab_position',
         }
 
         this.getNews = this.getNews.bind(this);
@@ -23,6 +26,29 @@ export default class NewsList extends React.Component {
         this.getNews();
 
     }
+
+    componentWillUpdate(nextProps,nextState){
+      let pagClass ;
+
+      if(this.state.CurrentPage !== nextState.CurrentPage){ //如果有按下分頁效果 , 先消失
+           pagClass = cx({'tab_position': true,'off': true });
+           this.setState({pagClass:pagClass});
+
+        myVar = setTimeout(function(){ //過幾秒出現
+              pagClass = cx({'tab_position': true});
+              this.setState({pagClass:pagClass})
+            }.bind(this),800);
+
+      }
+
+
+    }
+
+    componentWillUnmount(){
+      clearTimeout(myVar);
+    }
+
+
 
     getNews(){
        NewsArray = [{ //之後根據清單修改array內容
@@ -93,10 +119,11 @@ export default class NewsList extends React.Component {
       let  NewsIsNotNull = this.state.NewsArray[this.state.CurrentPage - 1];   //現在頁數的News內容
       if(!NewsIsNotNull ){NewsIsNotNull  = [];}//如果沒有資料必須塞空陣列，不然會有error
 
+
       return (
         <div className="col-md-8" id="mainNews">
                 <h2 className="news_title">News</h2>
-            <div className="tab_position">
+            <div className={this.state.pagClass}>
                   {NewsIsNotNull.map(function(item,index){ //房間的array做map渲染
                      return(
                       <NewsItem key={index} title={item.title} image={item.image}/>
@@ -106,6 +133,7 @@ export default class NewsList extends React.Component {
             </div>
             <Pagination defaultCurrent={1} total={this.state.nowPageTotal *10} onChange={this.changePage} current={this.state.CurrentPage}  />
         </div>
+
 
         )
     }

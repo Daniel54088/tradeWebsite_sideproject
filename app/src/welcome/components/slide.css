@@ -15,7 +15,10 @@
   width: 100%;
   height: auto;
 }
-.carousel-inner .player div{display: inline-block;height: 324px;}
+.carousel-inner .player div{
+  display: inline-block;height: 324px;
+}
+
 .carousel-inner .player div img{
   position: absolute;
   display: inline-block;
