@@ -1,7 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Link, IndexLink, browserHistory } from 'react-router';
-import LoginHead from './LoginHead.jsx'
 import {cx} from '../mutipleClass.js';
 
 
@@ -29,8 +28,7 @@ export default class Header extends React.Component {
 
     render() {
 
-      //新增登入前後改變 headTemplate
-      var headTemplate =   <LoginHead  callback={this.props.callback}/> ;
+
       //根據不同頁來亮燈不同 menu item
       let tradeClass = cx({'active': location.pathname == '/trade'});
       let rankingClass = cx({'active': location.pathname == '/ranking'});
@@ -49,6 +47,7 @@ export default class Header extends React.Component {
              <header>
                 <div className="top-menu">
                    <ul>
+
                         <li>
                           <Link to={`/trade`} className={tradeClass}>
                             <h5>Trade</h5>
@@ -59,22 +58,6 @@ export default class Header extends React.Component {
                           <Link to={`/ranking`} className={rankingClass}>
                             <h5>Ranking</h5>
                           </Link>
-                        </li>
-                        <li>
-                            <Link to={`/tutorial`} className={TutorialClass}>
-                              <h5>Tutorial</h5>
-                            </Link>
-                        </li>
-                        <li className="logo_middle">
-                            <Link to={`/`} >
-                              <img  src={require('../images/header/801837.svg')}/>
-                            </Link>
-                        </li>
-
-                        <li>
-                            <Link to={`/contact`} className={contactClass}>
-                              <h5>Contact</h5>
-                            </Link>
                         </li>
 
                         <li >
@@ -109,12 +92,6 @@ export default class Header extends React.Component {
                   </div>
               </div>
           </div>
-
-        <div className="top_grayline">
-            {headTemplate}
-        </div>
-
-
 
         </div>
         )

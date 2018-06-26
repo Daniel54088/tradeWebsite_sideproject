@@ -15,13 +15,13 @@ export default class LiveItem extends React.Component {
 
 
       return (
-        <div className="liveing">
+        <div className="col-md-3">
 
             <div className="liveing_img"><Link><img src={this.props.image}/></Link></div>
 
             <div className="liveing_text">
 
-            <h4>{this.props.name}</h4><p className="game_type game_01 clearfix">24h</p>
+            <h4>{this.props.name}</h4>
             <p className="liveingtext">Last Price: {this.props.price}</p>
             <p className="liveingtext">24h Change: <a className={upordownClass}>{this.props.change}  /  {this.props.percent}</a></p>
             </div>

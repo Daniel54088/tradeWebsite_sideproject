@@ -13,6 +13,7 @@ require('console-polyfill');
 
 import './main.css';
 import './main_2.css';
+import './mainNew.css';
 import './header_rwd.css';
 
 let user ={};
@@ -56,7 +57,7 @@ export default class Init extends React.Component {
         }.bind(this), //是個坑  無命名function奧在手動作bind
 
         error: function(data){
-          
+
         },
       }).done(this.setData);
 

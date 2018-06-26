@@ -14,7 +14,7 @@ export default class NewsItem extends React.Component {
 
 
       return (
-        <div className="news_1">
+        <div className="news_1 col-md-6">
             <div className="news_img_left"><img src={this.props.image}/></div>
             <div className="news_text_right">
                 <h3>{this.props.title}</h3>
@@ -27,7 +27,7 @@ export default class NewsItem extends React.Component {
                   <a className="readMore">Read more</a>
                 </div>
             </div>
-          <hr/>
+        
         </div>
 
         )

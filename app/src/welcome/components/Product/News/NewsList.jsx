@@ -121,8 +121,8 @@ export default class NewsList extends React.Component {
 
 
       return (
-        <div className="col-md-8" id="mainNews">
-                <h2 className="news_title">News</h2>
+        <div  id="mainNews">
+
             <div className={this.state.pagClass}>
                   {NewsIsNotNull.map(function(item,index){ //房間的array做map渲染
                      return(

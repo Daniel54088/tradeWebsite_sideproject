@@ -1,5 +1,6 @@
 import React from 'react';
 import './welcome.css';
+import './welcomeNew.css';
 import Slider from './components/Slider.jsx';
 import NewsList from './components/Product/News/NewsList.jsx';
 import LiveList from './components/Product/Lives/LiveList.jsx';
@@ -20,14 +21,15 @@ export default class Welcome extends React.Component {
 
         return (
           <div>
-            <Slider />
+
             <main>
 
               <div className="content">
                   <div className="container-fluid">
                       <div className="row">
-                        <NewsList/>
                         <LiveList/>
+                        <NewsList/>
+
                       </div>
                   </div>
               </div>

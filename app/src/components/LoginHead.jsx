@@ -121,7 +121,7 @@ export default class LoginHead extends React.Component {
 
           <div className="top_float clearfix">
             <div className="top clearfix">
-               <Bulletin/>
+               
 
               <div className="top_box clearfix">
                 {/*

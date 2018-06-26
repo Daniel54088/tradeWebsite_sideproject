@@ -174,27 +174,20 @@
 
 .live_bg {
     padding: 40px 15px;
-    background-color: #f0f0f1;
+    background-color: #d3e0e2;
 }
 
 .liveing_img {
-    width: 100%;
+
     text-align: center;
-    overflow: hidden;
+
 }
 
-.liveing {
-    border-bottom: 2px solid #e0dfe0;
-    color: #fcfaf4;
-    padding-bottom: 2px;
-    margin-bottom: 30px;
-    margin-top: 30px;
-}
-
+/*這是啥？*/
 .liveing_img img {
-    width: 85%;
-    margin: 0 auto;
-    max-width: 100px;
+    width: auto;
+    height:50px;
+
 }
 
 .liveing h2 {
@@ -209,7 +202,7 @@
 }
 
 .liveing_text h4 {
-    color: #885bcc;
+    color: #333;
     font-size: 1.5em;
     text-align: center;
     margin: 15px 0;
@@ -228,13 +221,17 @@
 }
 
 .up{
-    color: #70a800;
-
+    color: #00a72f;
+    display: block;
+    font-size: 1.5em;
+    margin-top: 5px;
 }
 
 .down{
-    color: #ea0070;
-
+    color: #bf403d;
+    display: block;
+    font-size: 1.5em;
+    margin-top: 5px;
 }
 
 
