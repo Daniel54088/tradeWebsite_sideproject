@@ -1,15 +1,15 @@
 /*整體背景顏色*/
 
 body {
-    background-color: #333 !important;
+    background-color: #2d2d2d !important;
 
 }
 
 /*限制內容區塊的框*/
 
 .content {
-    background-color: #ffffff70;
-    margin-bottom: 80px;
+  background-color: #2d2d2d;
+background-image: url("https://www.transparenttextures.com/patterns/black-orchid.png");
 }
 
 hr {
@@ -42,7 +42,7 @@ a {
 
 .header_yellowline {
     margin: 0 auto;
-    border-bottom: 2px solid #3aeae7;
+     border-bottom: 15px solid #2d2d2d;
 }
 
 
@@ -106,7 +106,7 @@ header .top-menu ul li {
 
 
 header .top-menu ul li a {
-    color: #5c5c5f;
+    color: #2d2d2d;
     display: block;
 }
 
@@ -120,24 +120,6 @@ header .top-menu ul li a h5 {
     font-size: 1em;
     font-family: 'Overpass';
     display: block;
-}
-
-
-header .top-menu h5:after {
-    content: '';
-    position: relative;
-    left: 50%;
-    bottom: 0;
-    width: 0%;
-    height: 3px;
-    background-color: #8036ea;
-    transform: translateX(-50%);
-    transition: all 0.2s;
-    display: block;
-}
-
-header .top-menu ul li:hover h5:after {
-    width: 60%;
 }
 
 .logo_middle:before {

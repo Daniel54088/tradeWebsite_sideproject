@@ -1,19 +1,13 @@
-/*先砍掉 logo_middle 那行li，太醜1*/
-/*class news_title 那行砍掉*/
-/*class live_bg 那行的 col-md-4 改成 12 */
-/*class Liveing_title 那行砍掉*/
-/*class liveing 那行，全部加上 col-md-3 ，然後砍掉其中一個 liveing 讓這個 div 先撐滿一行
-最後砍掉liveing這個class*/
-/*之後需要再研究bootstrap column的slide*/
-/*class game_type砍掉*/
-/*body 的背景元素全部砍掉，先下個 #333 背景色就好*/
-/*News 的區塊 col-md-8 砍掉*/
-/*每一個 news_1 加上 col-md-6 並且把裡面的 <hr> 砍掉*/
+/*引入 <link href="https://fonts.googleapis.com/css?family=Asap|Frank+Ruhl+Libre|Goudy+Bookletter+1911|Josefin+Sans|Lato|Noto+Sans|Questrial|Titillium+Web" rel="stylesheet"> */
 
-
-/*瀏覽器跟welcome.css長得不一樣*/
 .liveing_text .liveingtext{
   margin: 15px 0 0 0;
+}
+
+body{
+
+    background-color: #2d2d2d !important;
+  background-image: url("https://www.transparenttextures.com/patterns/black-orchid.png");
 }
 
 .news_text_right h3{
@@ -24,4 +18,13 @@
     font-weight: 600;
     color: #fff;
     text-shadow: 0 3px 3px #00000094;
+}
+
+.AllHeader{
+     background: #6feae7;
+}
+
+#mainNews{
+    padding-top: 366px;
+    padding-bottom: 60px;
 }

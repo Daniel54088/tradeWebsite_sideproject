@@ -1,65 +1,3 @@
-
-/*公告*/
-
-.bulletin {
-    overflow: hidden;
-    width: 80%;
-    display: inline-block;
-    margin-right: -4px;
-}
-
-.bulletin ul {
-    margin: 0;
-    padding: 0;
-    height: 50px;
-    overflow: hidden;
-}
-
-.bulletin ul li {
-    vertical-align: middle;
-    list-style-type: none;
-    padding: 10px 0;
-}
-
-.bulletin p {
-    font-size: 0.8em;
-    color: #5c5c5f;
-    display: inline-block;
-    margin-right: -4px;
-    margin-left: 4px;
-}
-
-
-
-
-
-
-/*新聞/優惠頁籤*/
-
-.tab_position ul {
-    text-align: center;
-    text-align: center;
-    padding: 0;
-    margin: 0;
-}
-
-
-.tab_position ul li a h3 {
-    color: #5c5c5f;
-    font-size: 1.4em;
-}
-
-.tab_position ul li a h3:hover {
-    color: #8036ea;
-}
-
-.pagination {
-    margin-top: 0;
-}
-
-
-
-
 /*news*/
 
 .news_title{
@@ -70,7 +8,8 @@
 }
 
 .news_1 {
-    margin-bottom: 20px;
+  padding:0 40px;
+  margin-bottom: 50px;
 }
 
 .page-navigation {
@@ -78,8 +17,8 @@
 }
 
 .readMore{
-  border: 2px solid #222;
-  color: #222;
+  border: 2px solid #6febe9;
+  color: #6febe9;
   transition: all .3s;
   text-transform: uppercase;
   font-size: 18px;
@@ -87,28 +26,28 @@
   padding: 11px 23px;
   display: inline-block;
   cursor: pointer;
+  font-weight: 500;
 }
 
 .readMore:hover{
-  background: #222;
-  color: #fff;
+  background: #6febe9;
+  color: #2d2d2d;
+  box-shadow: 0 3px 10px #000000;
 }
 
 
 /*news的左圖片*/
 
 .news_img_left {
-    display: inline-block;
-    margin-left: -4px;
-    width: 40%;
-    margin-right: 15px;
+      width: 100%;
+    height: 400px;
+    overflow: hidden;
+    border-radius: 3px;
 }
 
 
 .news_img_left img {
     width: 100%;
-    padding: 1px;
-    margin: 0;
 }
 
 
@@ -117,10 +56,7 @@
 /*news的右文字*/
 
 .news_text_right {
-    display: inline-block;
-    margin-right: -4px;
-    width: 55%;
-    vertical-align: middle;
+    width: 100%;
 }
 
 .news_text_right p {
@@ -132,7 +68,7 @@
 
 
 .news_text_right h4 {
-    color: #ffbf1b;
+    color: #6febe8;
 }
 
 .news_text_right h5 {
@@ -174,7 +110,8 @@
 
 .live_bg {
     padding: 40px 15px;
-    background-color: #d3e0e2;
+    background-color: #ffffff;
+     box-shadow: 0 5px 10px #000;
 }
 
 .liveing_img {
@@ -221,14 +158,14 @@
 }
 
 .up{
-    color: #00a72f;
+    color: #00ad2a;
     display: block;
     font-size: 1.5em;
     margin-top: 5px;
 }
 
 .down{
-    color: #bf403d;
+    color: #c32020;
     display: block;
     font-size: 1.5em;
     margin-top: 5px;
