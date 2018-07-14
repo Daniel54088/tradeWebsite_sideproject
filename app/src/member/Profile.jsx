@@ -103,52 +103,13 @@ export default class Profile extends React.Component {
             </div>
           </div>
 
-            <div className="btn_group">
-              <a className="how_play" data-toggle="modal" data-target="#exampleModal"><i className="fa fa-info-circle"></i>各种币别怎么玩？</a>
-                <div className="modal fade" id="exampleModal" tabIndex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                  <div className="modal-dialog" role="document">
-                    <div className="modal-content">
-                      <div className="modal-body">
-                          <button type="button" className="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                          </button>
-                        <div className="click_modal coin_rule">
-                            <div className="title_bar">
-                              各种币值
-                            </div>
-                            <h2><img  src={require('../images/main/sliver_img.png')}/>银币相关规则</h2>
-                            <ul className="rule_list">
-                              <li>新会员注册送1000银币，可到常规任务区点选「领取」。</li>
-                              <li>每日凌晨06:00将自动审核帐户内银币数，若银币低于500者，则自动补足至500，高于500银币者，则保持原数值。</li>
-                              <li>银币可投注趣味竞猜银币盘，参与投注则可自动排名于银币获利排行榜，并取得相对应奖励，详细规则与奖励已相关排行榜公告为准。</li>
-                              <li>每季银币数量将重置到1000银币，排行榜积分将重新累积。</li>
-                            </ul>
-                            <h2><img src={require('../images/main/gold_img.png')}/ >金币相关规则</h2>
-                            <ul className="rule_list">
-                              <li>会员充值后将1比1转成帐户中的金币。</li>
-                              <li>金币能畅游站内所有竞猜盘，参与投注即可自动排名于金币获利排行榜，并取得相对应奖励，详细规则与奖励以相关排行榜公告为准。</li>
-                            </ul>
-                            <h2><img src={require('../images/main/rocket_img.png')}/ >火箭币相关规则</h2>
-                            <ul className="rule_list">
-                              <li>会员每下注10金币可得1火箭币，火箭币由系统自动派发。</li>
-                              <li>火箭幣可使用於火競猜商城兌換禮品。</li>
-                            </ul>
-                        </div>
-                        <div className="btn_group">
-                          <a href="#" className="btndefault" data-dismiss="modal">我知道了</a>
-                        </div>
-                      </div>
 
-                    </div>
-                  </div>
-                </div>
-            </div>
 
             <div className="col-md-9 col-sm-12">
               <div className="coin_money">
                 <div className="col-sm-4">
                   <div className="coin_type">
-                    <img  src={require('../images/main/gold_img.png')} alt="金币持有数"/>
+
                       <div className="coin_text">
                         <h4>BTC</h4>
                         <p>1,999,999,999</p>
@@ -158,7 +119,7 @@ export default class Profile extends React.Component {
                 </div>
                 <div className="col-sm-4">
                   <div className="coin_type">
-                    <img src={require('../images/main/sliver_img.png')} alt="银币持有数"/>
+
                       <div className="coin_text">
                         <h4>ETH</h4>
                         <p>1,999,999,999</p>
@@ -168,7 +129,7 @@ export default class Profile extends React.Component {
                 </div>
                 <div className="col-sm-4">
                   <div className="coin_type">
-                    <img  src={require('../images/main/rocket_img.png')} alt="火箭币持有数"/>
+
                       <div className="coin_text">
                         <h4>ADA</h4>
                         <p>1,999,999,999</p>
@@ -182,8 +143,7 @@ export default class Profile extends React.Component {
             <div className="col-md-3 col-sm-12">
               <div className="charge_btn">
                 <div className="btn_group">
-                  <a href="#"><img  src={require('../images/member/wallet/deposit_btn.png')} /></a>
-                  <a href="#"><img  src={require('../images/member/wallet/withdrawal_btn.png')} /></a>
+
                   <div className="clearfix"></div>
                 </div>
               </div>

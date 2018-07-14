@@ -50,7 +50,7 @@ export default class RankingList extends React.Component {
 
 
     render() {
-      console.log(this.state.week_ranking_array);
+    
 
       let game_name;
       let game_pic;
@@ -58,22 +58,22 @@ export default class RankingList extends React.Component {
       switch(this.props.params.type) { //根據進來的domain網址來判斷預設的圖片
         case 'topvolume':
           game_name = 'Greatest Volume Rank List';
-          game_pic =  require('../images/main/gold_img.png');
+          //game_pic =  require('../images/main/gold_img.png');
           keep_betting = <Link to={`/inplay`} className="btnsys">去冲榜</Link>;
         break;
         case 'topgain':
           game_name = 'Greatest Gain Rank List';
-          game_pic =  require('../images/main/gold_img.png');
+          //game_pic =  require('../images/main/gold_img.png');
           keep_betting = <Link to={`/fpk`} className="btnsys">去冲榜</Link>;
         break;
         case 'toploss':
           game_name = 'Greatest Loss Rank List';
-          game_pic =  require('../images/main/sliver_img.png');
+          //game_pic =  require('../images/main/sliver_img.png');
           keep_betting = <Link to={`/fpk`} className="btnsys">去冲榜</Link>;
         break;
         default:
           game_name = 'Greatest Volume Rank List';
-          game_pic =  require('../images/main/sliver_img.png');
+          //game_pic =  require('../images/main/sliver_img.png');
           keep_betting = <Link to={`/inplay`} className="btnsys">去冲榜</Link>;
       }
 

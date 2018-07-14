@@ -44,12 +44,12 @@ export default class TradeDetail extends React.Component {
                                     <hr/>
                                     <div className="fpk_silver_gold">
                                         <ul>
-                                            <li className="gold_left"><img src={require('../images/main/gold_img.png')}/></li>
+
                                             <li className="money_right">
                                                 <h5>200,000</h5></li>
                                         </ul>
                                         <ul>
-                                            <li className="gold_left"><img src={require('../images/main/sliver_img.png')}/></li>
+
                                             <li className="money_right">
                                                 <h5>10,240,000</h5></li>
                                         </ul>
@@ -72,12 +72,12 @@ export default class TradeDetail extends React.Component {
                                     <div className="fpkdetail_1_poolbet">
                                         <div className="fpk_silver_gold">
                                             <ul className="gold_right">
-                                                <li className="gold_left"><img src={require('../images/main/gold_img.png')}/></li>
+                                                <li className="gold_left"></li>
                                                 <li className="money_right">
                                                     <h5>200,000</h5></li>
                                             </ul>
                                             <ul className="sivler_right">
-                                                <li className="gold_left"><img src={require('../images/main/sliver_img.png')}/></li>
+                                                <li className="gold_left"></li>
                                                 <li className="money_right">
                                                     <h5>10,240,000</h5></li>
                                             </ul>

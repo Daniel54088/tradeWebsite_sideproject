@@ -5,7 +5,6 @@
   margin: 50px 0;
 }
 .ranking .titleimg {
-  background: url('../images/main/mainskin.png') -1194px -527px no-repeat;
   width: 110px;
   margin-bottom: 30px;
 }
@@ -159,7 +158,6 @@
   position: absolute;
   width: 25px;
   height: 25px;
-  background-image: url('../images/main/mainskin.png');
   background-repeat: no-repeat;
   left: 0;
 }

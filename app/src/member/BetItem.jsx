@@ -16,11 +16,11 @@ export default class BetItem extends React.Component {
         <div className="item">
           <div className="betting_price">
             <span>竞猜金额</span>
-            <h3><img src={require('../images/main/gold_img.png')}/>20.0</h3>
+
           </div>
           <div className="get_price">
             <span>预计获得</span>
-            <h3><img src={require('../images/main/gold_img.png')}/>46.42</h3>
+          
           </div>
           <div className="betting_name">
             <span>DOTA2 QCHappy vs. X-Quest</span>

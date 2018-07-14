@@ -113,15 +113,15 @@ main .news .tab .content .con-toparea {
   margin-bottom: 20px;
 }
 main .news .tab .content.esport .titleimg {
-  background:url('../images/main/mainskin.png') -1194px -399px no-repeat;
+
   margin-right: 20px;
 }
 main .news .tab .content.promotion .titleimg {
-  background:url('../images/main/mainskin.png') -1194px -467px no-repeat;
+
   margin-right: 20px;
 }
 main .news .tab .content.competition .titleimg {
-  background:url('../images/main/mainskin.png') -1457px -910px no-repeat;
+
   margin-right: 20px;
 }
 main .news .tab .content.esport ul,
@@ -220,7 +220,7 @@ main .news .tab .content.promotion ul li a .activitybox .moretext span {
   display: block;
   float: none;
   text-indent: -9999px;
-  background: url('../images/main/mainskin.png') 4px -530px no-repeat;
+
 }
 main .news .tab .content.promotion ul li a .activitybox .moretext p,
 main .news .tab .content.promotion ul li a .activitybox .moretext span {
@@ -481,12 +481,12 @@ main .news .newscontent .newscontent_txt p {
   font-size: 14px;
 }
 main .news .newscontent .newscon_title .titleimg {
-  background:url('../images/main/mainskin.png') -1194px -399px no-repeat;
+
   margin-right: 20px;
   width: 102px;
 }
 main .news .newscontent .systemcon_title .titleimg {
-  background:url('../images/main/mainskin.png') -1194px -910px no-repeat;
+
   margin-right: 20px;
   width: 102px;
 }

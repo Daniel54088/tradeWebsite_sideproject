@@ -3,26 +3,22 @@ import ReactDOM from 'react-dom';
 import { Router, Route, IndexRoute, Redirect, browserHistory } from 'react-router';
 
 
-import About from './guidepage/About.jsx'
+
 import Contact from './contact/contact.jsx'
 //import Download from './download/Download.jsx'
 import TradeTab from './trade/TradeTab.jsx'
 import TradeDetail from './trade/TradeDetail.jsx'
 import ForgetPassword from './loginlobby/ForgetPassword.jsx';
 import WalletHistory from './wallet/WalletHistory.jsx';
-import Help from './guidepage/help.jsx';
 import Init from './main.jsx';
 import Information from './information/Information.jsx';
 import Member from './member/Member.jsx';
 import Memberset from './member/Memberset.jsx';
 import NotFoundPage from './nofind/nofind.jsx';
-import PromotionList from './promotion/promotionList.jsx';
 import Ranking from './ranking/ranking.jsx'
 import RankingList from './ranking/rankingList.jsx'
 import Register from './loginlobby/Register.jsx';
 import SignIn from './loginlobby/SignIn.jsx';
-import Term from './guidepage/term.jsx'
-import Wallet from './wallet/Wallet.jsx';
 import Welcome from './welcome/welcome.jsx';
 import ApplePen from './welcome/ApplePen.jsx';
 import ClearFix from './welcome/ClearFix.jsx';
@@ -31,8 +27,7 @@ import ClearFix from './welcome/ClearFix.jsx';
 ReactDOM.render(
     <Router history={browserHistory} >
         <Route path="member/:type"  component={Member} />
-        <Route path="wallet/:type"  component={Wallet} />
-        <Route path="promotion"  component={PromotionList} />
+
         <Route path="trade" component={TradeTab} />
         <Route path="/" component={Init} >
             <IndexRoute component={Welcome}/>
@@ -43,9 +38,6 @@ ReactDOM.render(
             <Route path="news/:Id" component={Information} />
             <Route path="trade/:Id" component={TradeDetail} />
             <Route path="contact" component={Contact} />
-            <Route path="term" component={Term} />
-            <Route path="help" component={Help} />
-            <Route path="about" component={About} />
             <Route path="ranking" component={Ranking} />
             <Route path="ranking/:type" component={RankingList} />
             {/* 404 */}
