@@ -1,30 +1,41 @@
-/*引入 <link href="https://fonts.googleapis.com/css?family=Asap|Frank+Ruhl+Libre|Goudy+Bookletter+1911|Josefin+Sans|Lato|Noto+Sans|Questrial|Titillium+Web" rel="stylesheet"> */
+/* 版面怪怪的，News區塊要推奇怪的padding-top，找不到切換頁數的按鈕 */
 
 .liveing_text .liveingtext{
   margin: 15px 0 0 0;
 }
 
-body{
-
-    background-color: #2d2d2d !important;
-  background-image: url("https://www.transparenttextures.com/patterns/black-orchid.png");
-}
 
 .news_text_right h3{
     font-size: 3em;
     margin: 0;
-    position: relative;
-    top: -20px;
     font-weight: 600;
-    color: #fff;
-    text-shadow: 0 3px 3px #00000094;
+    color: #47a6ff;
 }
 
 .AllHeader{
-     background: #6feae7;
+     background: #485361;
+     background-image: url("https://www.transparenttextures.com/patterns/maze-black.png");
+
 }
 
 #mainNews{
-    padding-top: 366px;
-    padding-bottom: 60px;
+  padding:100px;
+  padding-top: 100px;
+}
+
+.newsRight_title{
+  width: 100%;
+    overflow: hidden;
+    max-height: 63px;
+    padding: 15px 0;
+}
+
+
+
+/*換頁*/
+
+.PageChange{
+  width: 100%;
+padding-top: 30px;
+border-top: 1px dashed #47a5fb;
 }

@@ -20,7 +20,7 @@ export default class RankingItem extends React.Component {
         <div className="ranking_item col-md-12 col-xs-12">
 
           <div className="rank col-md-4 col-xs-4">
-             <span>No. {this.props.rank}</span>
+             <h3>No. {this.props.rank}</h3>
           </div>
 
           <div className="player col-md-4 col-xs-4">

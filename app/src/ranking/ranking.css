@@ -33,23 +33,20 @@
   float: right;
 }
 .ranking .list .item {
-  width: 100%;
-  font-size: 0;
-  /*for fix inline-block blank*/
-  padding: 20px;
-
-  border: 3px solid #fdc200;
-  border-radius: 4px;
-  transition: .3s ease;
+  position: relative;
+      width: 100%;
+    transition: .3s ease;
+    box-shadow: 3px 3px 4px 1px #607d964d;
+    background: #fff;
+    border: 1px solid #434b54;
+    margin: 20px 0;
 }
 .ranking .list .item:hover {
   opacity: .6;
   transform: translate(1px,1px);
 }
-.ranking .list .item {
-  position: relative;
-  margin-bottom: 60px;
-}
+
+
 .ranking .list .item > div {
   display: inline-block;
   vertical-align: middle;
@@ -64,19 +61,21 @@
   transform: translateY(-50%);
 }
 .ranking .list .item .ranking_title {
-  width: calc(50% - 10px);
-  color: black;
-  letter-spacing: 1px;
-  font-size: 20px;
-  line-height: 40px;
+  width: 100%;
+    color: black;
+    letter-spacing: 1px;
+    font-size: 20px;
+    text-align: center;
+    padding: 30px;
 }
 .ranking .list .item .ranking_title img {
   width: 40px;
-  margin-right: 10px;
+  display: block;
+  margin: 0 auto;
 }
 .ranking .list .item .week_rank,
 .ranking .list .item .mounth_rank {
-  width: 25%;
+  width: 50%;
   font-size: 26px;
   text-align: center;
 }
@@ -190,9 +189,8 @@
 
 /*Set Table width*/
 .ranking .content .ranking_item {
-  color: #fff;
   padding: 10px 15px;
-  border-bottom: 1px dashed rgba(102, 102, 102,.5);
+  border-bottom: 1px dashed #6666665c;
 }
 
 
@@ -201,13 +199,12 @@
   position: relative;
   height: 559px;
   overflow-y: scroll;
-  background-color: rgba(34, 34, 34, .7);
-  box-shadow: inset 0 0 6px rgba(0,0,0,.5);
+  background-color: #f7f7f7;
 }
 
 /*Set Table item*/
 .table_body .ranking_item:nth-child(odd) {
-  background-color: rgba(0,0,0,.2);
+  background-color: #fff;
 }
 .table_body .ranking_item:hover {
   background-color: rgba(255,255,255,.1);
@@ -244,9 +241,10 @@
 .ranking .content .table_body .ranking_item .bonus {
   text-shadow: 2px 2px #000;
 }
-.ranking .content .table_body .ranking_item .rank {
-  font-size: 24px;
-  text-shadow: 4px 4px #000
+.ranking .content .table_body .ranking_item .rank h3{
+  padding: 0;
+  margin: 0;
+  font-size: 1em;
 }
 .ranking .content .table_body .ranking_item .rank img {
   height: auto;
@@ -298,4 +296,10 @@
   display: none;
 }
 
+}
+
+/*Tab樣式覆蓋*/
+
+.ant-tabs-tab{
+  background-color: #ccc;
 }

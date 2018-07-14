@@ -25,6 +25,8 @@ import Tutorial from './tutorial/tutorial.jsx'
 import Term from './guidepage/term.jsx'
 import Wallet from './wallet/Wallet.jsx';
 import Welcome from './welcome/welcome.jsx';
+import ApplePen from './welcome/ApplePen.jsx';
+import ClearFix from './welcome/ClearFix.jsx';
 
 
 ReactDOM.render(

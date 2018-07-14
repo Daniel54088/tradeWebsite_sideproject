@@ -1,3 +1,11 @@
+.recharts-wrapper{
+  display: none;
+}
+
+.TradeBox{
+  border:1px solid #333;
+}
+
 
 .trade-head{
 
@@ -42,19 +50,51 @@
 }
 
 .trade-chart .key{
-    font-size: 12px;
+    font-size: 1em;
     padding: 10px;
     white-space: nowrap;
     color: #253137;
-    text-align: left;
 }
 
 .trade-chart .value{
-  font-size: 12px;
+  font-size: 1em;
   font-weight: 700;
   padding: 10px;
   white-space: nowrap;
+}
+
+.trade-chart .title,
+  .trade-chart .rate,
+  .KeyBox,.valueBox{
+  display: inline-block;
+}
+
+.KVBoxLeft,
+.KVBoxRight{
+  display: block;
+}
+
+.KVBoxLeft{
   text-align: right;
+}
+
+.KVBoxRight{
+  text-align: left;
+}
+
+.trade-chart .title{
+      width: 45px;
+    text-align: right;
+    margin-right: 7px;
+}
+
+.trade-chart .rate{
+  width: auto;
+}
+
+.TimeBox{
+  display: block;
+  text-align: center;
 }
 
 .trade-chart .col-lg-5.col-md-5.col-sm-5.col-xs-12{
@@ -73,7 +113,6 @@
   margin-bottom: 0px;
   line-height: 60px;
   white-space: nowrap;
-  margin-bottom: 15px;
 }
 
 

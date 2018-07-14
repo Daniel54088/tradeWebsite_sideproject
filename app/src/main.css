@@ -1,15 +1,9 @@
-/*整體背景顏色*/
 
-body {
-    background-color: #2d2d2d !important;
-
-}
 
 /*限制內容區塊的框*/
 
 .content {
-  background-color: #2d2d2d;
-background-image: url("https://www.transparenttextures.com/patterns/black-orchid.png");
+  background-color: #fff;
 }
 
 hr {
@@ -42,7 +36,6 @@ a {
 
 .header_yellowline {
     margin: 0 auto;
-     border-bottom: 15px solid #2d2d2d;
 }
 
 
@@ -106,13 +99,13 @@ header .top-menu ul li {
 
 
 header .top-menu ul li a {
-    color: #2d2d2d;
+    color: #fff;
     display: block;
 }
 
 header .top-menu ul li a:hover,
 header .top-menu ul li a.active {
-    color: #8036ea;
+    color: #4bfffb;
 }
 
 header .top-menu ul li a h5 {
@@ -177,10 +170,9 @@ header .top-menu ul li .logo img {
 
 footer {
     text-align: center;
-    background-color: #634d80;
-    background-image: url('./images/shattered.png');
+    background: #485361;
+    background-image: url(https://www.transparenttextures.com/patterns/maze-black.png);
     padding: 30px 0;
-    border-top: 2px solid #8036ea;
 }
 
 .footer_title img {
@@ -286,14 +278,14 @@ footer {
 
 
 .btndefault {
-    transition: all 0.15s ease-out 0s;
-    background: linear-gradient(45deg, #8036ea 0%,#a67ae8 100%);
-    border-radius: 30px;
-    margin: 0;
-    padding: 15px 80px;
-    color: #fff;
-    text-align: center;
-    font-size: 1em;
+  transition: all 0.15s ease-out 0s;
+background: linear-gradient(45deg, #47a5fb 0%,#2c8ee8 100%);
+border-radius: 99px;
+margin: 0;
+padding: 18px 100px;
+color: #fff;
+text-align: center;
+font-size: 1.6em;
 }
 
 .btndefault:hover {
@@ -307,12 +299,12 @@ footer {
 /*清除浮動*/
 
 .clearfix:after {
-    visibility: hidden;
-    display: block;
-    font-size: 0;
-    content: " ";
-    clear: both;
-    height: 0;
+    visibility: hidden !important;
+    display: block !important;
+    font-size: 0 !important;
+    content: " " !important;
+    clear: both !important;
+    height: 0 !important;
 }
 
 body,
@@ -362,14 +354,14 @@ h4 {
 /*input style*/
 
 .input_mainpg {
-    color: #5c5c5f;
-    font-size: 1em;
-    padding: 10px 1px;
-    border: none;
-    border-bottom: 1px solid #8036ea;
-    text-align: left;
-    background-color: transparent;
-    cursor: text;
+  color: #5c5c5f;
+  font-size: 1em;
+  padding: 15px 1px;
+  border: none;
+  border-bottom: 1px solid #47a5fb;
+  text-align: left;
+  background-color: transparent;
+  cursor: text;
 }
 
 
@@ -416,6 +408,10 @@ h4 {
 .ant-tabs-ink-bar{
   background-color: #8036ea;
 }
+
+
+
+
 
   /*CSSTransition   換頁面的轉換效果*/
   .example-enter{

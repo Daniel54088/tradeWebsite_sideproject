@@ -102,18 +102,28 @@ ul li .ant-dropdown-menu-item-group-title{
 
 /*頁碼樣式*/
 
+.ant-pagination li .ant-pagination-item-link{
+  border: 2px solid #47a5fb;
+    background-color: #47a5fb;
+    border-radius: 4px;
+    outline: none;
+    display: block;
+    transition: all .3s;
+    color: #fff;
+}
+
 .ant-pagination{
-	margin-top: 20px !important;
-	margin-bottom: 20px !important;
+	text-align: center;
+	margin-top: 20px;
 }
 
 .ant-pagination-item a{
-	font-size: 15px !important;
-	color: #fff !important;
+
 }
 
-.ant-pagination-item a:hover{
-	color: #fdc200 !important;
+.ant-pagination-prev .ant-pagination-item-link:hover,
+.ant-pagination-next .ant-pagination-item-link:hover{
+	color: #fff !important;
 }
 
 .ant-pagination-prev,
@@ -127,20 +137,5 @@ ul li .ant-dropdown-menu-item-group-title{
 }
 
 .ant-pagination-item-active {
-    background-color: #fdc200 !important;
-    border-color: transparent !important;
-}
-
-.ant-pagination-prev:hover a,
-.ant-pagination-next:hover a{
-    color: #fdc200 !important;
-}
-
-.ant-pagination-item:hover a {
-    color: #fdc200 !important;
-}
-
-.ant-pagination-prev a:hover,
-.ant-pagination-next a:hover{
-    color: #fdc200 !important;
+    background-color: transparent;
 }
