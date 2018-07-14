@@ -32,13 +32,18 @@ export default class LiveList extends React.Component {
     getCoins(){
 
 
+
+      //binance socket api
       btcws = new WebSocket('wss://stream.binance.com:9443/ws/btcusdt@ticker');
       ethws = new WebSocket('wss://stream.binance.com:9443/ws/ethusdt@ticker');
       xrpws = new WebSocket('wss://stream.binance.com:9443/ws/xrpusdt@ticker');
       neows = new WebSocket('wss://stream.binance.com:9443/ws/neousdt@ticker');
       ltcws = new WebSocket('wss://stream.binance.com:9443/ws/ltcusdt@ticker');
 
-      let coinArray = [btcws,ethws,xrpws,neows,ltcws];
+
+
+      //let coinArray = [btcws,ethws,xrpws,neows,ltcws];
+      let coinArray = [btcws,ethws];
 
       coinArray.map(function(item,idx){
           let newCoin;

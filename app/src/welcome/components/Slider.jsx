@@ -1,5 +1,4 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 
 import SlideShow from './SlideShow.jsx'
 import './slide.css';

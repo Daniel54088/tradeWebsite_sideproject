@@ -1,5 +1,4 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import { Link, IndexLink, browserHistory } from 'react-router';
 import Bulletin from './Bulletin.jsx';
 import { Menu, Dropdown , Icon} from 'antd';

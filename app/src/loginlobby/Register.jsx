@@ -1,5 +1,4 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import './loginlobby.css';
 import {registerInputCheck} from './InputCheck.js';
 import {notification, message} from 'antd';

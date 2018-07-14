@@ -1,5 +1,4 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import {Spin,Pagination} from 'antd'; //等待選轉組件
 import NewsItem from './NewsItem.jsx';
 

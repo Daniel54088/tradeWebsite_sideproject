@@ -1,5 +1,4 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 
 
 //根據物件內的true或false來判定要塞入哪個className

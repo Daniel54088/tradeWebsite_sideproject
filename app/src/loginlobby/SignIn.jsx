@@ -1,5 +1,4 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import {Link, browserHistory } from 'react-router';
 import './loginlobby.css';
 import {loginInputCheck} from './InputCheck.js';

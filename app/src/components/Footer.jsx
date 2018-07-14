@@ -1,5 +1,4 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import { Link} from 'react-router';
 
 /*结尾组件*/
@@ -15,7 +14,7 @@ export default class Footer extends React.Component {
                 <div className="col-md-12">
                     <div className="footer_title">
                         <img src="images/footer/footer_logo.svg" alt=""/>
-                    </div>        
+                    </div>
 
                     <div className="footer_content">
                         <a href="about.html">

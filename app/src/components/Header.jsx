@@ -1,5 +1,4 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import { Link, IndexLink, browserHistory } from 'react-router';
 import LoginHead from './LoginHead.jsx'
 import {cx} from '../mutipleClass.js';
