@@ -1,6 +1,5 @@
 /*bg fix*/
 html.background_fix{
-	background: url(../images/main-background.jpg) center center;
 	background-size: cover;
 	box-sizing: border-box;
 }

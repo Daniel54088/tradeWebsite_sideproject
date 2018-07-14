@@ -4,7 +4,6 @@ import './loginlobby.css';
 import {loginInputCheck} from './InputCheck.js';
 import {notification, message} from 'antd';
 
-
 export default class SignIn extends React.Component {
     constructor(props) {
         super(props);
@@ -77,9 +76,11 @@ export default class SignIn extends React.Component {
                     </div>
 
                     <div className="btngroup">
-                        <a className="btndefault registerbtn" onClick={this.check}>sent</a>
+                        <a className="btndefault" onClick={this.check}>Sign in</a>
                     </div>
-
+                    <div className="btngroup">
+                        <a className="btndefault registerbtn" onClick={this.check}>Sign up</a>
+                    </div>
                     <div className="loginLink" >
                       <Link to={`forgetpassword`}  id="forget_btn">
                           <span>Forget password？</span>
@@ -95,7 +96,6 @@ export default class SignIn extends React.Component {
                 </div>
 
                 <div className="col-md-3 col-xs-1">
-
                 </div>
             </div>
         </div>

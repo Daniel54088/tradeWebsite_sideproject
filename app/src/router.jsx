@@ -21,10 +21,11 @@ import Ranking from './ranking/ranking.jsx'
 import RankingList from './ranking/rankingList.jsx'
 import Register from './loginlobby/Register.jsx';
 import SignIn from './loginlobby/SignIn.jsx';
-import Tutorial from './tutorial/tutorial.jsx'
 import Term from './guidepage/term.jsx'
 import Wallet from './wallet/Wallet.jsx';
 import Welcome from './welcome/welcome.jsx';
+import ApplePen from './welcome/ApplePen.jsx';
+import ClearFix from './welcome/ClearFix.jsx';
 
 
 ReactDOM.render(
@@ -45,7 +46,6 @@ ReactDOM.render(
             <Route path="term" component={Term} />
             <Route path="help" component={Help} />
             <Route path="about" component={About} />
-            <Route path="tutorial" component={Tutorial} />
             <Route path="ranking" component={Ranking} />
             <Route path="ranking/:type" component={RankingList} />
             {/* 404 */}

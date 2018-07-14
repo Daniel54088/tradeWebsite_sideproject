@@ -1,27 +1,9 @@
-/*整體背景顏色*/
 
-body {
-    background-color: #fdfdff;
-    background-image: url("https://www.transparenttextures.com/patterns/brilliant.png");
-    /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
-    background-color: #fdfdff;
-    background-image: url("https://www.transparenttextures.com/patterns/inspiration-geometry.png");
-    /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
-    background-color: #fdfdff;
-    background-image: url("https://www.transparenttextures.com/patterns/light-wool.png");
-    /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
-    background-color: #fdfdff;
-    width: 100%;
-    height: 100%;
-    overflow-x: hidden;
-    font-family: -apple-system, "Helvetica Neue", Helvetica, "Nimbus Sans L", Arial, "Liberation Sans", "PingFang SC", "Hiragino Sans GB", "Source Han Sans CN", "Source Han Sans SC", "Microsoft YaHei", "Wenquanyi Micro Hei", "WenQuanYi Zen Hei", "ST Heiti", SimHei, "WenQuanYi Zen Hei Sharp", sans-serif !important;
-}
 
 /*限制內容區塊的框*/
 
 .content {
-    background-color: #ffffff70;
-    margin-bottom: 80px;
+  background-color: #fff;
 }
 
 hr {
@@ -54,7 +36,6 @@ a {
 
 .header_yellowline {
     margin: 0 auto;
-    border-bottom: 1px solid #615c7b3b;
 }
 
 
@@ -118,13 +99,13 @@ header .top-menu ul li {
 
 
 header .top-menu ul li a {
-    color: #5c5c5f;
+    color: #fff;
     display: block;
 }
 
 header .top-menu ul li a:hover,
 header .top-menu ul li a.active {
-    color: #8036ea;
+    color: #4bfffb;
 }
 
 header .top-menu ul li a h5 {
@@ -132,24 +113,6 @@ header .top-menu ul li a h5 {
     font-size: 1em;
     font-family: 'Overpass';
     display: block;
-}
-
-
-header .top-menu h5:after {
-    content: '';
-    position: relative;
-    left: 50%;
-    bottom: 0;
-    width: 0%;
-    height: 3px;
-    background-color: #8036ea;
-    transform: translateX(-50%);
-    transition: all 0.2s;
-    display: block;
-}
-
-header .top-menu ul li:hover h5:after {
-    width: 60%;
 }
 
 .logo_middle:before {
@@ -207,10 +170,9 @@ header .top-menu ul li .logo img {
 
 footer {
     text-align: center;
-    background-color: #634d80;
-    background-image: url('./images/shattered.png');
+    background: #485361;
+    background-image: url(https://www.transparenttextures.com/patterns/maze-black.png);
     padding: 30px 0;
-    border-top: 2px solid #8036ea;
 }
 
 .footer_title img {
@@ -316,14 +278,14 @@ footer {
 
 
 .btndefault {
-    transition: all 0.15s ease-out 0s;
-    background: linear-gradient(45deg, #8036ea 0%,#a67ae8 100%);
-    border-radius: 30px;
-    margin: 0;
-    padding: 15px 80px;
-    color: #fff;
-    text-align: center;
-    font-size: 1em;
+  transition: all 0.15s ease-out 0s;
+background: linear-gradient(45deg, #47a5fb 0%,#2c8ee8 100%);
+border-radius: 99px;
+margin: 0;
+padding: 18px 100px;
+color: #fff;
+text-align: center;
+font-size: 1.6em;
 }
 
 .btndefault:hover {
@@ -337,12 +299,12 @@ footer {
 /*清除浮動*/
 
 .clearfix:after {
-    visibility: hidden;
-    display: block;
-    font-size: 0;
-    content: " ";
-    clear: both;
-    height: 0;
+    visibility: hidden !important;
+    display: block !important;
+    font-size: 0 !important;
+    content: " " !important;
+    clear: both !important;
+    height: 0 !important;
 }
 
 body,
@@ -392,14 +354,14 @@ h4 {
 /*input style*/
 
 .input_mainpg {
-    color: #5c5c5f;
-    font-size: 1em;
-    padding: 10px 1px;
-    border: none;
-    border-bottom: 1px solid #8036ea;
-    text-align: left;
-    background-color: transparent;
-    cursor: text;
+  color: #5c5c5f;
+  font-size: 1em;
+  padding: 15px 1px;
+  border: none;
+  border-bottom: 1px solid #47a5fb;
+  text-align: left;
+  background-color: transparent;
+  cursor: text;
 }
 
 
@@ -446,6 +408,10 @@ h4 {
 .ant-tabs-ink-bar{
   background-color: #8036ea;
 }
+
+
+
+
 
   /*CSSTransition   換頁面的轉換效果*/
   .example-enter{

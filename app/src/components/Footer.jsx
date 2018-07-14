@@ -12,9 +12,6 @@ export default class Footer extends React.Component {
         <div className="container">
             <div className="row">
                 <div className="col-md-12">
-                    <div className="footer_title">
-                        <img src="images/footer/footer_logo.svg" alt=""/>
-                    </div>
 
                     <div className="footer_content">
                         <a href="about.html">

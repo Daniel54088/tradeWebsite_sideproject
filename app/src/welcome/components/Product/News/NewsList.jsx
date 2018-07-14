@@ -1,6 +1,7 @@
 import React from 'react';
 import {Spin,Pagination} from 'antd'; //等待選轉組件
 import NewsItem from './NewsItem.jsx';
+import ClearFix from '../../../ClearFix.jsx';
 
 import {cx} from '../../../../mutipleClass.js';
 
@@ -120,8 +121,8 @@ export default class NewsList extends React.Component {
 
 
       return (
-        <div className="col-md-8" id="mainNews">
-                <h2 className="news_title">News</h2>
+        <div  id="mainNews">
+
             <div className={this.state.pagClass}>
                   {NewsIsNotNull.map(function(item,index){ //房間的array做map渲染
                      return(
@@ -130,7 +131,10 @@ export default class NewsList extends React.Component {
                   })}
 
             </div>
-            <Pagination defaultCurrent={1} total={this.state.nowPageTotal *10} onChange={this.changePage} current={this.state.CurrentPage}  />
+            <ClearFix/>
+            <div className="PageChange">
+              <Pagination defaultCurrent={1} total={this.state.nowPageTotal *10} onChange={this.changePage} current={this.state.CurrentPage}  />
+            </div>
         </div>
 
 

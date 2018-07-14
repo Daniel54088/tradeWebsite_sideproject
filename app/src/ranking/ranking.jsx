@@ -27,50 +27,32 @@ export default class Ranking extends React.Component {
                     <div className="board list">
 
                       <div className="clearfix"></div>
-                      <div className="col-xs-12">
+
+                      <div className="col-md-10 col-md-offset-1">
                         <Link to={`/ranking/topvolume`}>
-                          <div className="item">
+                          <div className="item itembg1">
                             <div className="ranking_title"><img  src={require('../images/volume.png')}/>Greatest Volume</div>
-                            <div className="week_rank">
-                              BTC
-                              <p>Best of week</p>
-                            </div>
-                            <div className="mounth_rank">
-                              BTC
-                              <p>Best of Month</p>
-                            </div>
-                            <i className="fas fa-chevron-right"></i>
-                          </div>
-                        </Link>
-                        <Link to={`/ranking/topgain`}>
-                          <div className="item">
-                            <div className="ranking_title"><img src={require('../images/up.png')}/>Greatest % Gain</div>
-                            <div className="week_rank">
-                              ETH
-                              <p>Best of week</p>
-                            </div>
-                            <div className="mounth_rank">
-                              XRP
-                              <p>Best of Month</p>
-                            </div>
-                            <i className="fas fa-chevron-right"></i>
-                          </div>
-                        </Link>
-                        <Link to={`/ranking/toploss`}>
-                          <div className="item">
-                            <div className="ranking_title"><img  src={require('../images/down.png')}/>Greatest % Loss</div>
-                            <div className="week_rank">
-                              LTC
-                              <p>Best of week</p>
-                            </div>
-                            <div className="mounth_rank">
-                              XMR
-                              <p>Best of Month</p>
-                            </div>
-                            <i className="fas fa-chevron-right"></i>
                           </div>
                         </Link>
                       </div>
+
+                      <div className="col-md-10 col-md-offset-1">
+                      <Link to={`/ranking/topgain`}>
+                        <div className="item itembg2">
+                          <div className="ranking_title"><img src={require('../images/up.png')}/>Greatest % Gain</div>
+                        </div>
+                      </Link>
+                      </div>
+
+                      <div className="col-md-10 col-md-offset-1">
+                      <Link to={`/ranking/toploss`}>
+                        <div className="item itembg3">
+                          <div className="ranking_title"><img  src={require('../images/down.png')}/>Greatest % Loss</div>
+                        </div>
+                      </Link>
+                      </div>
+
+
                       <div className="clearfix"></div>
                     </div>
                   </div>

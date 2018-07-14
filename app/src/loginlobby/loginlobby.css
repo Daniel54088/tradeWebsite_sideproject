@@ -1,10 +1,19 @@
 
 /*註冊*/
 
+.join_style .content{
+  background-color: transparent !important;
+}
+
+.join_style{
+background: url(../images/banner/desktop-1155613_1920.jpg) no-repeat left center;
+background-size: cover;
+}
+
 .join_style .content p {
     padding: 0;
     margin: 0;
-    color: #8036ea;
+    color: #47a5fb;
     font-size: 0.8em;
     width: 100%;
 }
@@ -16,8 +25,11 @@
 }
 
 .join_style .content .register_content .input_mainpg {
-    width: 100%;
-    padding-left: 10px;
+  width: 100%;
+  padding: 10px 0 10px 10px;
+  font-size: 2em;
+  color: #6c7277;
+  font-weight: 400;
 }
 
 /*註冊按鈕*/
@@ -28,13 +40,12 @@
 }
 
 .join_style .content h4 {
-    color: #ffbf1b;
-    margin-left: 8px;
-    width: 80px;
+      color: #47a6ff;
     padding: 0;
-    margin: 0;
-    margin: 10px auto;
     text-align: center;
+    font-size: 3em;
+    width: 100%;
+    margin-bottom: 30px;
 }
 
 .join_style .content .first{
