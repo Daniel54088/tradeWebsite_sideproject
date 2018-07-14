@@ -16,7 +16,7 @@ export default class AcccountManagement extends React.Component {
       return (
         <div className="account_manage">
           <div className="col-sm-12">
-            <a  className="btnsys" data-toggle="modal" data-target="#exampleModal2"><i className="fa fa-plus-square"></i>新增帐户</a>
+            <a  className="btnsys" data-toggle="modal" data-target="#exampleModal2"><i className="fa fa-plus-square"></i>Create new Account</a>
 
               <div className="modal fade" id="exampleModal2" tabIndex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <div className="modal-dialog" role="document">

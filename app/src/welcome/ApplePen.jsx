@@ -17,8 +17,8 @@ export default class ApplePen extends React.Component {
           <div className="a1_bk">
 
             <div className="a1bk_title">
-            <h1>Currency flow rate</h1>
-            <h4>The true value of virtual currency</h4>
+            <h1>The Greatest Crptocurrency Exchange Service</h1>
+            <h4>Secure Fast and Easy</h4>
             </div>
 
 

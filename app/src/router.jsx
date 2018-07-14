@@ -27,13 +27,13 @@ import ClearFix from './welcome/ClearFix.jsx';
 ReactDOM.render(
     <Router history={browserHistory} >
         <Route path="member/:type"  component={Member} />
-
         <Route path="trade" component={TradeTab} />
         <Route path="/" component={Init} >
             <IndexRoute component={Welcome}/>
             <Route path="signin" component={SignIn} />
             <Route path="register" component={Register} />
             <Route path="memberset" component={Memberset} />
+
             <Route path="forgetpassword" component={ForgetPassword} />
             <Route path="news/:Id" component={Information} />
             <Route path="trade/:Id" component={TradeDetail} />

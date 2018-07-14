@@ -33,7 +33,7 @@ export default class Init extends React.Component {
 
       return (
            <div>
-                <Header  />
+                <Header />
                 <CSSTransitionGroup transitionName='example' transitionEnterTimeout={500} transitionLeaveTimeout={300} >
                 <div id="bottomWrap" key={this.props.location.key}>
                     {this.props.children}

@@ -33,7 +33,7 @@ export default class Header extends React.Component {
       let rankingClass = cx({'active': location.pathname == '/ranking'});
       let TutorialClass = cx({'active': location.pathname == '/tutorial'});
       let contactClass = cx({'active': location.pathname == '/contact'});
-      let profileClass = cx({'active': location.pathname == '/member/profile'});
+      let accountClass = cx({'active': location.pathname == '/member/account'});
       let signinClass = cx({'active': location.pathname == '/signin'});
 
         return (
@@ -60,8 +60,8 @@ export default class Header extends React.Component {
                         </li>
 
                         <li >
-                            <Link to={`/member/profile`} className={profileClass}>
-                                <h5>Profile</h5>
+                            <Link to={`/member/account`} className={accountClass}>
+                                <h5>Account</h5>
                             </Link>
                         </li>
 

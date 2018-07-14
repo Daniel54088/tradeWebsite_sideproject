@@ -33,6 +33,7 @@ export default class Profile extends React.Component {
 
       return (
         <div className="profile">
+          可以全頁砍掉重弄
           <div className="col-lg-12 col-sm-12">
             <div className="col-lg-8 col-sm-12">
               <div className="all_info">

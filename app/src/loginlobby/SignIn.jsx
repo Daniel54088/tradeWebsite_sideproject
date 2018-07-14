@@ -79,20 +79,13 @@ export default class SignIn extends React.Component {
                         <a className="btndefault" onClick={this.check}>Sign in</a>
                     </div>
                     <div className="btngroup">
-                        <a className="btndefault registerbtn" onClick={this.check}>Sign up</a>
+                        <Link to={`register`} className="btndefault registerbtn">Sign up</Link>
                     </div>
                     <div className="loginLink" >
                       <Link to={`forgetpassword`}  id="forget_btn">
                           <span>Forget password？</span>
                       </Link>
                     </div>
-
-                    <div className="loginLink" >
-                      <Link to={`register`} id="forget_btn">
-                          <span style={{'textAlign': 'center'}} >Create new account!</span>
-                      </Link>
-                    </div>
-
                 </div>
 
                 <div className="col-md-3 col-xs-1">
