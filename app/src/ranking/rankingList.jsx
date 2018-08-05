@@ -50,7 +50,7 @@ export default class RankingList extends React.Component {
 
 
     render() {
-    
+
 
       let game_name;
       let game_pic;
@@ -88,12 +88,12 @@ export default class RankingList extends React.Component {
                     <div className="board content">
 
 
+                        <div className="title">
+                          <h2>{game_name}</h2>
+                        </div>
                       <Tabs>
                       <TabPane tab="Week Rank" key="1">
                       <div className="table_head">
-                        <div className="title">
-                          {game_name}
-                        </div>
                         <div className="date_time">
                           <div className="time">
                             <span className="date">3</span>Days

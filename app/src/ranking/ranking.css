@@ -108,17 +108,17 @@
 .ranking .content .table_head > div {
   display: inline-block;
   font-size: 14px;
-  width: 50%;
+  width: 100%;
   vertical-align: middle;
 }
-.ranking .content .table_head .title {
-  font-size: 18px;
-  color: #ffbf1b;
+.title h2{
+  text-align: center;
+  color: #b54242;
 }
 .ranking .content .table_head .time,
 .ranking .content .table_head .date_range {
   text-align: right;
-  color: #ccc;
+  color: #34373d;
 }
 .ranking .content .table_head .time span {
   display: inline-block;
@@ -129,14 +129,11 @@
   font-size: 0;
   width: 100%;
   margin-top: 40px;
-  opacity: .6;
-  border-bottom: 1px solid #666;
   padding: 10px;
-  color: #ffbf1b;
+  color: #000;
 }
 .ranking .content .table_label > div {
   position: relative;
-  padding-left: 30px;
   line-height: 25px;
 }
 .ranking .content .table_label .score {
@@ -177,6 +174,13 @@
 .ranking .content .ranking_item .player {
   font-size: 0;
 }
+
+
+.ranking .content .ranking_item{
+  height: 65px;
+}
+
+
 .ranking .content .table_label > div,
 .ranking .content .table_body .ranking_item > div,
 .ranking .content .ranking_item .player > div {
@@ -193,11 +197,16 @@
 
 
 /*Set Table Body*/
+
+.ranking .content .table_body {
+  border:1px solid #ccc;
+}
 .ranking .content .table_body .ranking_list {
   position: relative;
   height: 559px;
   overflow-y: scroll;
   background-color: #f7f7f7;
+  border:1px solid #ccc;
 }
 
 /*Set Table item*/
@@ -229,21 +238,40 @@
   font-size: 20px;
 }
 .ranking .content .table_body .ranking_item .player .name {
-  font-size: 16px;
+  font-size: 0.5em;
+  padding: 10px 0;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
   width: calc(100% - 50px);
 }
-.ranking .content .table_body .ranking_item .score,
+
+
 .ranking .content .table_body .ranking_item .bonus {
   text-shadow: 2px 2px #000;
 }
 .ranking .content .table_body .ranking_item .rank h3{
   padding: 0;
-  margin: 0;
-  font-size: 1em;
+    margin: 0;
+    font-size: 1em;
+    color: #333;
+    font-family: Arial;
+    font-weight: bolder;
+    padding: 10px 0;
 }
+
+.ranking .content .table_body .ranking_item .score{
+  padding: 0;
+margin: 0;
+color: #b54242;
+font-family: Arial;
+font-weight: bolder;
+     position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+
 .ranking .content .table_body .ranking_item .rank img {
   height: auto;
   width: 90px;

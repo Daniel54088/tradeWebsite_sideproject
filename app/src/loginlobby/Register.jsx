@@ -52,17 +52,13 @@ export default class Register extends React.Component {
           <div className="join_style" id="signin">
             <div className="container content">
                <div className="row" style={{'padding':'20px 0px 20px 0px'}}>
-                <div className="col-md-3 col-xs-1">
 
-                </div>
-
-                <div className="col-md-6 col-md-offset-0 col-xs-8 col-xs-offset-1">
+                <div className="col-md-8 col-md-offset-2 col-xs-8 col-xs-offset-1">
 
                     <div className="caption">
 
                         <h4>Register</h4>
-                        <p>Stay up to date on the development of Bootstrap and reach out to the community with these helpful resources.</p>
-                    </div>
+                        </div>
                     <div className="register_content">
                         <p>
                             Account<span className="necessary">*</span>

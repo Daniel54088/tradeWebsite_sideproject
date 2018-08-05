@@ -170,7 +170,7 @@ header .top-menu ul li .logo img {
 
 footer {
     text-align: center;
-    background: #485361;
+    background: #303640;
     background-image: url(https://www.transparenttextures.com/patterns/maze-black.png);
     padding: 30px 0;
 }
@@ -279,18 +279,16 @@ footer {
 
 .btndefault {
   transition: all 0.15s ease-out 0s;
-background: linear-gradient(45deg, #47a5fb 0%,#2c8ee8 100%);
-border-radius: 99px;
-margin: 0;
-padding: 18px 100px;
-color: #fff;
-text-align: center;
-font-size: 1.6em;
+    background: linear-gradient(45deg, #b54242 0%,#46505e 100%);
+    margin: 0;
+    padding: 20px 120px;
+    color: #fff;
+    font-size: 1.2em;
 }
 
 .btndefault:hover {
     color: #fff;
-    background: -webkit-linear-gradient(left, #febf01 0%, #febf01 100%);
+    background: -webkit-linear-gradient(left, #ce4545 0%, #475f84 100%);
     transition: all 0.15s ease-out 0s;
 }
 
@@ -358,7 +356,7 @@ h4 {
   font-size: 1em;
   padding: 15px 1px;
   border: none;
-  border-bottom: 1px solid #47a5fb;
+  border-bottom: 1px solid #47515f;
   text-align: left;
   background-color: transparent;
   cursor: text;
@@ -366,7 +364,7 @@ h4 {
 
 
 .input_mainpg:focus {
-    border-bottom: 1px solid #ffbf1b;
+    border-bottom: 1px solid #b54242;
     outline: none;
     transition: all 0.15s ease-out 0s;
     cursor: text;
@@ -398,15 +396,20 @@ h4 {
 .ant-tabs-bar{
   font-weight: bold;
 }
+
+.ant-tabs-nav .ant-tabs-tab{
+  color: #6c727b;
+}
+
 .ant-tabs-nav .ant-tabs-tab-active{
-  color: #8036ea;
+color: #b54242;
 }
 
 .ant-tabs-nav .ant-tabs-tab:hover{
-  color: #8036ea;
+  color: #b54242;
 }
 .ant-tabs-ink-bar{
-  background-color: #8036ea;
+  background-color: #b54242;
 }
 
 

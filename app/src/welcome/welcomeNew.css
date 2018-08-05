@@ -1,37 +1,40 @@
 /*welcome */
 
 .a1_bk{
-  height: 800px;
+  /* height: 500px; */
   width: 100%;
-  background: url(../images/banner/paper-3190198_black.jpg) no-repeat center center;
-  background-size: cover;
+  padding: 50px 0;
+  /* background: url(../images/banner/paper-3190198_black.jpg) no-repeat center center; */
+  /* background-size: cover; */
   /* clip-path: polygon(0 10%,100% 0%,100% 90%,0% 100%); */
 }
 
 .a1_bk .a1bk_title{
     position: relative;
-    top: 50%;
-    transform: translateY(-50%);
+    /* top: 50%; */
+    /* transform: translateY(-50%); */
 }
 
 .a1_bk h1{
-  font-size: 7em;
-  color: #fff;
-  padding: 0;
-  margin: 0;
-  text-align: center;
-  text-shadow: 0 0 10px #000000;
-}
-
-.a1_bk h4{
-  font-size: 3em;
-  color: #fff;
-  padding: 0;
-  margin: 0;
-  text-align: center;
-  text-shadow: 0 0 10px #000000;
+font-size: 3em;
+color: #b54242;
+padding: 0;
+margin: 0;
+text-align: center;
+/* text-shadow: 0 0 10px #000000; */
+border-bottom: 7px solid;
+text-align: left;
+margin-left: 115px;
+width: 30%;
+padding-bottom: 5px;
 }
 
 .clearfix {
     clear: both !important;
+}
+
+.coin-item{
+      padding: 50px 0;
+     border: 6px double #3f4854;
+    background: #fff;
 }

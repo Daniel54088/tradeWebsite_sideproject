@@ -62,11 +62,6 @@ ul li .ant-dropdown-menu-item-group-title{
 
 /*內文標題*/
 
-.news_text_right h3{
-	font-weight:400;
-
-}
-
 .news_text_right h4{
 	color: #ddd;
 }
@@ -103,13 +98,13 @@ ul li .ant-dropdown-menu-item-group-title{
 /*頁碼樣式*/
 
 .ant-pagination li .ant-pagination-item-link{
-  border: 2px solid #47a5fb;
-    background-color: #47a5fb;
+		border: 0;
+    background-color: transparent;
     border-radius: 4px;
     outline: none;
     display: block;
     transition: all .3s;
-    color: #fff;
+    color: #454e58s;
 }
 
 .ant-pagination{
@@ -117,13 +112,9 @@ ul li .ant-dropdown-menu-item-group-title{
 	margin-top: 20px;
 }
 
-.ant-pagination-item a{
-
-}
-
 .ant-pagination-prev .ant-pagination-item-link:hover,
 .ant-pagination-next .ant-pagination-item-link:hover{
-	color: #fff !important;
+	color: #ea4b3b !important;
 }
 
 .ant-pagination-prev,
@@ -136,6 +127,11 @@ ul li .ant-dropdown-menu-item-group-title{
 	background-color: transparent !important;
 }
 
-.ant-pagination-item-active {
-    background-color: transparent;
+.ant-pagination-item-active a{
+	color:#ea4b3b !important;
 }
+
+.ant-pagination-item:focus a,
+.ant-pagination-item:hover a{
+	 color:#ea4b3b !important;
+ }
