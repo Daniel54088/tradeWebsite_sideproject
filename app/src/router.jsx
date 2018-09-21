@@ -9,7 +9,7 @@ import Contact from './contact/contact.jsx'
 import TradeTab from './trade/TradeTab.jsx'
 import TradeDetail from './trade/TradeDetail.jsx'
 import ForgetPassword from './loginlobby/ForgetPassword.jsx';
-import WalletHistory from './wallet/WalletHistory.jsx';
+
 import Init from './main.jsx';
 import Information from './information/Information.jsx';
 import Member from './member/Member.jsx';
@@ -21,7 +21,7 @@ import Register from './loginlobby/Register.jsx';
 import SignIn from './loginlobby/SignIn.jsx';
 import Welcome from './welcome/welcome.jsx';
 import ApplePen from './welcome/ApplePen.jsx';
-import ClearFix from './welcome/ClearFix.jsx';
+
 
 
 ReactDOM.render(

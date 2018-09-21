@@ -5,7 +5,6 @@ import Slider from './components/Slider.jsx';
 import NewsList from './components/Product/News/NewsList.jsx';
 import LiveList from './components/Product/Lives/LiveList.jsx';
 import ApplePen from './ApplePen.jsx';
-import ClearFix from './ClearFix.jsx';
 
 let newArray =[];
 
@@ -30,7 +29,7 @@ export default class Welcome extends React.Component {
                   <div className="container-fluid">
                       <div className="row">
                         <LiveList/>
-                        <ClearFix/>
+                        <div className="clearfix"></div>
                         <ApplePen/>
                         <NewsList/>
 
