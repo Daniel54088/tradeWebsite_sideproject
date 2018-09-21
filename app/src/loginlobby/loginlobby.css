@@ -6,15 +6,15 @@
 }
 
 .join_style{
-background: url(../images/banner/desktop-1155613_1920.jpg) no-repeat left center;
+/* background: url(../images/banner/desktop-1155613_1920.jpg) no-repeat left center; */
 background-size: cover;
 }
 
 .join_style .content p {
     padding: 0;
     margin: 0;
-    color: #47a5fb;
-    font-size: 0.8em;
+    color: #b54242;
+    font-size: 1.2em;
     width: 100%;
 }
 
@@ -27,25 +27,27 @@ background-size: cover;
 .join_style .content .register_content .input_mainpg {
   width: 100%;
   padding: 10px 0 10px 10px;
-  font-size: 2em;
-  color: #6c7277;
+  font-size: 1.2em;
+  color: #333;
   font-weight: 400;
+  text-align: center;
 }
 
 /*註冊按鈕*/
 
 .join_style .content .btngroup {
-    text-align: center;
-    margin: 35px 0 25px 0;
+  margin: 20px;
+  padding: 0;
+  width: auto;
+  display: inline-block;
 }
 
 .join_style .content h4 {
-      color: #47a6ff;
+      color: #b54242;
     padding: 0;
     text-align: center;
     font-size: 3em;
     width: 100%;
-    margin-bottom: 30px;
 }
 
 .join_style .content .first{
@@ -120,6 +122,13 @@ background-size: cover;
   margin: 20px  0px  10px  0px ;
 }
 
+.loginLink #forget_btn{
+      color: #af4243;
+    font-size: 1.2em;
+    border-bottom: 1px solid;
+    padding-bottom: 5px;
+}
+
 
 /*返回按鈕*/
 
@@ -133,12 +142,21 @@ background-size: cover;
   display: inline;
 }
 
+.join_style .content .caption{
+  margin-bottom: 30px;
+}
+
 .join_style .content .caption img{
   width: 100%;
 }
 
 .join_style .content .caption p{
   color: #5c5c5f;
+}
+
+.btnBox{
+      text-align: center;
+    margin: 50px 0 20px 0;
 }
 
 

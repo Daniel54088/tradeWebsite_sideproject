@@ -1,0 +1,35 @@
+.Basic-info{
+	display: flex;
+}
+
+.Basic-item {
+	flex:1.5;
+	margin: 15px 0;
+	text-align: center;
+}
+
+.Basic-item:nth-child(2),
+.Basic-item:nth-child(3){
+	flex: 2;
+}
+
+.Basic-item h3{
+	margin: 0;
+	padding: 0;
+}
+
+.bulletin{
+	border:1px solid #ccc;
+	border-radius: 5px;
+
+}
+
+.bulletin .bulletin-list ul {
+	height: 100px;
+	overflow-y: scroll;
+}
+
+.bulletin .bulletin-list ul li{
+	display: inline-block;
+	list-style: none;
+}

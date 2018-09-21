@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link, IndexLink } from 'react-router';
 import {cx} from '../../../../mutipleClass.js';
+import ClearFix from '../../../ClearFix.jsx';
 
 
 export default class LiveItem extends React.Component {
@@ -14,7 +15,7 @@ export default class LiveItem extends React.Component {
 
 
       return (
-        <div className="col-md-3">
+        <div className="col-md-6 coin-item">
 
             <div className="liveing_img"><Link><img src={this.props.image}/></Link></div>
 
@@ -24,6 +25,7 @@ export default class LiveItem extends React.Component {
             <p className="liveingtext">Last Price: {this.props.price}</p>
             <p className="liveingtext">24h Change: <a className={upordownClass}>{this.props.change}  /  {this.props.percent}</a></p>
             </div>
+            <ClearFix/>
         </div>
         )
     }

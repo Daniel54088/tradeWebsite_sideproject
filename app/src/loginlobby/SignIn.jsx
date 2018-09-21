@@ -44,16 +44,12 @@ export default class SignIn extends React.Component {
           <div className="join_style" id="signin">
             <div className="container content">
                <div className="row" style={{'padding':'20px 0px 20px 0px','marginBottom':'50px'}}>
-                <div className="col-md-3 col-xs-1">
 
-                </div>
-
-                <div className="col-md-6 col-md-offset-0 col-xs-12 " style={{marginTop:'50px',marginBottom:'30px'}}>
+                <div className="col-md-8 col-md-offset-2 col-xs-12 " style={{marginTop:'50px',marginBottom:'30px'}}>
 
                     <div className="caption">
 
                         <h4>Sign In</h4>
-                        <p>Stay up to date on the development of Bootstrap and reach out to the community with these helpful resources.</p>
                     </div>
 
                     <div className="register_content">
@@ -61,7 +57,7 @@ export default class SignIn extends React.Component {
                             Name<span className="necessary">*</span>
                         </p>
                         <div className="form_group">
-                            <input type="text" className="input_mainpg" ref="account" placeholder="your name"/>
+                            <input type="text" className="input_mainpg" ref="account"/>
                         </div>
                     </div>
 
@@ -70,17 +66,22 @@ export default class SignIn extends React.Component {
                             Password<span className="necessary">*</span>
                         </p>
                         <div className="form_group">
-                            <input type="password" className="input_mainpg" ref="password" placeholder="password"/>
+                            <input type="password" className="input_mainpg" ref="password"/>
 
                         </div>
                     </div>
 
+
+                    <div className="btnBox">
                     <div className="btngroup">
                         <a className="btndefault" onClick={this.check}>Sign in</a>
                     </div>
                     <div className="btngroup">
                         <Link to={`register`} className="btndefault registerbtn">Sign up</Link>
                     </div>
+                  </div>
+
+
                     <div className="loginLink" >
                       <Link to={`forgetpassword`}  id="forget_btn">
                           <span>Forget password？</span>

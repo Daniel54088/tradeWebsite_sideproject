@@ -44,16 +44,9 @@ export default class TradeItem extends React.Component {
       return (
         <div className="col-md-6">
           <div className="trade-bg">
-            <div className="col-md-12 trade-head">
-
-                <div className="col-md-12 col-sm-12 trade-head-left">
+          <div className="trade-chart"  ref="test">
                   <h4>{this.props.name} / BTC</h4>
-                </div>
-            </div>
 
-          <div className="col-md-12 trade-chart"  ref="test">
-                <div className="col-md-12">
-                    <div className="col-md-12">
                       <div className="Pairprice"> $20</div>
                       <div className="TimeBox">
                           <div className="title" >DAY</div>
@@ -71,55 +64,34 @@ export default class TradeItem extends React.Component {
                             <div className="rate">+0.79%</div>
                           </div>
 
-
-                    </div>
-
-                </div>
-
-
-                  <div className="col-md-6">
+                    <div className="trade_Box">
                     <div className="KVBoxLeft">
-                    <div className="KeyBox">
-                      <div className="key">Open 24H</div>
-                    </div>
-                    <div className="valueBox">
+                      <div className="key">Open 24H：</div>
                       <div className="value">23224</div>
-                    </div>
                     </div>
 
                       <div className="KVBoxLeft">
-                    <div className="KeyBox">
-                      <div className="key">Open 24H</div>
-                    </div>
-                    <div className="valueBox">
+                      <div className="key">Open 24H：</div>
                       <div className="value">23224</div>
                     </div>
+
                     </div>
 
-                  </div>
 
 
-                  <div className="col-md-6">
 
+                <div className="trade_Box">
                       <div className="KVBoxRight">
-                    <div className="KeyBox">
-                      <div className="key">Open 24H</div>
-                    </div>
-                    <div className="valueBox">
+                      <div className="key">Open 24H：</div>
                       <div className="value">23224</div>
-                    </div>
                     </div>
 
                       <div className="KVBoxRight">
-                    <div className="KeyBox">
-                      <div className="key">Open 24H</div>
-                    </div>
-                    <div className="valueBox">
+                      <div className="key">Open 24H：</div>
                       <div className="value">23224</div>
                     </div>
-                    </div>
-
                   </div>
+
 
 
 

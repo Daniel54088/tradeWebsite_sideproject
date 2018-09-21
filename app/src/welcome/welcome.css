@@ -75,7 +75,7 @@
 
 
 .news_text_right h4 {
-    color:#5f768c;
+    color:#364661;
 }
 
 .news_text_right h5 {
@@ -117,21 +117,25 @@
 /*小姊姊開黑中*/
 
 .live_bg {
-    padding: 40px 15px;
-    background-color: #fff;
+    padding: 30px 115px !important;
+    background: #303640;
+    background-image: url(https://www.transparenttextures.com/patterns/maze-black.png);
+    padding-top: 0 !important;
 }
 
 .liveing_img {
-
-    text-align: center;
-
+      text-align: center;
+    width: 50%;
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 /*這是啥？*/
 .liveing_img img {
     width: auto;
-    height:50px;
-
+    height:80px;
 }
 
 .liveing h2 {
@@ -141,14 +145,14 @@
 }
 
 .liveing_text {
-    position: relative;
-    padding: 0 20px;
+      width: 50%;
+    float: right;
 }
 
 .liveing_text h4 {
     color: #333;
-    font-size: 1.5em;
-    text-align: center;
+    font-size: 2.5em;
+    text-align: left;
     margin: 15px 0;
     font-weight:bold;
 }
@@ -156,7 +160,7 @@
 .liveing_text .liveingtext {
     color: #333;
     font-size: 0.8em;
-    text-align: center;
+    text-align: lefts;
     padding: 0;
     margin: 0 0 20 0;
     font-weight: bold;
